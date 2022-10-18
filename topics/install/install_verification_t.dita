@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_d3w_jtg_m5b">
+    <title>Installation Verification</title>
+    <shortdesc>Run the sanity tests to verify the <keyword keyref="product"/>
+        installation.</shortdesc>
+    <taskbody>
+        <context>Perform JS and Python tests to verify the installation.</context>
+        <steps>
+            <step>
+                <cmd>Login to the installed <keyword keyref="product"/> machine.</cmd>
+            </step>
+            <step>
+                <cmd>Verify the JS tests:</cmd>
+                <substeps id="substeps_w2s_stg_m5b">
+                    <substep>
+                        <cmd>Navigate to the <filepath>client/tests/js</filepath>.</cmd>
+                        <info>
+                            <pre id="pre_kly_ttg_m5b">cd client/tests/js</pre>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Execute the following command:</cmd>
+                        <info>
+                            <pre id="pre_fd1_vtg_m5b">execute "npm test"</pre>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Verify the Python tests:</cmd>
+                <substeps id="substeps_ww5_vtg_m5b">
+                    <substep>
+                        <cmd>Navigate to the <filepath>client/tests/python</filepath>.</cmd>
+                        <info>
+                            <pre id="pre_xw5_vtg_m5b">cd client/tests/python</pre>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Execute the following command:</cmd>
+                        <info>
+                            <pre id="pre_yw5_vtg_m5b">execute "pytest -v"</pre>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

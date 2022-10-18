@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_unc_sv3_3r">
+  <title>Technical Support</title>
+  <shortdesc>Altair provides comprehensive software support via telephone and e-mail.</shortdesc>
+  <refbody>
+    <section>
+      <title>Telephone and E-mail </title>
+      <p>When contacting Altair support, please specify the product and version number you are using
+        along with a detailed description of the problem. Many times, it is very beneficial for the
+        support engineer to know what type of workstation, operating system, RAM, and graphics board
+        you have, so please have that information ready. If you send an e-mail, please specify the
+        workstation type, operating system, RAM, and graphics board information in the e-mail. </p>
+      <p>To contact an Altair support representative, reference the following table.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_rbn_tr2_2s">
+          <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+            <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+            <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+            <thead>
+              <row>
+                <entry>Location</entry>
+                <entry>Telephone</entry>
+                <entry>E-mail</entry>
+              </row>
+            </thead>
+            <tbody>
+            <row>
+              <entry>Australia</entry>
+              <entry>
+                <p>+61 3 9866 5557</p>
+                <p>+61 4 1486 0829</p>
+              </entry>
+              <entry><xref keyref="href_pbs_support_australia"/></entry>
+            </row>
+            <row>
+              <entry>China</entry>
+              <entry>+86 21 6117 1666</entry>
+              <entry><xref keyref="href_pbs_support_china"/></entry>
+            </row>
+              <row>
+                <entry>France</entry>
+                <entry>+33 (0)1 4133 0992</entry>
+                <entry><xref keyref="href_pbs_support_europe"/></entry>
+              </row>
+              <row>
+                <entry>Germany</entry>
+                <entry>+49 (0)7031 6208 22</entry>
+                <entry><xref keyref="href_pbs_support_europe"/></entry>
+              </row>
+              <row>
+                <entry>India</entry>
+                <entry>
+                <p>+91 80 66 29 4500</p>
+                <p>+1 800 208 9234 (Toll Free)</p>
+              </entry>
+                <entry><xref keyref="href_pbs_support_india"/></entry>
+              </row>
+              <row>
+                <entry>Italy</entry>
+                <entry>+39 800 905595</entry>
+                <entry><xref keyref="href_pbs_support_europe"/></entry>
+              </row>
+              <row>
+                <entry>Japan</entry>
+                <entry>+81 3 6225 5821</entry>
+                <entry><xref keyref="href_pbs_support_japan"/></entry>
+              </row>
+              <row>
+                <entry>Korea</entry>
+                <entry>+82 70 4050 9200</entry>
+                <entry><xref keyref="href_pbs_support_korea"/></entry>
+              </row>
+            <row>
+              <entry>Malaysia</entry>
+              <entry>
+                <p>+91 80 66 29 4500</p>
+                <p>+1 800 208 9234 (Toll Free)</p>
+              </entry>
+              <entry><xref keyref="href_pbs_support_india"/></entry>
+            </row>
+            <row>
+              <entry>North America</entry>
+              <entry>+1 248 614 2425</entry>
+              <entry><xref keyref="href_pbs_support_northamerica"/></entry>
+            </row>
+            <row>
+              <entry>Russia</entry>
+              <entry>+49 7031 6208 22</entry>
+              <entry><xref keyref="href_pbs_support_europe"/></entry>
+            </row>
+              <row>
+                <entry>Scandinavia</entry>
+                <entry>+46 (0) 46 460 2828</entry>
+                <entry><xref keyref="href_pbs_support_europe"/></entry>
+              </row>
+            <row>
+              <entry>Singapore</entry>
+              <entry><p>+91 80 66 29 4500</p>+1 800 208 9234 (Toll Free)</entry>
+              <entry><xref keyref="href_pbs_support_india"/></entry>
+            </row>
+            <row>
+                <entry>South Africa</entry>
+              <entry>+27 21 831 1500</entry>
+              <entry><xref keyref="href_pbs_support_europe"/></entry>
+            </row>
+            <row>
+              <entry>South America</entry>
+              <entry>+55 11 3884 0414</entry>
+              <entry><xref keyref="href_pbs_support_southamerica"/></entry>
+            </row>
+              <row>
+                <entry>United Kingdom</entry>
+                <entry>+44 (0)1926 468 600</entry>
+                <entry><xref keyref="href_pbs_support_europe"/></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+    </section>
+  </refbody>
+</reference>

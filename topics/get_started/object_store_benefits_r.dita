@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_y2h_klg_m5b">
+    <title>Benefits of <keyword keyref="product"/></title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_cd4_nlg_m5b">
+            <p>The benefits of <keyword keyref="product"/> are as follows:<ul id="ul_kxg_4lg_m5b">
+                    <li><keyword keyref="product"/> lets you model Engineering Objects, define
+                        properties, and methods</li>
+                    <li>Ability to define and capture Objects (content, file, folder...)</li>
+                    <li>Define the properties, behavior, and methods for these Objects</li>
+                    <li>Write sample code for a method, action, and behavior</li>
+                    <li>Objects can be independent rather than glued to the user interface</li>
+                    <li>Consume it in different applications (HyperWorks, HyperView, Inspire...)
+                        using the APIs</li>
+                    <li>Support for authoring the contents, actions, and deploying them</li>
+                <li>Users can author the content and get onboarded to the platform easily.</li>
+                </ul></p>
+        </section>
+    </refbody>
+</reference>

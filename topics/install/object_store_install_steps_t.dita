@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_wws_yqg_m5b">
+    <title>Install <keyword keyref="product"/></title>
+    <shortdesc>Install <keyword keyref="product"/> to <b>????</b>.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_tqm_2rg_m5b">Before you begin:<ul id="ul_jr5_3rg_m5b">
+                <li>Review the <xref href="prerequisites_t.dita"/></li>
+                <li>The <keyword keyref="product"/> zip file needs to be downloaded from Altair
+                    Drive or obtained using your usual Altair support channels.</li>
+            </ul></prereq>
+        <context/>
+        <steps>
+            <step>
+                <cmd>Copy the <keyword keyref="product"/> installer to the system where you want to
+                    install.</cmd>
+            </step>
+            <step>
+                <cmd>Start the console as an administrator.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to the location where you have copied the Object Store installer zip
+                    file.</cmd>
+            </step>
+            <step>
+                <cmd>Unzip the <keyword keyref="product"/> Installer zip file.</cmd>
+            </step>
+            <step>
+                <cmd>Execute the following command:</cmd>
+                <info>
+                    <pre id="pre_sld_rrg_m5b">execute reinstall.sh</pre>
+                </info>
+                <info>
+                    <note id="note_vjw_rrg_m5b"><b>Review with Sanjeev – </b>I opened Gitbash and
+                        entered the command sh reinstall.sh</note>
+                </info>
+                <info>This will install <keyword keyref="product"/> docker image with database and
+                    VSCode plugin.</info>
+                <info>
+                    <note id="note_dqy_xrg_m5b">If there is an existing instance of the <keyword
+                            keyref="product"/>, then this command will reinstall the <keyword
+                            keyref="product"/> docker image with a new database and VSCode
+                        plugin.</note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

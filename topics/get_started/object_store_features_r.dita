@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ogh_541_wtb">
+    <title><keyword keyref="product"/> Features</title>
+    <shortdesc>An <keyword keyref="product"/> is an enhanced next-generation platform core that has
+        combined capabilities of numerous services. </shortdesc>
+    <refbody>
+        <section id="section_yht_pp1_wtb">
+            <p>The <keyword keyref="product"/> is a Content Management and an action execution
+                engine that applies Access Control List (ACL) and other authorization policies for
+                security.</p>
+            <p><keyword keyref="product"/> features are as follows:<ul id="ul_etr_qp1_wtb">
+                    <li>Everything in the object store is modeled as an Object. </li>
+                    <li>Author a Content Pack which helps the consumers and providers.</li>
+                    <li>Supports object extension and ACL.</li>
+                    <li>Author the actions in one language and it can be consumed in many other
+                        languages.</li>
+                    <li>There is seamless communication between the applications.</li>
+                    <li>Supports various deployment modes.</li>
+                    <li>It is built on a multi-model graph database.</li>
+                    <li>There is a clear separation of storage and computation.</li>
+                </ul></p>
+        </section>
+    </refbody>
+</reference>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fvh_2vg_m5b">
+    <title>Connect to a Server</title>
+    <shortdesc>Create a profile using the Altair One tool in the VS Code to connect to a
+        server.</shortdesc>
+    <taskbody>
+        <context>
+            <p>The authentication is integrated with VS Code, hence the credentials are not required
+                while creating a profile. The VS Code re-directs to Okta login page for
+                authentication. You can set the created profile as a default profile.</p>
+            <p>Refresh the Remote Packs after adding the profile to authenticate your credentials
+                using Okta login page. Remote packs get activated after authenticating your
+                credentials.</p>
+            <p>The following list of content packs will be available once you bootstrap the
+                    system:<ul id="ul_dv3_jxw_n5b">
+                    <li>altair.system - which has the details as to how to create content, a
+                        relation, an event, and other entities. This has the base interfaces. For
+                        example, what are an application, application version, and execution
+                        environment.</li>
+                    <li>altair.pbs - is an execution environment pack</li>
+                    <li>altair.local - is an execution environment pack</li>
+                    <li>altair.versioning - pack which provides the default way of versioning
+                        entities. It is based on the Git style of versioning. This is a decoupling
+                        way of versioning. You can create your own pack with your own versioning.
+                        You can also use the other user’s versioning packs as well.</li>
+                    <li>altair.open.faas - is an execution environment pack. Even the Execution
+                        Environment is a content pack within the Object Store.</li>
+                </ul></p>
+            <p>An administrator creates the execution environment, onboards the environment, and
+                shares it with other users. The other users can use the shared execution environment
+                and execute an action on top of it.</p>
+            <p>Perform the following steps to create a profile.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click Altair One Tool icon (<image
+                        href="../../images/icons/altair_one_tool.png" scale="60"
+                        id="image_p2w_cng_m5b"/>) in the VS Code.</cmd>
+            </step>
+            <step>
+                <cmd>Click <image placement="break" href="../../images/icons/add_icon.png"
+                        scale="75" id="image_l4g_p5v_n5b"/> at the top pane in the left panel.</cmd>
+                <stepresult>The <uicontrol>Create Profile</uicontrol> is displayed in the right
+                        panel.<fig id="fig_tmm_55v_n5b">
+                        <title>Create Profile</title>
+                        <image placement="break" href="../../images/profile_create.png" scale="75"
+                            id="image_gns_w5v_n5b">
+                            <alt>Create Profile</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter a <uicontrol>Profile Name</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Server URL</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Execution Environment</uicontrol> from the drop-down
+                    menu.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The created profile will be listed.<fig id="fig_qyd_1wv_n5b">
+                        <title>Created Profile</title>
+                        <image placement="break" href="../../images/profile_created.png" scale="75"
+                            id="image_u5c_bwv_n5b">
+                            <alt>Created Profile</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Right-click the profile and select <uicontrol>Make Default</uicontrol> to set
+                    it as a default profile.</cmd>
+                <info>
+                    <fig id="fig_vpv_4wv_n5b">
+                        <title>Set the Profile as Default</title>
+                        <image placement="break" href="../../images/profile_default.png" scale="75"
+                            id="image_htg_qwv_n5b">
+                            <alt>Set the Profile as Default</alt>
+                        </image>
+                    </fig>
+                </info>
+                <info>
+                    <note id="note_ccy_nzk_t5b">Refresh the Remote Packs after adding the profile to
+                        authenticate your credentials using Okta login page. Remote packs get
+                        activated after authenticating your credentials.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Click Altair One Content Pack icon (<image
+                        href="../../images/icons/altair_one_content_pack.png" scale="60"
+                        id="image_mzx_2ng_m5b"/>).</cmd>
+                <stepresult>The Remote Packs deployed are listed:<fig id="fig_dlr_2yw_n5b">
+                        <title>Remote Packs</title>
+                        <image placement="break" href="../../images/profile_in_remote_packs.png"
+                            scale="75" id="image_jgx_gyw_n5b">
+                            <alt>Remote Packs</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+        <postreq id="postreq_ppy_q1l_t5b"><xref href="local_packs_create_t.dita">Create Local
+                Packs</xref>.</postreq>
+    </taskbody>
+</task>

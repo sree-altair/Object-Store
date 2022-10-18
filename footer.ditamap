@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Footer</title>
+ <topicref href="front_matter/intellectual_property_rights_notice_pbsworks_r.dita" toc="no">
+ </topicref>
+ <topicref href="front_matter/technical_support_pbsworks_r.dita" toc="no">
+ </topicref>
+</map>

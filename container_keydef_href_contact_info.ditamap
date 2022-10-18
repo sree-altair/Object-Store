@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Keydefs for hrefs: Contact Information</title>
+ <keydef keys="href_pbs_support_northamerica" format="html" href="mailto:pbssupport@altair.com" scope="external">
+  <topicmeta>
+   <linktext>pbssupport@altair.com</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_australia" format="html" href="mailto:anz-pbssupport@altair.com"
+  scope="external">
+  <topicmeta>
+   <linktext>anz-pbssupport@altair.com</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_china" format="html" href="mailto:pbs@altair.com.cn"
+  scope="external">
+  <topicmeta>
+   <linktext>pbs@altair.com.cn</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_europe" format="html" href="mailto:pbssupport@europe.altair.com"
+  scope="external">
+  <topicmeta>
+   <linktext>pbssupport@europe.altair.com</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_india" format="html" href="mailto:pbs-support@india.altair.com"
+  scope="external">
+  <topicmeta>
+   <linktext>pbs-support@india.altair.com</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_japan" format="html" href="mailto:pbs@altairjp.co.jp"
+  scope="external">
+  <topicmeta>
+   <linktext>pbs@altairjp.co.jp</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_korea" format="html" href="mailto:support@altair.co.kr"
+  scope="external">
+  <topicmeta>
+   <linktext>support@altair.co.kr</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_support_southamerica" format="html" href="mailto:br_support@altair.com"
+  scope="external">
+  <topicmeta>
+   <linktext>br_support@altair.com</linktext>
+  </topicmeta>
+ </keydef>
+ <keydef keys="href_pbs_sales" format="html" href="mailto:pbssales@altair.com"
+  scope="external">
+  <topicmeta>
+   <linktext>pbssales@altair.com</linktext>
+  </topicmeta>
+ </keydef>
+</map>

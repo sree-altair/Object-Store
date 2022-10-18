@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vrh_m5g_m5b">
+    <title>Troubleshooting the Installation</title>
+    <shortdesc>Troubleshoot the <keyword keyref="product"/> installation.</shortdesc>
+    <taskbody>
+        <context>
+            <p>Perform the steps if the following error is displayed while starting the Object Store
+                server on
+                Windows:<msgblock id="msgblock_ddk_35g_m5b">"A required privilege is not held by the client"</msgblock></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Run <i>secpol.msc</i> and add the user to the list of users who can create
+                    symbolic links by navigating to Security Settings -> Local Policies -> User
+                    Rights Assignment -> Create symbolic links.</cmd>
+            </step>
+            <step>
+                <cmd>Start the console used to launch Object store as administrator.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_u24_byq_55b">
+    <title>Compile the Action for the Content Definition</title>
+    <shortdesc>Compile that actions provided for the content definition. </shortdesc>
+    <taskbody>
+        <prereq id="prereq_rwr_fyq_55b">The prerequisites to compile that action are:<ul
+                id="ul_vgn_gyq_55b">
+                <li>Create Content definition</li>
+                <li>Define Actions for the content definition</li>
+            </ul></prereq>
+        <context>
+            <p>Once you compile the actions for the content definition, it will generate Python and
+                JavaScript of the defined actions. The generated Python or JavaScript is applied to
+                the action based on the selected <uicontrol>Language for implementing
+                    action</uicontrol> while creating the action.</p>
+            <p>After compiling the action, you must author the business logic in the code that is
+                used to run the actions. The action code consists of 3 arguments:<ul
+                    id="ul_d4j_lpr_55b">
+                    <li>Inputs - contains the information defined while creating the actions. </li>
+                    <li>Output - contains the information defined while creating the actions. </li>
+                    <li>Action Context - contains the details required for action execution. For
+                        example, to pass some environment variables to the action. </li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Right-click the created content definition.</cmd>
+                <info>
+                    <fig id="fig_gsp_wyq_55b">
+                        <title>Content Definition - Compile</title>
+                        <image placement="break" href="../../images/action_compile.png" scale="80"
+                            id="image_esk_yyq_55b">
+                            <alt>Content Definition - Compile</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Compile</uicontrol> from the drop-down list.</cmd>
+                <stepresult>The content definition compilation notifications are displayed.<fig
+                        id="fig_g4h_gzq_55b">
+                        <title>Compile Notifications</title>
+                        <image placement="break"
+                            href="../../images/action_compile_notifications.png" scale="80"
+                            id="image_ish_3zq_55b">
+                            <alt>Compile Notifications</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Right-click the <uicontrol>Action</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_onl_n1r_55b">
+                        <title>Action - Options</title>
+                        <image placement="break" href="../../images/action_author_mode_1.png"
+                            scale="80" id="image_bsf_q1r_55b">
+                            <alt>Action - Options</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Open Source File</uicontrol> from the drop-down list.</cmd>
+                <stepresult>The action source code file is opened.<fig id="fig_n4s_jbr_55b">
+                        <title>Action in Author Mode</title>
+                        <image placement="break" href="../../images/action_author_mode_2.png"
+                            scale="80" id="image_php_lbr_55b">
+                            <alt>Action in Author Mode</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Update the business logic of the action under the pre-run method:</cmd>
+                <info>
+                    <pre id="pre_xzp_qbr_55b">***Implement business logic of action and set outputs</pre>
+                </info>
+                <info>As an example, we will update the following
+                    code:<pre id="pre_jfl_5br_55b">testcontent = inputs.thisContent
+testcontent.foo = "Hi"
+outputs.message = "Hello world"</pre></info>
+                <info>The first two lines defines the business logic and the value that you provide
+                    in the <parmname>outputs.message</parmname> is the message that you provide
+                    after completing the action.</info>
+                <stepresult>The updated source code of the action will be as follows:<fig
+                        id="fig_nxg_2cr_55b">
+                        <title>Updated Action in Author Mode</title>
+                        <image placement="break" href="../../images/action_author_mode_3.png"
+                            scale="80" id="image_d1j_gcr_55b">
+                            <alt>Updated Action in Author Mode</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

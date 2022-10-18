@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_nkg_dbj_2vb">
+    <title>Create a Relation for the Content Definition</title>
+    <shortdesc>Author the content definition by creating a relation.</shortdesc>
+    <taskbody>
+        <context>
+            <p>Perform the following steps to create a relation for the content definition.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_bcp_yr4_55b"/> next to the
+                        <uicontrol>Relations</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_nsj_zr4_55b">
+                        <title>Content Definition Relations</title>
+                        <image placement="break" href="../../images/relations_create_0.png"
+                            scale="80" id="image_i1l_bs4_55b">
+                            <alt>Content Definition Relations</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The <uicontrol>Create Relation</uicontrol> is displayed.<fig
+                        id="fig_e5q_pt4_55b">
+                        <title>Create Relation</title>
+                        <image placement="break" href="../../images/relations_create_1.png"
+                            scale="80" id="image_qp5_qt4_55b">
+                            <alt>Create Relation</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Relation name</uicontrol>. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Content type of related content</uicontrol> from the
+                    drop-down list.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>From cardinality [from this content to related
+                        content]</uicontrol> from the drop-down list.</cmd>
+                <info>
+                    <fig id="fig_bg5_qdj_2vb">
+                        <title>From Cardinality</title>
+                        <image placement="break" href="../../images/relations_create_2.png"
+                            scale="75" id="image_b3y_rdj_2vb"/>
+                        <image>
+                            <alt>From Cardinality</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>To cardinality [from this content to related
+                        content]</uicontrol> from the drop-down list.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_qdr_l2j_2vb">
+                        <title>Create Relation Details</title>
+                        <image placement="break" href="../../images/relations_create_3.png"
+                            scale="75" id="image_zmv_42j_2vb"/>
+                        <image>
+                            <alt>Create Relation Details</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The content definition lists the created relation.<fig
+                        id="fig_efv_xq4_55b">
+                        <title>Created Content Definition Relation</title>
+                        <image placement="break" href="../../images/relations_create_4.png"
+                            scale="80" id="image_cpd_txq_55b">
+                            <alt>Created Content Definition Relation</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

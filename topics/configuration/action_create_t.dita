@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ikz_fr4_55b">
+    <title>Create an Action for the Content Definition</title>
+    <shortdesc>Author the content definition by creating an action.</shortdesc>
+    <taskbody>
+        <context>
+            <p>Perform the following steps to create an action for the content definition.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_bcp_yr4_55b"/> next to the
+                        <uicontrol>Actions</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_nsj_zr4_55b">
+                        <title>Content Definition Actions</title>
+                        <image placement="break" href="../../images/action_create_1.png" scale="80"
+                            id="image_i1l_bs4_55b">
+                            <alt>Content Definition Actions</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The <uicontrol>Create Action</uicontrol> is displayed.<fig
+                        id="fig_e5q_pt4_55b">
+                        <title>Create Action</title>
+                        <image placement="break" href="../../images/action_create_2.png" scale="80"
+                            id="image_qp5_qt4_55b">
+                            <alt>Create Action</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Action name</uicontrol>. </cmd>
+                <info>By default, the <uicontrol>Extends from event content type</uicontrol> value
+                    is selected. </info>
+            </step>
+            <step>
+                <cmd>Choose one of the following actions to model the content definition:</cmd>
+                <choices id="choices_h4t_2w3_2vb">
+                    <choice>Constructor action - action to construct the entity type.</choice>
+                    <choice>Static action - a type level action which is applicable for the content
+                        definition.</choice>
+                    <choice>Inline action - is an action which provides an output as part of the
+                        invocation response.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Language for implementing action</uicontrol> from the
+                    drop-down list.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Description</uicontrol>.</cmd>
+                <info>The description is mandatory in all the places for documentation purpose. The
+                    information provided in this field will generate documentation for the content
+                    definition action.</info>
+            </step>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_rz5_z2p_55b"/> next to the <uicontrol>Action
+                        Inputs</uicontrol> to define the action inputs.</cmd>
+                <info>The action inputs field are displayed.<fig id="fig_gbm_rhp_55b">
+                        <title>Action Inputs</title>
+                        <image placement="break" href="../../images/action_create_inputs.png"
+                            scale="80" id="image_zpt_5hp_55b">
+                            <alt>Action Inputs</alt>
+                        </image>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Enter the required details for the <uicontrol>Action Inputs</uicontrol>.</cmd>
+                <info>The required action inputs are <uicontrol>Name</uicontrol>,
+                        <uicontrol>Type</uicontrol>, and <uicontrol>Description</uicontrol>.</info>
+            </step>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_dpb_cfp_55b"/> next to the <uicontrol>Action
+                        Outputs</uicontrol> to define the action output when the action is
+                    complete.</cmd>
+                <info>The action outputs field are displayed.<fig id="fig_lpy_whp_55b">
+                        <title>Action Outputs</title>
+                        <image placement="break" href="../../images/action_create_outputs.png"
+                            scale="80" id="image_nfm_yhp_55b">
+                            <alt>Action Outputs</alt>
+                        </image>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Enter the required details for the <uicontrol>Action Outputs</uicontrol>.</cmd>
+                <info>The required action outputs are <uicontrol>Name</uicontrol>,
+                        <uicontrol>Type</uicontrol>, and <uicontrol>Description</uicontrol>.</info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The content definition lists the created action.<fig
+                        id="fig_efv_xq4_55b">
+                        <title>Created Content Definition Action</title>
+                        <image placement="break" href="../../images/action_create_4.png" scale="80"
+                            id="image_cpd_txq_55b">
+                            <alt>Created Content Definition Action</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+        <example id="example_rxh_zql_fvb">In this example, we have created a
+                <parmname>Create</parmname> action to perform an action on the task. Now, we can
+            create <parmname>GetAll</parmname>, <parmname>Delete</parmname>,
+                <parmname>MarkAsCompleted</parmname>, <parmname>MarkAsPending</parmname>,
+                <parmname>GetPending</parmname>, <parmname>GetCompleted</parmname> and
+                <parmname>GetNotes</parmname> actions to perform various operations on the
+            tasks.</example>
+        <postreq id="postreq_mcx_zxq_55b"><xref href="action_compile_t.dita">Compile the Action for
+                the Content Definition</xref>.</postreq>
+    </taskbody>
+</task>

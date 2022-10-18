@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="untitled3">
+    <title>Overview</title>
+    <shortdesc>An <keyword keyref="product"/> is an enhanced next-generation platform core that has
+        combined capabilities of numerous services. </shortdesc>
+    <refbody>
+        <section id="section_b1p_n41_wtb">
+            <p>Altair <keyword keyref="product"/> is a set of core fundamental services that let
+                client applications define, modify, and share authoritative digital content
+                representing virtual engineering meta-words.</p>
+            <p>An <keyword keyref="product"/> is a unique content management system that allows the
+                modeling of complex digital through:<ul id="ul_hn5_441_wtb">
+                    <li>object inheritance, instancing</li>
+                    <li>fine-grained level access control</li>
+                    <li>metadata for search and classification</li>
+                    <li>object linkage through relationships</li>
+                    <li>capture behavior through actions</li>
+                    <li>pub/sub-object lifecycle events</li>
+                </ul></p>
+            <p>In the current environment, Domain Objects, Actions, Events, and Execution
+                Environments everything can be modeled as an object. Actions like solving, result
+                extraction or even file operations can be domain actions. Execute these in an
+                environment like <keyword keyref="product_pbs"/>, Open Faas, or any other
+                environment.</p>
+        </section>
+    </refbody>
+</reference>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ql5_png_m5b">
+    <title>Install <keyword keyref="product"/></title>
+    <shortdesc>Instructions to install <keyword keyref="product"/>, prerequisites, and verification
+        of <keyword keyref="product"/> installation are provided in this chapter.</shortdesc>
+    <taskbody>
+        <context>
+            <p/>
+        </context>
+    </taskbody>
+</task>
