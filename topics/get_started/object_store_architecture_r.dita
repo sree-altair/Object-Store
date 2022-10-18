@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_usn_xlg_m5b">
+    <title>Altair <keyword keyref="product"/> Platform Architecture</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_ubt_xlg_m5b">
+            <p> Altair <keyword keyref="product"/> platform architectures consist of:<ul
+                    id="ul_ttk_zlg_m5b">
+                    <li>Arango Database (third-party software) – a multi-model database that
+                        provides storage capability and a graph model. The database provides Search
+                        capability and it indexes the data based on the index definition. </li>
+                    <li>Redits (third-party software) for distributed data structure
+                        implementation</li>
+                    <li>NATS Event Bus (third-party software)</li>
+                    <li>Root Gateway</li>
+                    <li>API Gateway – a downstream gateway that calls the Object Store</li>
+                    <li>Authentication Server - Receive Request, Authenticate the user, give JWT
+                        token and forward the request to the downstream configured services</li>
+                    <li><keyword keyref="product"/> – a core engine handling configuration and
+                        execution</li>
+                    <li>Environment Manager – a service that curates the execution environment. For
+                        example, PBS and OpenFaaS. This is responsible for authoring the content
+                        definition and deployed in the execution environment. Manages the health of
+                        the environment such as server going down, bringing it up, and addresses the
+                        different functions.</li>
+                </ul></p>
+        </section>
+    </refbody>
+</reference>

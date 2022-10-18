@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_qhy_qnl_2vb">
+    <title>Create an Application with Object Store </title>
+    <shortdesc>In this section, using Object Store entities we will create an application that will
+        help you to manage and monitor daily tasks. </shortdesc>
+    <refbody>
+        <section id="section_zhp_t4l_2vb">
+            <p>In Object Store, create Local Packs, Properties, Actions, Events, and Relations and
+                use them to create an application to manage and monitor tasks.</p>
+            <p>Create the following Local Pack:<ul id="ul_gbt_2pl_2vb">
+                    <li>ToDo - is local pack that contains ToDo and Note Content Definition. </li>
+                </ul></p>
+            <p>Create the following Content Definition:<ul id="ul_jdp_2tl_2vb">
+                    <li>ToDo - captures the basic description, status, start and end dates.
+                        Optionally one can assign a category to a ToDo task. </li>
+                    <li>Note - captures the note for the tasks.</li>
+                </ul></p>
+            <p>Cteate the following Properties:<ul id="ul_qyd_npl_2vb">
+                    <li>description - ToDo that you want to accomplish. This is a string property
+                        type to define the content of the task.</li>
+                    <li>status - Status of the ToDo whether in progress, pending or completed. All
+                        todos are by default in pending status. Set the property value as “In
+                        Progress”, “Completed”, and “Pending”. </li>
+                    <li> category - Group the ToDo . Set the property value as “Personal” and
+                        “Work”.</li>
+                </ul></p>
+            <p>Create the following Actions:<ul id="ul_yz4_mtl_2vb">
+                    <li>Create - Create a ToDo action with the description, status and category</li>
+                    <li>GetAll - Get All ToDos that is created by the user from the database</li>
+                    <li>Delete - Delete the selected ToDo</li>
+                    <li>MarkAsCompleted - Mark the ToDo as completed</li>
+                    <li>MarkAsPending - Mark the ToDo as pending</li>
+                    <li>GetPending - Get all the pending ToDos</li>
+                    <li>GetCompleted - Returns completed ToDos</li>
+                    <li>GetNotes - Get all the associated notes</li>
+                </ul></p>
+            <p>Create the following Events:<ul id="ul_lnt_ttl_2vb">
+                    <li>ToDoCreateEvent - Event is triggered when a ToDo entity is created</li>
+                    <li>ToDoDeleteEvent - This event is triggered on deletion of a ToDo entity</li>
+                    <li>ToDoModifiedEvent - Trigger on modification of ToDo</li>
+                </ul></p>
+            <p>Create the following Relations:<ul id="ul_ly3_xtl_2vb">
+                    <li>Notes</li>
+                </ul></p>
+            <p/>
+        </section>
+    </refbody>
+</reference>

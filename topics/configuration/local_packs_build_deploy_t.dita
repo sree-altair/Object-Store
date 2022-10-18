@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_l4f_tqr_55b">
+    <title>Build and Deploy the Local Pack</title>
+    <shortdesc>Build, deploy and install the local pack with the content definition, its property
+        and action. </shortdesc>
+    <taskbody>
+        <context>
+            <p>Perform the following steps to build, deploy and install the local pack.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Right-click the created local pack.</cmd>
+                <info>
+                    <fig id="fig_wvx_mrr_55b">
+                        <title>Created Local Pack</title>
+                        <image placement="break" href="../../images/build_deploy_1.png" scale="80"
+                            id="image_eg4_1sr_55b">
+                            <alt>Created Local Pack</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Build, Deploy &amp; Install</uicontrol> from the drop-down
+                    list.</cmd>
+                <info>
+                    <fig id="fig_a5j_2sr_55b">
+                        <title>Build, Deploy, and Install Local Pack</title>
+                        <image placement="break" href="../../images/build_deploy_2.png" scale="80"
+                            id="image_h5v_hsr_55b">
+                            <alt>Build, Deploy, and Install Local Pack</alt>
+                        </image>
+                    </fig>
+                </info>
+                <info>This will package the Python and NodeJS code into a WHL file and the tar.gz
+                    respectively. The package is sent to the server to register the definitions and
+                    to deploy the code. </info>
+                <info>Notifications are displayed once the build, deploy and install is
+                    complete.</info>
+                <stepresult>The Remote Packs pane lists the deployed local pack.<fig
+                        id="fig_dqj_ntr_55b">
+                        <title>Deployed Local Pack</title>
+                        <image placement="break" href="../../images/build_deploy_3.png" scale="80"
+                            id="image_x3x_str_55b">
+                            <alt>Deployed Local Pack</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Browse the deployed local pack to verify the content definition, property and
+                    actions.</cmd>
+                <info>
+                    <fig id="fig_g5r_ytr_55b">
+                        <title>Browse Local Pack</title>
+                        <image placement="break" href="../../images/build_deploy_4.png" scale="80"
+                            id="image_vzd_15r_55b">
+                            <alt>Browse Local Pack</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

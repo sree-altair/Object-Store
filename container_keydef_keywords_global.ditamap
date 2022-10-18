@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Global Keyword Keydefs Container</title>
+ 
+ <keydef keys="product_allocation_manager">
+  <topicmeta>
+   <keywords>
+    <keyword>Budget Manager</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="product_carriots">
+  <topicmeta>
+   <keywords>
+    <keyword>SmartSight</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+  <keydef keys="product_hyperstudy">
+   <topicmeta>
+    <keywords>
+     <keyword>HyperStudy</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+  <keydef keys="product_hyperworks">
+   <topicmeta>
+    <keywords>
+     <keyword>HyperWorks</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+ <keydef keys="product_pbs_analytics">
+  <topicmeta>
+   <keywords>
+    <keyword>PBS Analytics</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+  <keydef keys="product_pbsa">
+   <topicmeta>
+    <keywords>
+     <keyword>PBSA</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+  <keydef keys="product_pbs_app_services">
+   <topicmeta>
+    <keywords>
+     <keyword>PBS Application Services</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+  <keydef keys="product_pas">
+   <topicmeta>
+    <keywords>
+     <keyword>PAS</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+  <keydef keys="product_pbs">
+   <topicmeta>
+    <keywords>
+     <keyword>PBS Professional</keyword>
+    </keywords>
+   </topicmeta>
+  </keydef>
+ <keydef keys="product_pbs_acronym">
+  <topicmeta>
+   <keywords>
+    <keyword>PBS</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="product_age">
+  <topicmeta>
+   <keywords>
+    <keyword>Altair Grid Engine</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="product_age_acronym">
+  <topicmeta>
+   <keywords>
+    <keyword>AGE</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="product_access_desktop">
+  <topicmeta>
+   <keywords>
+    <keyword>Access Desktop</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="product_access_web">
+  <topicmeta>
+   <keywords>
+    <keyword>Access Web</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="product_access_control">
+  <topicmeta>
+   <keywords>
+    <keyword>Access Control</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="comp_dm_service">
+  <topicmeta>
+   <keywords>
+    <keyword>Remote Desktops</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="comp_rvs">
+  <topicmeta>
+   <keywords>
+    <keyword>Results Visualization Service</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="comp_rvs_acronym">
+  <topicmeta>
+   <keywords>
+    <keyword>RVS</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef> 
+ <keydef keys="comp_analyze">
+  <topicmeta>
+   <keywords>
+    <keyword>Analyze</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_cloud">
+  <topicmeta>
+   <keywords>
+    <keyword>Cloud</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_configure">
+  <topicmeta>
+   <keywords>
+    <keyword>Configure</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_monitor">
+  <topicmeta>
+   <keywords>
+    <keyword>Monitor</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_dc">
+  <topicmeta>
+   <keywords>
+    <keyword>Data Collector</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_simulator">
+  <topicmeta>
+   <keywords>
+    <keyword>Simulate</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_web_interface">
+  <topicmeta>
+   <keywords>
+    <keyword>Web Interface</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="product_compose">
+  <topicmeta>
+   <keywords>
+    <keyword>Compose</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ <keydef keys="comp_telegraf">
+  <topicmeta>
+  <keywords>
+   <keyword>Telegraf</keyword>
+  </keywords>
+   </topicmeta>
+ </keydef>
+ 
+ <keydef keys="comp_diad">
+  <topicmeta>
+   <keywords>
+    <keyword>Diving Into Application Definitions</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ 
+ <keydef keys="comp_diad_acronym">
+  <topicmeta>
+   <keywords>
+    <keyword>DIAD</keyword>
+   </keywords>
+  </topicmeta>
+ </keydef>
+ 
+ 
+</map>

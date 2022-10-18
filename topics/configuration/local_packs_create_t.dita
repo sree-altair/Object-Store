@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_s15_s1l_t5b">
+    <title>Create Local Packs</title>
+    <shortdesc>Create local packs which is a content pack that a user can author.</shortdesc>
+    <taskbody>
+        <context>
+            <p>In this example, we will create a <varname>todo</varname> content pack with the
+                Altair as a provider.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_iw4_dbl_t5b"/> in the Local Packs pane.</cmd>
+                <info>
+                    <fig id="fig_o45_lbl_t5b">
+                        <title>Create Local Packs</title>
+                        <image placement="break" href="../../images/local_pack_create_1.png"
+                            scale="75" id="image_pmw_4bl_t5b">
+                            <alt>Create Local Packs</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The Create Content Pack is displayed.<fig id="fig_fmw_rbl_t5b">
+                        <title>Create Content Pack</title>
+                        <image placement="break" href="../../images/local_content_pack.png"
+                            scale="75" id="image_sgc_1cl_t5b">
+                            <alt>Create Content Pack</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Content pack name</uicontrol>. </cmd>
+                <info>The content pack name should be in lowercase which is the standard way used in
+                    Python and nodejs package names. The content pack name links to the package name
+                    in Python or in nodejs (npm package) as this is the encapsulation of all the use
+                    cases.</info>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Content pack provider</uicontrol>.</cmd>
+                <info>The content pack provider is a higher-level name spacing to differentiate
+                    package names at an account level.</info>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Content pack version number</uicontrol>.</cmd>
+                <info>The selected content pack version should be based on npm versioning style
+                    which is prevalent in the node modules and at various package management system
+                    (Major. Minor, and Bug Fixes - 1.0.0).</info>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Content pack dependencies</uicontrol>.</cmd>
+                <info>By default, all the content pack is dependent on system pack. System pack is a
+                    set of interfaces defined by the platform. This provides the information about
+                    the content pack and its relationship with the event, action, application,
+                    execution environment, and file directory.</info>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Content pack description</uicontrol>.</cmd>
+                <info>The content pack description is mandatory in all the places for documentation
+                    purpose. The information provided in this field will generate documentation for
+                    that pack.</info>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Content pack parent directory</uicontrol>.</cmd>
+                <info>The content pack parent directory is where the content pack must be
+                    initialised.</info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_kmb_fr3_bvb">
+                        <title>ToDo Example</title>
+                        <image placement="break" href="../../images/todo_example_1.png" scale="75"
+                            id="image_a11_mr3_bvb">
+                            <alt>ToDo Example</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The Local Packs pane lists the created local content pack.<fig
+                        id="fig_mrl_ngl_t5b">
+                        <title>Created Local Content Pack</title>
+                        <image placement="break" href="../../images/todo_example_2.png" scale="75"
+                            id="image_prs_4gl_t5b">
+                            <alt>Created Local Content Pack</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    
+    <title>Altair Object Store</title>
+    
+    <topicmeta>
+        <prodinfo>
+            <prodname>Object Store</prodname>
+        </prodinfo>
+        <othermeta name="version" content="2022.1.0"/>
+    </topicmeta>
+    
+    
+    <keydef keys="product">
+        <topicmeta>
+            <keywords>
+                <keyword>Object Store</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef keys="version">
+        <topicmeta>
+            <keywords>
+                <keyword>2022.1.0</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+    <mapref href="container_keydef_href_contact_info.ditamap" />
+    
+    <mapref href="container_keydef_keywords_global.ditamap" />
+    
+    <mapref href="subjectschemepbsworks.ditamap" />
+
+    <topicref href="topics/whats_new/whats_new_object_store_r.dita">
+        <topicmeta>
+            <data name="wh-tile">
+                <data name="image" href="images/skin_images/icon_whats_new.png" format="png"
+                    > </data>
+            </data>
+        </topicmeta>
+    </topicref>
+    
+    <topicref href="topics/get_started/object_store_overview_r.dita">
+        <topicmeta>
+            <data name="wh-tile">
+                <data name="image" href="images/skin_images/icon_get_started.png" format="png"
+                    > </data>
+            </data>
+        </topicmeta>
+        
+    </topicref>
+    
+    <topicref href="topics/videos/tutorials_object_store_r.dita">
+        <topicmeta>
+            <data name="wh-tile">
+                <data name="image" href="images/skin_images/icon_tutorials.png" format="png"
+                    > </data>
+            </data>
+        </topicmeta>
+    </topicref>
+    
+    <topicref href="topics/get_started/object_store_features_r.dita">
+        <topicref href="topics/get_started/content_packs_intro_r.dita"/>
+        <topicref href="topics/get_started/object_store_benefits_r.dita"/>
+        <topicref href="topics/get_started/object_store_architecture_r.dita"/>
+    </topicref>
+    
+    <topicref href="topics/get_started/vs_code_integration_r.dita"/>
+    
+    <topicref href="topics/install/object_store_install_t.dita">
+        <topicref href="topics/install/prerequisites_t.dita"/>
+        <topicref href="topics/install/object_store_install_steps_t.dita"/>
+        <topicref href="topics/install/object_store_service_commands_t.dita">
+            <topicref href="topics/install/object_store_start_t.dita"/>
+            <topicref href="topics/install/object_store_stop_t.dita"/>
+        </topicref>
+        <topicref href="topics/install/install_verification_t.dita"/>
+        <topicref href="topics/install/install_troubleshoot_t.dita"/>
+    </topicref>
+    <topicref href="topics/configuration/object_store_configuration_t.dita">
+        <topicref href="topics/configuration/server_connect_t.dita"/>
+        <topicref href="topics/configuration/application_create_r.dita"/>
+        <topicref href="topics/configuration/local_packs_create_t.dita"/>
+        <topicref href="topics/configuration/content_definition_t.dita"/>
+        <topicref href="topics/configuration/property_create_t.dita"/>
+        <topicref href="topics/configuration/action_create_t.dita">
+            <topicref href="topics/code_snippets/actions_r.dita"/>
+        </topicref>
+        <topicref href="topics/configuration/event_create_t.dita"/>
+        <topicref href="topics/configuration/relation_create_t.dita"/>
+        <topicref href="topics/configuration/action_compile_t.dita"/>
+        <topicref href="topics/configuration/local_packs_build_deploy_t.dita"/>
+    </topicref>         
+    
+
+    <mapref href="footer.ditamap"/>
+
+    <reltable title="Relationship Table: Altair Object Store">
+        <relheader>
+            <relcolspec>
+                <title>Main Topic</title>
+            </relcolspec>
+            <relcolspec linking="targetonly">
+                <title>See Also</title>
+            </relcolspec>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref href="topics/whats_new/whats_new_object_store_r.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="topics/videos/tutorials_object_store_r.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
+
+
+</map>

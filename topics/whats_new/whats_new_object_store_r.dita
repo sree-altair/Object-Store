@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="whats_new_object_store_r">
+  <title>What's New</title>
+  <shortdesc>Here is a quick look at the latest features available with Altair <keyword
+      keyref="product"/>.</shortdesc>
+  <prolog>
+    <author>Raja M</author>
+    <critdates>
+      <created date="2022-08-10"/>
+      <revised modified="2022-08-10"/>
+    </critdates>
+    <metadata>
+      <category>New Features</category>
+      <keywords>
+ 
+      </keywords>
+      <prodinfo>
+        <prodname>Object Store</prodname>
+        <vrmlist>
+          <vrm version="2022" release="0"/>
+        </vrmlist>
+      </prodinfo>
+    </metadata>
+  </prolog>
+    
+  <refbody/>
+</reference>

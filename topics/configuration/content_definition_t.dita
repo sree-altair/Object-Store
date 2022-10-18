@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_arr_4vb_55b">
+    <title>Create Content Definition</title>
+    <shortdesc>Create the content definition in the local packs.</shortdesc>
+    <taskbody>
+        <context>
+            <p>The content definition captures the definition of the domain object that you want to
+                model.</p>
+            <p>The Type of definition created for the local packs are:<ul id="ul_d1w_fyb_55b">
+                    <li>Content - captures the definition of the domain object that you want to
+                        model.</li>
+                    <li>Property - is a data type in programming parlance. When you share the
+                        content pack with a user, then the user can use the authored properties as
+                        well.</li>
+                    <li>Global Action - Actions defined globally.</li>
+                    <li>Global Event - Events defined globally. </li>
+                </ul></p>
+            <p>Perform the following steps to create a content definition.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_r2f_ht4_55b"/> next to the created local pack.</cmd>
+                <info>
+                    <fig id="fig_tf2_3t4_55b">
+                        <title>Content Definition</title>
+                        <image placement="break" href="../../images/content_definition_create_1.png"
+                            scale="80" id="image_pkh_kt4_55b">
+                            <alt>Content Definition</alt>
+                        </image>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Content</uicontrol> from the <uicontrol>Type of
+                        definition</uicontrol> drop down list.</cmd>
+                <info>
+                    <fig id="fig_rm4_sxb_55b">
+                        <title>Content Definition - Options</title>
+                        <image placement="break" href="../../images/content_definition_create_2.png"
+                            scale="75" id="image_sm4_sxb_55b">
+                            <alt>Content Definition - Options</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The Create Content Definition is displayed.<fig id="fig_lcc_ngj_55b">
+                        <title>Create Content Definition</title>
+                        <image placement="break" href="../../images/content_definition_create_3.png"
+                            scale="75" id="image_x2z_b3j_55b">
+                            <alt>Create Content Definition</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Content definition name</uicontrol>. </cmd>
+                <info>
+                    <note id="note_srd_23j_55b">The content definition name should start with an
+                        Uppercase character.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Extends from content definition</uicontrol> from the
+                    drop-down list.</cmd>
+                <info>
+                    <fig id="fig_zqm_nmj_55b">
+                        <title>Extend from content definition - Lists</title>
+                        <image placement="break" href="../../images/content_definition_create_5.png"
+                            scale="75" id="image_wx2_pmj_55b">
+                            <alt>Extend from content definition - Lists</alt>
+                        </image>
+                    </fig>
+                </info>
+                <info>By default, only the system content packs are displayed for an empty database.
+                    It will display user deployed content packs if they are available.</info>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Description</uicontrol>.</cmd>
+                <info>The description is mandatory in all the places for documentation purpose. The
+                    information provided in this field will generate documentation for the content
+                    definition.</info>
+            </step>
+            <step importance="optional">
+                <cmd>Select <uicontrol>Abstract content definition</uicontrol> to define an
+                    interface. The content definition created will be extended and defined later.
+                </cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The local packs lists the created content definition. <fig
+                        id="fig_uhm_2kj_55b">
+                        <title>Created Content Definition and Content Outline</title>
+                        <image placement="break" href="../../images/content_definition_create_4.png"
+                            scale="75" id="image_o2m_gkj_55b">
+                            <alt>Created Content Definition</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Click the created content definition to view the Content Outline in the bottom
+                    pane.</cmd>
+                <stepresult>The content outline of the content definition will be displayed.<fig
+                        id="fig_gh2_npj_55b">
+                        <title>Content Outline</title>
+                        <image placement="break" href="../../images/content_definition_create_6.png"
+                            scale="75" id="image_hh2_npj_55b">
+                            <alt>Content Outline</alt>
+                        </image>
+                    </fig><p>The content outline provides you to further author the content
+                        definitions like Properties, Relations, Actions, and
+                    Events.</p></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

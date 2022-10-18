@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_udy_bsg_m5b">
+    <title><keyword keyref="product"/> Service Commands</title>
+    <shortdesc>Commands for starting, stopping, <b>restarting (??)</b> and <b>checking the status
+            (??)</b> of <keyword keyref="product"/>.</shortdesc>
+    <taskbody>
+        <context>
+            <p>An administrator or as a user with sudo permissions should execute the commands.</p>
+        </context>
+    </taskbody>
+</task>

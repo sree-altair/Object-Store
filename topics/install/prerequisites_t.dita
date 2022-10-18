@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dlw_gpg_m5b">
+    <title>Prerequisites for Installation</title>
+    <shortdesc>Prerequisites for installing <keyword keyref="product"/> components and <keyword
+            keyref="product"/>.</shortdesc>
+    <taskbody>
+        <context>
+            <p>The following are the general prerequisites for installation:<ul id="ul_lf4_xpg_m5b">
+                    <li>Install nodejs 16 LTS<ul id="ul_xj5_1qg_m5b">
+                            <li><b>Review the following points with Sanjeev or Kushal (Remove it
+                                    after confirmation)</b><p>If the following error message is
+                                    displayed:</p><p><i>‘node’ is not recognized as an internal or
+                                        external command, operable program, or batch
+                                    file.</i></p><p>then update nodejs path in the Environment
+                                    Variable.</p><p><i>Control Panel -> System and Security ->
+                                        System -> Advanced system settings -> Environment
+                                        Variables…</i></p></li>
+                        </ul></li>
+                    <li>Install python 3.8.10<ul id="ul_jmn_kqg_m5b">
+                            <li><b>Review the following points with Sanjeev or Kushal (Remove it
+                                    after confirmation)</b><p>To verify if python is installed,
+                                    execute the command “python”</p></li>
+                        </ul></li>
+                    <li>Install Amazon Corretto open JDK version 11<ul id="ul_zyn_nqg_m5b">
+                            <li><b>Review the following points with Sanjeev or Kushal (Remove it
+                                    after confirmation)</b><p>To verify if Java is installed,
+                                    execute the command “java --version”</p></li>
+                        </ul></li>
+                    <li>Install Visual Studio (VS) Code<p>
+                            <note id="note_zyp_qqg_m5b">For Mac, install VS Code command in the path
+                                    (<xref
+                                    href="https://stackoverflow.com/questions/30065227/run-open-vscode-from-mac-terminal"
+                                    format="html" scope="external"
+                                    >https://stackoverflow.com/questions/30065227/run-open-vscode-from-mac-terminal</xref>)</note>
+                        </p></li>
+                    <li><keyword keyref="product"/> installer zip file is available in Altair Drive
+                        location at: <filepath>/Users/&lt;User
+                            Name>/MyFiles/ObjectStore_Installer/</filepath>. Contact your Altair
+                        Support Channels if you do not have access to Altair Drive.</li>
+                </ul></p>
+        </context>
+    </taskbody>
+</task>

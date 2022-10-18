@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd"> 
+<subjectScheme>
+    <subjectHead>
+        <subjectHeadMeta>
+            <navtitle>PBSWorks Documentation Conditions</navtitle>
+        </subjectHeadMeta>
+    </subjectHead>
+    <!-- For more information about using the outputclass attribute see
+        https://confluence.prog.altair.com/display/DITA/Using+the+Outputclass+Attribute -->
+    <hasInstance>
+        <subjectdef keys="outputclassKey">
+            <subjectdef keys="pagebreak">
+                <topicmeta>
+                    <navtitle>PDF: Insert pagebreak before topic.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="video">
+                <topicmeta>
+                    <navtitle>PDF: Insert the current date after the title of the PBSWorks copyright notice.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="insert_date">
+                <topicmeta>
+                    <navtitle>PDF: Insert the current date after the title of the PBSWorks copyright notice.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="release_note">
+                <topicmeta>
+                    <navtitle>PDF Release Notes Only: Tags a section title so that it is formatted as a release note - a solid line precedes and succeeds the section title </navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="table">
+                <topicmeta>
+                    <navtitle>HTML: Only available for a definition list(dl). Formats a definition list as a table.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="letter">
+                <topicmeta>
+                    <navtitle>HTML: Only available for an ordered list (ol). Converted an ordered list from numbers (1,2,3,...) to letters (a,b,c,...)</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="tut">
+                <topicmeta>
+                    <navtitle>HTML: Automatically assigns sequential numbering to h2 and h3 elements.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Blue">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: blue</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Maroon">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: maroon</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Safety">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: orange</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Pink">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: pink</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Green">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: green and font-style: italic</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Highlight">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: black and background-color: yellow</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Navy">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: navy blue</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="Dark">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: dark green</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="red">
+                <topicmeta>
+                    <navtitle>HTML: Can be used on any element. Renders font as: color: red</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="no_border">
+                <topicmeta>
+                    <navtitle>HTML: Can be used with an image. Does not automatically generate a border around the image.</navtitle>
+                </topicmeta>
+            </subjectdef>
+        </subjectdef>
+        <subjectdef keys="productKey">
+            <subjectdef keys="access_desktop">
+                <topicmeta>
+                    <navtitle>Access Desktop</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="access_web">
+                <topicmeta>
+                    <navtitle>Access Web</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="control">
+                <topicmeta>
+                    <navtitle>Control</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="alloc_mngr">
+                <topicmeta>
+                    <navtitle>Allocation Manager</navtitle>
+                </topicmeta>
+            </subjectdef>
+        </subjectdef>
+        <subjectdef keys="propsKey">
+            <subjectdef keys="internet">
+                <topicmeta>
+                    <navtitle>Indicates that steps require internet connectivity.</navtitle>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="no_internet">
+                <topicmeta>
+                    <navtitle>Indicates that steps are for sites with no internet connectivity.</navtitle>
+                </topicmeta>
+            </subjectdef>
+        </subjectdef>
+    </hasInstance>
+    <enumerationdef>
+        <!-- Bind an attribute to a tree of related values -->
+        <attributedef name="product"/>
+        <subjectdef keyref="productKey"/>
+    </enumerationdef>
+    <enumerationdef>
+        <!-- Bind an attribute to a tree of related values -->
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="outputclassKey"/>
+    </enumerationdef>
+    <enumerationdef>
+        <!-- Bind an attribute to a tree of related values -->
+        <attributedef name="props"/>
+        <subjectdef keyref="propsKey"/>
+    </enumerationdef>
+</subjectScheme>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_cmk_4sg_m5b">
+    <title>Start <keyword keyref="product"/></title>
+    <shortdesc>Start <keyword keyref="product"/> services.</shortdesc>
+    <taskbody>
+        <context>
+            <p>An administrator or a user with sudo permissions should start the <keyword
+                    keyref="product"/>.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Login to the installed <keyword keyref="product"/> machine.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the following command to start <keyword keyref="product"/> docker
+                    image:</cmd>
+                <info>
+                    <pre id="pre_wgz_vsg_m5b">docker-compose up</pre>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

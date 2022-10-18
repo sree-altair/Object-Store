@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_pf2_h3g_m5b">
+    <title>Content Packs</title>
+    <shortdesc>Content packs help to define, create, and manage the content.</shortdesc>
+    <refbody>
+        <section id="section_tms_k3g_m5b">
+            <p>The content pack is an encapsulation of:<ul id="ul_a4h_l3g_m5b">
+                    <li>Content Definitions</li>
+                    <li>Property Definitions</li>
+                    <li>Actions</li>
+                    <li>Applications</li>
+                    <li>Events</li>
+                    <li>Execution Environments</li>
+                    <li>Other Resources</li>
+                </ul></p>
+            <p>The provider defines the domain model, shares the pack with a select or broader
+                audience, and monetizes the proceeds of usage. The provider creates and deploys the
+                domain model in the Object Store in the access-controlled environment.</p>
+            <p>The consumer uses the content packs provided by various providers and pays for the
+                services.</p>
+        </section>
+    </refbody>
+</reference>

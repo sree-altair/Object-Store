@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_wn1_nh4_55b">
+    <title>Create Property for the Content Definition</title>
+    <shortdesc>Author the content definition by creating a property.</shortdesc>
+    <taskbody>
+        <context>
+            <p>Perform the following steps to create property for the content definition.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_typ_gs4_55b"/> next to the
+                        <uicontrol>Property</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_xxp_hs4_55b">
+                        <title>Content Definition Property</title>
+                        <image placement="break" href="../../images/property_create_1.png"
+                            scale="80" id="image_epj_ks4_55b">
+                            <alt>Content Definition Property</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The <uicontrol>Create Property</uicontrol> is displayed.<fig
+                        id="fig_i4z_ms4_55b">
+                        <title>Create Property</title>
+                        <image placement="break" href="../../images/property_create_2.png"
+                            scale="80" id="image_u35_4s4_55b">
+                            <alt>Create Property</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Property name</uicontrol>. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Property Type</uicontrol> from the drop-down list.</cmd>
+                <info>
+                    <fig id="fig_b1f_rs4_55b">
+                        <title>Property Type - Lists</title>
+                        <image placement="break" href="../../images/property_create_3.png"
+                            scale="80" id="image_lv3_ts4_55b">
+                            <alt>Property Type - Lists</alt>
+                        </image>
+                    </fig>
+                </info>
+                <info>The property type is a list of various native types supported by JSON schema
+                    and the system properties authored on top of the JSON schema. </info>
+                <info><note id="note_pgl_pj4_55b">Additional fields are displayed based on the
+                        selected <uicontrol>Property Type</uicontrol>. </note>For example, if you
+                    have selected <varname>String</varname> as the <uicontrol>Property
+                        Type</uicontrol>, then it displays the <uicontrol>Enumerations for property
+                        value</uicontrol> field.<fig id="fig_uxs_yj4_55b">
+                        <title>Property Lists - Additional Fields</title>
+                        <image placement="break" href="../../images/property_create_4.png"
+                            scale="75" id="image_mr1_wk4_55b">
+                            <alt>Property Lists - Additional Fields</alt>
+                        </image>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Description</uicontrol>.</cmd>
+                <info>The description is mandatory in all the places for documentation purpose. The
+                    information provided in this field will generate documentation for the content
+                    definition property.</info>
+            </step>
+            <step importance="optional">
+                <cmd>Select <uicontrol>Required</uicontrol> to define if property defined is
+                    required or not for the content definition.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The content definition lists the created property.<fig
+                        id="fig_efv_xq4_55b">
+                        <title>Created Content Definition Property</title>
+                        <image placement="break" href="../../images/property_create_5.png"
+                            scale="75" id="image_xrp_zq4_55b">
+                            <alt>Created Content Definition Property</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+        <example id="example_lhj_wnl_fvb">In this example, we have created a
+                <parmname>description</parmname> property to describe the task. Now, we can create
+                <parmname>status</parmname> and <parmname>category</parmname> properties to describe
+            the task status and its category.</example>
+    </taskbody>
+</task>
