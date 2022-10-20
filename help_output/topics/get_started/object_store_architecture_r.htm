@@ -1,0 +1,389 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../../iconAltair-32.png"><!----></link><link rel="icon" href="../../iconAltair-32.png"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2022" /><meta name="DC.rights.owner" content="(C) Copyright 2022" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Altair Object Store Platform Architecture" /><meta name="abstract" content="" /><meta name="description" content="Altair Object Store platform architectures consist of: Arango Database (third-party software) – a multi-model database that provides storage capability and a graph model. The database provides Search ..." /><meta name="DC.Relation" scheme="URI" content="../../topics/get_started/object_store_features_r.htm" /><meta name="DC.Relation" scheme="URI" content="../../topics/get_started/object_store_benefits_r.htm" /><meta name="DC.Relation" scheme="URI" content="../../topics/get_started/vs_code_integration_r.htm" /><meta name="prodname" content="Object Store" /><meta name="version" content="2022.1.0" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_usn_xlg_m5b" /><title>Altair Object Store Platform Architecture</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><meta name="wh-path2root" content="../../" /><meta name="wh-toc-id" content="reference_usn_xlg_m5b-d46e557" />
+    	<!--ZOOMSTOP-->
+        <link rel="preload" href="../../oxygen-webhelp/template/resources/images/unity_gradient_resized.png" as="image" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-4424669-1');
+        </script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/app/topic-page.css?buildId=2018042310" />
+        
+
+        <script type="text/javascript" src="../../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"></script>
+
+        <script data-main="../../oxygen-webhelp/app/topic-page.js" src="../../oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/template/oxygen.css?buildId=2018042310" />
+        <link rel="stylesheet" type="text/css" href="../../altair-resources/css/bootstrap-toc.css" /><link rel="stylesheet" type="text/css" href="../../altair-resources/css/altair.css" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+        <!--ZOOMRESTART-->
+    </head>
+
+    <body class="wh_topic_page dita_topic frmBody" id="reference_usn_xlg_m5b" data-target="#toc" data-spy="scroll">
+    	<!--ZOOMSTOP-->
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_logo_and_publication_title_container">
+            <div class="wh_logo_and_publication_title">
+                
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url' and 'webhelp.prod.version'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../index.htm" class=" wh_logo "><img src="../../logo_PBSWorks_color_hw.svg" alt="Altair Object Store" /></a>
+                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Altair Object Store</span></a></div>
+                    <div class=" wh_version "><p>2022.1.0</p></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        <div class="wh_header_flex_container">
+            <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../../index.htm"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Features
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An <span class="keyword">Object Store</span> is an enhanced next-generation platform core that has         combined capabilities of numerous services. 
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="reference_usn_xlg_m5b"><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Platform Architecture
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../../topics/get_started/object_store_benefits_r.htm" title="Benefits of Object Store"></a></span>  
+<span class="navnext"><a class="link" href="../../topics/get_started/vs_code_integration_r.htm" title="Integration with VS Code"></a></span>  </span></div>
+            <div class=" wh_search_input "><form id="searchForm" method="get" action="../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search Help</span></button></div></form></div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li><span data-tocid="whats_new_object_store_r-d46e422" data-state="leaf" class=" topicref " data-id="whats_new_object_store_r"><span class="title"><a href="../../topics/whats_new/whats_new_object_store_r.htm">What's New</a></span></span></li>
+   <li><span data-tocid="untitled3-d46e448" data-state="leaf" class=" topicref " data-id="untitled3"><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">Overview</a></span></span></li>
+   <li><span data-tocid="reference_tpr_hf1_jbb-d46e474" data-state="leaf" class=" topicref " data-id="reference_tpr_hf1_jbb"><span class="title"><a href="../../topics/videos/tutorials_object_store_r.htm">Tutorials</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_ogh_541_wtb-d46e500" data-state="not-ready" class=" topicref " data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span class="keyword">Object Store</span> Features
+               </a></span></span></li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e577" data-state="leaf" class=" topicref " data-id="reference_zqq_pmg_m5b"><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_ql5_png_m5b-d46e598" data-state="not-ready" class=" topicref " data-id="task_ql5_png_m5b"><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span class="keyword">Object Store</span></a></span></span></li>
+   <li class="has-children"><span data-tocid="task_sr5_v5g_m5b-d46e785" data-state="not-ready" class=" topicref " data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm"><span class="keyword">Object Store</span> Configuration
+               </a></span></span></li>
+   <li><span data-tocid="task_ohf_jxb_gvb-d46e1012" data-state="leaf" class=" topicref " data-id="task_ohf_jxb_gvb"><span class="title"><a href="../../topics/application/application_access_t.htm">Access the Application Created by Object Store</a></span></span></li>
+</ul></div>
+                
+                <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page" class="print_button"></a></div>
+                
+            </div>
+        </div>
+        <div class="nav_tools">
+            <nav class="wh_tools hidden-print">
+                <div class="wh_right_tools hidden-sm hidden-xs">  
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+
+        <div class="container-fluid">
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar hidden-print">
+                            <div class="wh_logo_and_publication_title_container">
+                                <div class="wh_logo_and_publication_title">
+                                    
+                                    <a href="../../index.htm" class=" wh_logo hidden-xs "><img src="../../logo_PBSWorks_color_hw.svg" alt="Altair Object Store" /></a>
+                                    <div class=" wh_version "><p>2022.1.0</p></div>
+                                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Altair Object Store</span></a></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="nav_spacer"></div>
+                            <div class=" wh_publication_toc "><ul>
+   <li><span data-tocid="whats_new_object_store_r-d46e422" class="topicref" data-id="whats_new_object_store_r" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/whats_new/whats_new_object_store_r.htm">What's New</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Here is a quick look at the latest features available with Altair <span class="keyword">Object Store</span>.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="untitled3-d46e448" class="topicref" data-id="untitled3" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">Overview</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An <span class="keyword">Object Store</span> is an enhanced next-generation platform core that has         combined capabilities of numerous services. 
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_tpr_hf1_jbb-d46e474" class="topicref" data-id="reference_tpr_hf1_jbb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/videos/tutorials_object_store_r.htm">Tutorials</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Video tutorials to help you get started with Altair <span class="keyword">Object Store</span>. 
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_ogh_541_wtb-d46e500" class="topicref" data-id="reference_ogh_541_wtb" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Features
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An <span class="keyword">Object Store</span> is an enhanced next-generation platform core that has         combined capabilities of numerous services. 
+                  
+               </p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="reference_pf2_h3g_m5b-d46e522" class="topicref" data-id="reference_pf2_h3g_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/content_packs_intro_r.htm">Content Packs</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Content packs help to define, create, and manage the content.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="reference_y2h_klg_m5b-d46e539" class="topicref" data-id="reference_y2h_klg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_benefits_r.htm">Benefits of <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li class="active"><span data-tocid="reference_usn_xlg_m5b-d46e557" class="topicref" data-id="reference_usn_xlg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Platform Architecture
+                     </a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e577" class="topicref" data-id="reference_zqq_pmg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The <span class="keyword">Object Store</span> uses Visual Studio (VS) Code as a plugin that helps         in creating, authoring, and configuring the content packs.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="task_ql5_png_m5b-d46e598" class="topicref" data-id="task_ql5_png_m5b" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Instructions to install <span class="keyword">Object Store</span>, prerequisites, and verification         of <span class="keyword">Object Store</span> installation are provided in this chapter.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="task_sr5_v5g_m5b-d46e785" class="topicref" data-id="task_sr5_v5g_m5b" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Configuration
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Complete the configuration steps after installing the <span class="keyword">Object Store</span>.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="task_ohf_jxb_gvb-d46e1012" class="topicref" data-id="task_ohf_jxb_gvb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/application/application_access_t.htm">Access the Application Created by Object Store</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Login to the application created by Object Store to manage the task. </p>
+               </span></span></span></li>
+</ul></div>
+                            <div></div>
+
+                        </nav>
+                    
+                    <div class="contentbody col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header">
+                            
+<nav class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_logo_and_publication_title_container">
+            <div class="wh_logo_and_publication_title">
+                
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url' and 'webhelp.prod.version'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../index.htm" class=" wh_logo "><img src="../../logo_PBSWorks_color_hw.svg" alt="Altair Object Store" /></a>
+                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Altair Object Store</span></a></div>
+                    <div class=" wh_version "><p>2022.1.0</p></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        <div class="wh_header_flex_container">
+            <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../../index.htm"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Features
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An <span class="keyword">Object Store</span> is an enhanced next-generation platform core that has         combined capabilities of numerous services. 
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="reference_usn_xlg_m5b"><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Platform Architecture
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../../topics/get_started/object_store_benefits_r.htm" title="Benefits of Object Store"></a></span>  
+<span class="navnext"><a class="link" href="../../topics/get_started/vs_code_integration_r.htm" title="Integration with VS Code"></a></span>  </span></div>
+            <div class=" wh_search_input "><form id="searchForm" method="get" action="../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search Help</span></button></div></form></div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li><span data-tocid="whats_new_object_store_r-d46e422" data-state="leaf" class=" topicref " data-id="whats_new_object_store_r"><span class="title"><a href="../../topics/whats_new/whats_new_object_store_r.htm">What's New</a></span></span></li>
+   <li><span data-tocid="untitled3-d46e448" data-state="leaf" class=" topicref " data-id="untitled3"><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">Overview</a></span></span></li>
+   <li><span data-tocid="reference_tpr_hf1_jbb-d46e474" data-state="leaf" class=" topicref " data-id="reference_tpr_hf1_jbb"><span class="title"><a href="../../topics/videos/tutorials_object_store_r.htm">Tutorials</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_ogh_541_wtb-d46e500" data-state="not-ready" class=" topicref " data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span class="keyword">Object Store</span> Features
+               </a></span></span></li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e577" data-state="leaf" class=" topicref " data-id="reference_zqq_pmg_m5b"><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_ql5_png_m5b-d46e598" data-state="not-ready" class=" topicref " data-id="task_ql5_png_m5b"><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span class="keyword">Object Store</span></a></span></span></li>
+   <li class="has-children"><span data-tocid="task_sr5_v5g_m5b-d46e785" data-state="not-ready" class=" topicref " data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm"><span class="keyword">Object Store</span> Configuration
+               </a></span></span></li>
+   <li><span data-tocid="task_ohf_jxb_gvb-d46e1012" data-state="leaf" class=" topicref " data-id="task_ohf_jxb_gvb"><span class="title"><a href="../../topics/application/application_access_t.htm">Access the Application Created by Object Store</a></span></span></li>
+</ul></div>
+                
+                <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page" class="print_button"></a></div>
+                
+            </div>
+        </div>
+        <div class="nav_tools">
+            <nav class="wh_tools hidden-print">
+                <div class="wh_right_tools hidden-sm hidden-xs">  
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+
+                        </div>
+                        <div class="content_spacer"></div>
+                        <div class="wrapper">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 min">
+                                <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+                            </div>
+                            <!--ZOOMRESTART-->
+                            <div id="wh_topic_body" class="contentarea col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Altair <span class="keyword">Object Store</span> Platform Architecture</h1>
+
+    
+    <div class="body refbody"><p class="shortdesc"></p>
+
+        <section class="section" id="reference_usn_xlg_m5b__section_ubt_xlg_m5b">
+            <div class="p"> Altair <span class="keyword">Object Store</span> platform architectures consist of:<ul class="ul" id="reference_usn_xlg_m5b__ul_ttk_zlg_m5b">
+                    <li class="li">Arango Database (third-party software) – a multi-model database that
+                        provides storage capability and a graph model. The database provides Search
+                        capability and it indexes the data based on the index definition. </li>
+
+                    <li class="li">Redits (third-party software) for distributed data structure
+                        implementation</li>
+
+                    <li class="li">NATS Event Bus (third-party software)</li>
+
+                    <li class="li">Root Gateway</li>
+
+                    <li class="li">API Gateway – a downstream gateway that calls the Object Store</li>
+
+                    <li class="li">Authentication Server - Receive Request, Authenticate the user, give JWT
+                        token and forward the request to the downstream configured services</li>
+
+                    <li class="li"><span class="keyword">Object Store</span> – a core engine handling configuration and
+                        execution</li>
+
+                    <li class="li">Environment Manager – a service that curates the execution environment. For
+                        example, PBS and OpenFaaS. This is responsible for authoring the content
+                        definition and deployed in the execution environment. Manages the health of
+                        the environment such as server going down, bringing it up, and addresses the
+                        different functions.</li>
+
+                </ul>
+</div>
+
+        </section>
+
+    </div>
+
+</article></main></div>
+                                
+                                
+                                
+                            </div>
+                            <!--ZOOMSTOP-->
+                            <!--Turning off Oxygen Topic TOC, and using Bootstrap Topic Toc instead -->
+                            <!--<whc:webhelp_topic_toc>
+                                <nav role="navigation"  id="wh_topic_toc" 
+                                    class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navbar hidden-print"> 
+                                    <whc:component_content/>
+                                </nav>
+                            </whc:webhelp_topic_toc> -->
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 max">
+                                <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>Copyright (c) 1994-2022. Altair Engineering, Inc. All Rights Reserved. Contains trade secrets of Altair Engineering, Inc. Copyright notice does not imply publication.</p>
+            <p><a href="../../front_matter/intellectual_property_rights_notice_pbsworks_r.htm" onclick="window.open(this.href, 'windowOpenTab','scrollbars=1, resizable=1,width=740,height=500,left=0,top=0'); return false;">Intellectual Property Rights Notice</a>  |  <a href="../../front_matter/technical_support_pbsworks_r.htm" onclick="window.open(this.href, 'windowOpenTab','scrollbars=1, resizable=1,width=740,height=500,left=0,top=0'); return false;">Technical Support</a></p>   
+        </div>
+    
+  </div>
+</nav>
+
+                    </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../../altair-resources/js/bootstrap-toc.js"></script><script type="text/javascript" src="../../altair-resources/js/breadcrumbs.js"></script><script type="text/javascript" src="../../altair-resources/js/splash.js"></script><script type="text/javascript" src="../../altair-resources/js/homepage.js"></script><script type="text/javascript" src="../../altair-resources/js/topics.js"></script><script type="text/javascript" src="../../altair-resources/js/googleAnalytics.js"></script>
+        
+        <!--ZOOMRESTART-->
+    </body>
+</html>
