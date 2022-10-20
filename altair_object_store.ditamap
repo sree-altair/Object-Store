@@ -86,13 +86,16 @@
         <topicref href="topics/configuration/content_definition_t.dita"/>
         <topicref href="topics/configuration/property_create_t.dita"/>
         <topicref href="topics/configuration/action_create_t.dita">
-            <topicref href="topics/code_snippets/actions_r.dita"/>
+            <topicref href="topics/configuration/action_compile_t.dita"/>
+            <topicref href="topics/code_snippets/actions_code_r.dita"/>
         </topicref>
         <topicref href="topics/configuration/event_create_t.dita"/>
-        <topicref href="topics/configuration/relation_create_t.dita"/>
-        <topicref href="topics/configuration/action_compile_t.dita"/>
+        <topicref href="topics/configuration/relation_create_t.dita">
+            <topicref href="topics/code_snippets/notes_code_r.dita"/>
+        </topicref>
         <topicref href="topics/configuration/local_packs_build_deploy_t.dita"/>
-    </topicref>         
+    </topicref>
+    <topicref href="topics/application/application_access_t.dita"/>         
     
 
     <mapref href="footer.ditamap"/>
