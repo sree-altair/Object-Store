@@ -100,9 +100,18 @@ $(document).ready(function() {
         return $('<sup/>', {html: this.innerHTML});
     });
 
-    //Autoamtically adjust column widths for RADIOSS and OptiStruct tables in the Definition sections
+    //Automatically adjust column widths for RADIOSS and OptiStruct tables in the Definition sections
     $('.def_table colgroup col:nth-of-type(1)').css('width','20%');
     $('.def_table colgroup col:nth-of-type(2)').css('width','65%');
+
+    /*Automatically adjust column widths for io_3col_table, s_10col_table, and r_8col_table outputclasses
+    Added by A.Barbour*/
+    $('.io_3col_table colgroup col:nth-of-type(1)').css('width','18%');
+    $('.io_3col_table colgroup col:nth-of-type(2)').css('width','28%');
+
+    $('.s_10col_table colgroup col').css('width','10%');
+
+    $('.r_8col_table colgroup col').css('width','12.5%');
 
     /*Removes the hrefs with hidetoc from side toc*/
     $('.wh_publication_toc li span a[href*="hidetoc"]').parent().parent().remove();

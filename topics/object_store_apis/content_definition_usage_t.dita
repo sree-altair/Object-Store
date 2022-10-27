@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_nkq_lkb_3vb">
+    <title>Use the Object Store Content Definitions</title>
+    <shortdesc>Use the Object Store content definition in the application framework.</shortdesc>
+    <taskbody>
+        <context>
+            <p/>
+            <p>Create the following files to use the Object Store content definition:<ul
+                    id="ul_hrw_jlb_3vb">
+                    <li><filepath>session.js</filepath> - To create the sessions while using the
+                        content definition</li>
+                    <li><filepath>useManageToDo.js</filepath> - To use the properties and
+                        actions</li>
+                    <li><filepath>useToDoCreateEvent.js</filepath> - To use the events</li>
+                    <li><filepath>useManageNote.js</filepath> - To use the notes</li>
+                    <li/>
+                </ul></p>
+            <p>
+                <note id="note_khf_zmb_3vb">The above file names are just an example. The file names
+                    can be different based on your requirements.</note>
+            </p>
+            <p/>
+        </context>
+        <steps>
+            <step>
+                <cmd>Update the <filepath>session.js</filepath> file with the following code:</cmd>
+                <info>
+                    <codeblock id="codeblock_sgs_krb_3vb">import { Session } from '@altair/system';
+
+let session;
+const serverUrl = `${window.location.origin}/api/objectstore`;
+
+export const getSession = async () => {
+    if (!session) {
+      session = await Session.Create({ serverUrl });
+    }
+    return session;
+  };</codeblock>
+                </info>
+                <info>The above code will create the sessions while using the content
+                    definition.</info>
+            </step>
+            <step>
+                <cmd>Update the <filepath>useManageToDo.js</filepath> file with the following
+                    code:</cmd>
+                <info>
+                    <codeblock id="codeblock_xpd_plb_3vb">import React from 'react';
+import { ToDo } from '@altair/todo';
+import { getSession } from '../session';
+import { useToDoCreateEvent } from './useToDoCreateEvent';
+
+const EMPTY_ARRAY = [];
+
+export const useManageToDo = () => {
+  const [todos, setTodos] = React.useState(EMPTY_ARRAY);
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  useToDoCreateEvent({ todos, setTodos });
+
+  const addToDo = React.useCallback(async (text, category) => {
+    const session = await getSession();
+    await ToDo.Create({ session, description: text, category: category.label });
+  }, []);
+
+  const getAll = React.useCallback(async () => {
+    setIsLoading(true);
+    const session = await getSession();
+    const { todos = [] } = await ToDo.GetAll({ session });
+
+    const newTodos = todos.map(todo => ({
+      id: todo.id,
+      text: todo.description,
+      category: todo.category,
+      isDone: todo.status === 'Completed',
+      entity: todo,
+    }));
+
+    setIsLoading(false);
+    setTodos(newTodos);
+  }, []);
+
+  const markTodo = React.useCallback(
+    async (index, todo) => {
+      const mapTodos = {};
+      todos.forEach(todo => {
+        mapTodos[todo.id] = todo;
+      });
+
+      const session = await getSession();
+
+      const todoRef = await ToDo.getByRef({
+        contentRef: { id: todo.id, contentType: todo.entity.contentType },
+        session,
+      });
+
+      if (todo.isDone) {
+        await todoRef.content.MarkAsPending({ session });
+        mapTodos[todo.id].isDone = false;
+      } else {
+        await todoRef.content.MarkAsComplete({ session });
+        mapTodos[todo.id].isDone = true;
+      }
+
+      setTodos(Object.values(mapTodos));
+    },
+    [todos]
+  );
+
+  const getCompleted = React.useCallback(async () => {
+    const session = await getSession();
+    const { completedToDos } = await ToDo.GetCompleted({ session });
+
+    const newTodos = completedToDos.map(todo => ({
+      id: todo.id,
+      text: todo.description,
+      category: todo.category,
+      isDone: todo.status === 'Completed',
+      entity: todo,
+    }));
+
+    setTodos(newTodos);
+  }, []);
+
+  const getPending = React.useCallback(async () => {
+    const session = await getSession();
+    const { pendingToDos } = await ToDo.GetPending({ session });
+
+    const newTodos = pendingToDos.map(todo => ({
+      id: todo.id,
+      text: todo.description,
+      category: todo.category,
+      isDone: todo.status === 'Completed',
+      entity: todo,
+    }));
+
+    setTodos(newTodos);
+  }, []);
+
+  const removeTodo = React.useCallback(
+    async (index, todo) => {
+      const session = await getSession();
+
+      const todoRef = await ToDo.getByRef({
+        contentRef: { id: todo.id, contentType: todo.entity.contentType },
+        session,
+      });
+
+      await todoRef.content.Delete({});
+      const newTodos = todos.filter(({ id }) => todo.id !== id);
+
+      setTodos(newTodos);
+    },
+    [todos]
+  );
+
+  React.useEffect(() => {
+    getAll();
+  }, [getAll]);
+
+  return { addToDo, getAll, getCompleted, markTodo, getPending, removeTodo, todos, isLoading };
+};
+</codeblock>
+                </info>
+                <info>The above code will consume properties and actions content definition that is
+                    created in the Object Store.</info>
+            </step>
+            <step>
+                <cmd>Update the <filepath>useToDoCreateEvent.js</filepath> file with the following
+                    code:</cmd>
+                <info>
+                    <codeblock id="codeblock_r2d_gnb_3vb">import React from 'react';
+import { useSocketCallback } from '@altair/react-hooks';
+import { Content } from '@altair/system';
+import { getSession } from '../session';
+
+const topics = ['altair_todo_ToDoToDoCreatedEvent.*'];
+
+export const useToDoCreateEvent = ({ todos, setTodos }) => {
+  const socketCallback = React.useCallback(
+    async eventPayload => {
+      const { payload } = eventPayload;
+      const session = await getSession();
+      const { content } = await Content.getByRef({
+        contentRef: payload.todoRef,
+        session,
+      });
+
+      if (content?.id) {
+        const newTodos = [
+          { text: content.description, isDone: false, id: content.id, category: content.category, entity: content },
+          ...todos,
+        ];
+        setTodos(newTodos);
+      }
+    },
+    [setTodos, todos]
+  );
+
+  useSocketCallback(socketCallback, topics);
+};</codeblock>
+                </info>
+                <info>The above code will consume the Event content definition that is created in
+                    the Object Store.</info>
+            </step>
+            <step>
+                <cmd>Update the <filepath>useManageNote.js</filepath> file with the following
+                    code:</cmd>
+                <info>
+                    <codeblock id="codeblock_zn3_gnb_3vb">import React from 'react';
+import { Note, ToDo } from '@altair/todo';
+import { getSession } from '../session';
+
+const EMPTY_ARRAY = [];
+
+export const useManageNote = ({ selectedEntity, isOpen, setShowAddNote }) => {
+  const [notes, setNotes] = React.useState(EMPTY_ARRAY);
+  const [isLoadingNotes, setIsLoadingNotes] = React.useState(false);
+  const [isCreatingNote, setIsCreatingNote] = React.useState(false);
+
+  React.useEffect(() => {
+    if (selectedEntity?.id &amp;&amp; isOpen) {
+      const fetchNotes = async () => {
+        try {
+          setIsLoadingNotes(true);
+          const session = await getSession();
+
+          const todoRef = await ToDo.getByRef({
+            contentRef: { id: selectedEntity.id, contentType: selectedEntity.entity.contentType },
+            session,
+          });
+
+          const notesResponse = await todoRef.content.getNotes();
+          setNotes(notesResponse);
+        } catch (e) {
+          console.error(e);
+        } finally {
+          setIsLoadingNotes(false);
+        }
+      };
+
+      fetchNotes();
+    }
+  }, [selectedEntity, isOpen]);
+
+  const createNote = React.useCallback(
+    async ({ name, content }) => {
+      try {
+        setIsCreatingNote(true);
+        const session = await getSession();
+        const createdNote = await Note.Create({
+          session,
+          content,
+          name,
+          parentRef: {
+            id: selectedEntity?.id,
+            contentType: selectedEntity?.entity?.contentType,
+          },
+        });
+
+        setNotes([createdNote, ...notes]);
+      } catch (e) {
+        console.error(e);
+      } finally {
+        setIsCreatingNote(false);
+        setShowAddNote(false);
+      }
+    },
+    [selectedEntity, notes, setShowAddNote]
+  );
+
+  return { isLoadingNotes, isCreatingNote, notes, createNote };
+};</codeblock>
+                </info>
+                <info>The above code will consume the Note content definition that is created in the
+                    Object Store.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

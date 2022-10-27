@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_lbj_gy1_3vb">
+    <title>Use the Object Store Packages</title>
+    <shortdesc>Use the Object Store API packages created to the local UI framework.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_hjk_my1_3vb">Before you begin, ensure that you have the following
+                packages:<ul id="ul_ijx_ny1_3vb">
+                <li>Python (WHL file) or NodeJS (tar.gz) package. For example, the ToDo package
+                        (altair-todo-<varname>version</varname>.tgz) that is created </li>
+                <li>Altair System package (altair-system-<varname>version</varname>.tgz) located at
+                        <filepath>&lt;objectstore location>/&lt;version>/js/</filepath></li>
+            </ul></prereq>
+        <context>
+            <p>The following steps must be performed to use the Object Store packages:<ul
+                    id="ul_v44_lbb_3vb">
+                    <li>Upload the Object Store and Altair System Packages</li>
+                    <li>Update the Application framework</li>
+                    <li>Install the packages</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Upload the Object Store and Altair System packages to the local UI
+                    framework.</cmd>
+                <info>
+                    <fig id="fig_ht3_sz1_3vb">
+                        <title>Upload Packages<image placement="break"
+                                href="../../images/upload_package.png" scale="75"
+                                id="image_sgg_xz1_3vb">
+                                <alt>Upload Packages</alt>
+                            </image></title>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Update the <filepath>package.json</filepath> file with the packages that is
+                    uploaded and with the application framework.</cmd>
+                <info>
+                    <codeblock id="codeblock_r4v_h1b_3vb">{
+  "name": "todo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@altair/a365-themes": "^2.1.0",
+    <b>"@altair/app-frame": "^6.3.2",</b>
+    "@altair/react-hooks": "^2.2.0",
+<b>    "@altair/system": "./packages/altair-system-1.0.276.tgz",
+    "@altair/todo": "./packages/altair-todo-1.0.0.tgz",</b>
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.1.3",
+    "nats.ws": "^1.5.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.2.1",
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.15.1",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.2.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.2"
+  },
+  "devDependencies": {
+    "@altair/prettier-rules": "^2.0.1",
+    "@altair/react-dev-proxy": "^3.0.1",
+    "cross-env": "^5.2.1"
+  },
+  "scripts": {
+    "start": "cross-env GENERATE_SOURCEMAP=false REACT_APP_PROXIES=local react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}</codeblock>
+                </info>
+                <info>The application framework available in the cloud will provide the login page,
+                    authentication, authorization, and notifications required to use the web
+                    portal.</info>
+            </step>
+            <step>
+                <cmd>To use the application framework, update the <filepath>index.js</filepath> file
+                    with the following code:</cmd>
+                <info>
+                    <codeblock id="codeblock_jx1_mcb_3vb">import React from 'react';
+import ReactDOM from 'react-dom';
+<b>import AppFrame from '@altair/app-frame';</b>
+import './index.css';
+const App = React.lazy(() => import('./App'));
+
+ReactDOM.render(
+  <b>&lt;AppFrame appNames={['Todo']} defaultAppName="Todo" config={{ notification: { enabled: true }, waffleMenuFavoriteAppsEnabled: true }}>
+    &lt;App appName="Todo" />
+  &lt;/AppFrame>,</b>
+  document.getElementById('root')
+);</codeblock>
+                </info>
+                <info>The application framework with the Object Store package is ready to
+                    use.</info>
+            </step>
+            <step>
+                <cmd>Install the packages to the UI framework based on the node package manager that
+                    is used.</cmd>
+                <info>For example, use the following command to install the package: <cmdname>yarn
+                        install</cmdname></info>
+                <info>This will detect and install all the packages in node modules defined in the
+                        <filepath>package.json</filepath>.</info>
+            </step>
+        </steps>
+        <postreq id="postreq_ung_ygb_3vb">Next step is to use the Object Store content definitions
+            in the application framework.</postreq>
+    </taskbody>
+</task>

@@ -67,8 +67,6 @@
         <topicref href="topics/get_started/object_store_architecture_r.dita"/>
     </topicref>
     
-    <topicref href="topics/get_started/vs_code_integration_r.dita"/>
-    
     <topicref href="topics/install/object_store_install_t.dita">
         <topicref href="topics/install/prerequisites_t.dita"/>
         <topicref href="topics/install/object_store_install_steps_t.dita"/>
@@ -79,6 +77,7 @@
         <topicref href="topics/install/install_verification_t.dita"/>
         <topicref href="topics/install/install_troubleshoot_t.dita"/>
     </topicref>
+    <topicref href="topics/get_started/vs_code_integration_r.dita"/>
     <topicref href="topics/configuration/object_store_configuration_t.dita">
         <topicref href="topics/configuration/server_connect_t.dita"/>
         <topicref href="topics/configuration/application_create_r.dita"/>
@@ -95,6 +94,8 @@
         </topicref>
         <topicref href="topics/configuration/local_packs_build_deploy_t.dita"/>
     </topicref>
+    <topicref href="topics/object_store_apis/upload_packages_t.dita"/>
+    <topicref href="topics/object_store_apis/content_definition_usage_t.dita"/>
     <topicref href="topics/application/application_access_t.dita"/>         
     
 

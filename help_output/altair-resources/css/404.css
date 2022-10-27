@@ -1,0 +1,102 @@
+.options-list {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  max-width: 500px;
+}
+
+.container-fluid {
+  min-height: 91% !important;
+}
+
+body {
+  padding-bottom: 0 !important;
+}
+
+li {
+  padding: 2%;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+  font-size: 0.8rem;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.home-button {
+  border: none;
+  background-color: #00abec;
+  height: 2rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  min-height: 35px;
+}
+
+.home-button a:visited,
+.home-button a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.home-button a::before {
+  font-family: "Unity_font_icons";
+  content: "\E9C2";
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 5px 0 0;
+  vertical-align: text-top;
+}
+
+.home-button a {
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.page-not-found-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15vh;
+  height: 80vh;
+}
+
+.page-not-found-header {
+  font-size: 1.2rem;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+}
+
+.page-not-found-subheader {
+  font-size: 1.2rem;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+  padding-bottom: 50px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ CSS styles go here */
+  .home-button {
+    margin-left: 40%;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-button {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .home-button a::before {
+    display: none;
+  }
+  .page-not-found-options {
+    padding-top: 10vh;
+  }
+}
