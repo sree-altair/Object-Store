@@ -80,7 +80,5 @@
                     Store.</p></stepresult>
             </step>
         </steps>
-        <postreq id="postreq_sfk_3mb_gvb">Access the application created by Object Store to start
-            managing your task.</postreq>
     </taskbody>
 </task>

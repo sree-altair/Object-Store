@@ -38,6 +38,8 @@
                         location at: <filepath>/Users/&lt;User
                             Name>/MyFiles/ObjectStore_Installer/</filepath>. Contact your Altair
                         Support Channels if you do not have access to Altair Drive.</li>
+                    <li>Docker and GitBash - Install Node JS or Python supporting Docker and GitBash
+                        base on the requirement.</li>
                 </ul></p>
         </context>
     </taskbody>

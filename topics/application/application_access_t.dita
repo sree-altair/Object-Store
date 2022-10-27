@@ -8,9 +8,6 @@
                 id="ul_qp1_pxb_gvb">
                 <li>Altair One credential</li>
                 <li>Deploy the ToDo bundled package in the UI by creating a session</li>
-                <li><b>Should we mention about the Node Modules, display useManageToDo.js and
-                        useToDoCreate.js, updating the index.js by adding the ToDo source code
-                        ????</b></li>
             </ul></prereq>
         <context>
             <p>Once you include the bundled package in the Altair One application framework, you can
@@ -73,8 +70,50 @@
                     </fig></stepresult>
             </step>
             <step>
-                <cmd>Select the <uicontrol>Show</uicontrol> dropdown list to view the completed or
-                    pending tasks.</cmd>
+                <cmd>Click <image placement="break" href="../../images/icons/add_note_icon.png"
+                        scale="75" id="image_rbm_ftb_3vb"/> next to the task to add Note.</cmd>
+                <stepresult>The Notes dialog box is displayed.<fig id="fig_f5s_cvb_3vb">
+                        <title>Notes</title>
+                        <image placement="break" href="../../images/note_add_1.png" scale="75"
+                            id="image_gkb_2vb_3vb">
+                            <alt>Notes</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Add Note</uicontrol>.</cmd>
+                <stepresult>A dialog box is displayed to add a note.<fig id="fig_odr_gvb_3vb">
+                        <title>Add Note</title>
+                        <image placement="break" href="../../images/note_add_2.png" scale="75"
+                            id="image_wdp_3vb_3vb">
+                            <alt>Add Note</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the name and content for the note and click
+                    <uicontrol>Submit</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_oq2_4vb_3vb">
+                        <title>New Note</title>
+                        <image placement="break" href="../../images/note_add_3.png" scale="75"
+                            id="image_d4m_pvb_3vb">
+                            <alt>New Note</alt>
+                        </image>
+                    </fig>
+                </info>
+                <info>The Notes added will be listed in the dropdown menu. You can select the note
+                    from the dropdown menu to associate it to the tasks.<fig id="fig_ocg_wvb_3vb">
+                        <title>Notes Menu</title>
+                        <image placement="break" href="../../images/note_add_4.png" scale="75"
+                            id="image_xy3_xvb_3vb">
+                            <alt>Notes Menu</alt>
+                        </image>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Show</uicontrol> dropdown menu in the TODO LIST to view
+                    the completed or pending tasks.</cmd>
                 <info>
                     <fig id="fig_f1v_gvc_gvb">
                         <title>Task Status</title>

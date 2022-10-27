@@ -36,8 +36,9 @@
                     is selected. </info>
             </step>
             <step>
-                <cmd importance="optional">Select <uicontrol>Static</uicontrol> check-box.
-                        <b>????</b></cmd>
+                <cmd importance="optional">Select <uicontrol>Static</uicontrol> checkbox if you do
+                    not want the event to be instantiated. Static content will not have any
+                    associated action.</cmd>
             </step>
             <step>
                 <cmd>Enter the <uicontrol>Description</uicontrol>.</cmd>

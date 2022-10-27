@@ -1,0 +1,114 @@
+.offline-options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+.more-options-header {
+  display: block;
+  font-size: 1.1rem;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+  padding: 2%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.more-options-subheader {
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+  margin-top: 5px;
+  padding-top: 0%;
+  margin-bottom: 1%;
+}
+
+.options-list {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  max-width: 500px;
+}
+
+.container-fluid {
+  min-height: 91% !important;
+}
+
+body {
+  padding-bottom: 0 !important;
+}
+
+li {
+  padding: 2%;
+  font-family: "NotoSans-Regular", "Arial", sans-serif;
+  font-size: 0.8rem;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.helpHome a:visited,
+.helpHome a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.helpHome {
+  border: none;
+  background-color: #00abec;
+  height: 2rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ CSS styles go here */
+  .helpHome {
+    margin-left: 40%;
+    margin-right: 0px;
+  }
+}
+
+.helpHome p a {
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.helpHome p::before {
+  color: #ffffff;
+  vertical-align: text-top;
+}
+
+.view-online-link {
+  color: #337ab7;
+}
+
+.view-online-link:hover {
+  cursor: pointer;
+  color: #23527c;
+  text-decoration: underline;
+}
+
+#ok-button {
+  width: 75px;
+}
+
+#modal-text {
+  padding-top: 14%;
+}
+
+#offline-modal {
+  max-height: 120px;
+  min-height: 120px;
+  min-width: 210px;
+  max-width: 210px;
+}
