@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_qhy_qnl_2vb">
-    <title>Create an Application with Object Store </title>
-    <shortdesc>In this section, using Object Store entities we will create an application that will
-        help you to manage and monitor daily tasks. </shortdesc>
+    <title>Create an Application APIs using Object Store </title>
+    <shortdesc>Create a sample ToDo application APIs using Object Store entities. </shortdesc>
     <refbody>
         <section id="section_zhp_t4l_2vb">
-            <p>In Object Store, create Local Packs, Properties, Actions, Events, and Relations and
-                use them to create an application to manage and monitor tasks.</p>
-            <p>Create the following Local Pack:<ul id="ul_gbt_2pl_2vb">
-                    <li>ToDo - is local pack that contains ToDo and Note Content Definition. </li>
+            <p>We can use the Object Store entities to create objects to generate APIs. Using these
+                APIs, build a simple UI application to manage and monitor daily tasks. </p>
+            <p>Create the following objects in the Object Store to generate the required API
+                    packages:<ul id="ul_u5l_sfs_lvb">
+                    <li>Content Definition</li>
+                    <li>Properties</li>
+                    <li>Actions</li>
+                    <li>Events</li>
+                    <li>Relations</li>
                 </ul></p>
+            <p>Object Store provides an option to build and deploy these objects which will generate
+                the Nodejs and Python packages containing the APIs. We can add these APIs to the UI
+                framework and start using the application to manage and monitor daily tasks.</p>
+        </section>
+        <section id="section_ngs_fgs_lvb">
+            <title>Content Definition</title>
             <p>Create the following Content Definition:<ul id="ul_jdp_2tl_2vb">
                     <li>ToDo - captures the basic description, status, start and end dates.
                         Optionally one can assign a category to a ToDo task. </li>
                     <li>Note - captures the note for the tasks.</li>
                 </ul></p>
-            <p>Cteate the following Properties:<ul id="ul_qyd_npl_2vb">
+        </section>
+        <section id="section_nht_ggs_lvb">
+            <title>Properties</title>
+            <p>Create the following Properties:<ul id="ul_qyd_npl_2vb">
                     <li>description - ToDo that you want to accomplish. This is a string property
                         type to define the content of the task.</li>
                     <li>status - Status of the ToDo whether in progress, pending or completed. All
@@ -25,6 +38,9 @@
                     <li> category - Group the ToDo . Set the property value as “Personal” and
                         “Work”.</li>
                 </ul></p>
+        </section>
+        <section id="section_imn_3gs_lvb">
+            <title>Actions</title>
             <p>Create the following Actions:<ul id="ul_yz4_mtl_2vb">
                     <li>Create - Create a ToDo action with the description, status and category</li>
                     <li>GetAll - Get All ToDos that is created by the user from the database</li>
@@ -35,15 +51,20 @@
                     <li>GetCompleted - Returns completed ToDos</li>
                     <li>GetNotes - Get all the associated notes</li>
                 </ul></p>
+        </section>
+        <section id="section_dtw_3gs_lvb">
+            <title>Events</title>
             <p>Create the following Events:<ul id="ul_lnt_ttl_2vb">
                     <li>ToDoCreateEvent - Event is triggered when a ToDo entity is created</li>
                     <li>ToDoDeleteEvent - This event is triggered on deletion of a ToDo entity</li>
                     <li>ToDoModifiedEvent - Trigger on modification of ToDo</li>
                 </ul></p>
+        </section>
+        <section id="section_lwr_jgs_lvb">
+            <title>Relations</title>
             <p>Create the following Relations:<ul id="ul_ly3_xtl_2vb">
                     <li>Notes</li>
                 </ul></p>
-            <p/>
         </section>
     </refbody>
 </reference>

@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_nkq_lkb_3vb">
-    <title>Use the Object Store Content Definitions</title>
-    <shortdesc>Use the Object Store content definition in the application framework.</shortdesc>
+    <title>Apply the Web Content Pack</title>
+    <shortdesc>Apply the Object Store web content pack in the application framework.</shortdesc>
     <taskbody>
         <context>
-            <p/>
-            <p>Create the following files to use the Object Store content definition:<ul
-                    id="ul_hrw_jlb_3vb">
-                    <li><filepath>session.js</filepath> - To create the sessions while using the
-                        content definition</li>
-                    <li><filepath>useManageToDo.js</filepath> - To use the properties and
-                        actions</li>
-                    <li><filepath>useToDoCreateEvent.js</filepath> - To use the events</li>
-                    <li><filepath>useManageNote.js</filepath> - To use the notes</li>
-                    <li/>
-                </ul></p>
+            <p>Create the following files to use the Object Store web content pack:<ul
+          id="ul_hrw_jlb_3vb">
+          <li><filepath>session.js</filepath> - To create the sessions while using the content
+            definition</li>
+          <li><filepath>useManageToDo.js</filepath> - To use the properties and actions</li>
+          <li><filepath>useToDoCreateEvent.js</filepath> - To use the events</li>
+          <li><filepath>useManageNote.js</filepath> - To use the notes</li>
+        </ul></p>
             <p>
                 <note id="note_khf_zmb_3vb">The above file names are just an example. The file names
                     can be different based on your requirements.</note>
             </p>
-            <p/>
         </context>
         <steps>
             <step>
-                <cmd>Update the <filepath>session.js</filepath> file with the following code:</cmd>
-                <info>
-                    <codeblock id="codeblock_sgs_krb_3vb">import { Session } from '@altair/system';
+        <cmd>Update the <filepath>session.js</filepath> file with the following code to create
+          sessions while using the content definitions:</cmd>
+        <info>
+          <codeblock id="codeblock_sgs_krb_3vb">import { Session } from '@altair/system';
 
 let session;
 const serverUrl = `${window.location.origin}/api/objectstore`;
@@ -37,15 +34,13 @@ export const getSession = async () => {
     }
     return session;
   };</codeblock>
-                </info>
-                <info>The above code will create the sessions while using the content
-                    definition.</info>
-            </step>
+        </info>
+      </step>
             <step>
-                <cmd>Update the <filepath>useManageToDo.js</filepath> file with the following
-                    code:</cmd>
-                <info>
-                    <codeblock id="codeblock_xpd_plb_3vb">import React from 'react';
+        <cmd>Update the <filepath>useManageToDo.js</filepath> file with the following code to
+          consume the Object Store properties and actions content definitions:</cmd>
+        <info>
+          <codeblock id="codeblock_xpd_plb_3vb">import React from 'react';
 import { ToDo } from '@altair/todo';
 import { getSession } from '../session';
 import { useToDoCreateEvent } from './useToDoCreateEvent';
@@ -159,17 +154,14 @@ export const useManageToDo = () => {
   }, [getAll]);
 
   return { addToDo, getAll, getCompleted, markTodo, getPending, removeTodo, todos, isLoading };
-};
-</codeblock>
-                </info>
-                <info>The above code will consume properties and actions content definition that is
-                    created in the Object Store.</info>
-            </step>
+};</codeblock>
+        </info>
+      </step>
             <step>
-                <cmd>Update the <filepath>useToDoCreateEvent.js</filepath> file with the following
-                    code:</cmd>
-                <info>
-                    <codeblock id="codeblock_r2d_gnb_3vb">import React from 'react';
+        <cmd>Update the <filepath>useToDoCreateEvent.js</filepath> file with the following code to
+          consume the Object Store Event content definitions:</cmd>
+        <info>
+          <codeblock id="codeblock_r2d_gnb_3vb">import React from 'react';
 import { useSocketCallback } from '@altair/react-hooks';
 import { Content } from '@altair/system';
 import { getSession } from '../session';
@@ -199,15 +191,13 @@ export const useToDoCreateEvent = ({ todos, setTodos }) => {
 
   useSocketCallback(socketCallback, topics);
 };</codeblock>
-                </info>
-                <info>The above code will consume the Event content definition that is created in
-                    the Object Store.</info>
-            </step>
+        </info>
+      </step>
             <step>
-                <cmd>Update the <filepath>useManageNote.js</filepath> file with the following
-                    code:</cmd>
-                <info>
-                    <codeblock id="codeblock_zn3_gnb_3vb">import React from 'react';
+        <cmd>Update the <filepath>useManageNote.js</filepath> file with the following code to
+          consume the Object Store Note content definitions:</cmd>
+        <info>
+          <codeblock id="codeblock_zn3_gnb_3vb">import React from 'react';
 import { Note, ToDo } from '@altair/todo';
 import { getSession } from '../session';
 
@@ -271,10 +261,8 @@ export const useManageNote = ({ selectedEntity, isOpen, setShowAddNote }) => {
 
   return { isLoadingNotes, isCreatingNote, notes, createNote };
 };</codeblock>
-                </info>
-                <info>The above code will consume the Note content definition that is created in the
-                    Object Store.</info>
-            </step>
+        </info>
+      </step>
         </steps>
     </taskbody>
 </task>

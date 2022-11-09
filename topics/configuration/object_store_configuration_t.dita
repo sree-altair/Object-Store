@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_sr5_v5g_m5b">
-    <title><keyword keyref="product"/> Configuration</title>
-    <shortdesc>Complete the configuration steps after installing the <keyword keyref="product"
-        />.</shortdesc>
+    <title>Create Objects in <keyword keyref="product"/></title>
+    <shortdesc>Create the objects in <keyword keyref="product"/> to generate the APIs for the ToDo
+        application.</shortdesc>
     <taskbody>
         <context>
             <p></p>

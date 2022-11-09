@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_rxh_yxg_3vb">
+    <title>Apply Object Store Packs to use the Application</title>
+    <shortdesc>Apply the Object Store packages and web content packs in the local UI framework to
+        use the application to manage and monitor the tasks. </shortdesc>
+    <taskbody>
+        <context>
+            <p></p>
+        </context>
+        <steps>
+            <step>
+                <cmd></cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

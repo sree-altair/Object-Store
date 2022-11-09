@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_lbj_gy1_3vb">
-    <title>Use the Object Store Packages</title>
-    <shortdesc>Use the Object Store API packages created to the local UI framework.</shortdesc>
+    <title>Apply the Object Store Packages</title>
+    <shortdesc>Apply the Object Store API packages created to the local UI framework.</shortdesc>
     <taskbody>
         <prereq id="prereq_hjk_my1_3vb">Before you begin, ensure that you have the following
                 packages:<ul id="ul_ijx_ny1_3vb">
@@ -14,15 +14,16 @@
         <context>
             <p>The following steps must be performed to use the Object Store packages:<ul
                     id="ul_v44_lbb_3vb">
-                    <li>Upload the Object Store and Altair System Packages</li>
+                    <li>Copy the Object Store and Altair System Packages to the local web
+                        workspace</li>
                     <li>Update the Application framework</li>
                     <li>Install the packages</li>
                 </ul></p>
         </context>
         <steps>
             <step>
-                <cmd>Upload the Object Store and Altair System packages to the local UI
-                    framework.</cmd>
+                <cmd>Copy the Object Store and Altair System packages to the local web
+                    workspace.</cmd>
                 <info>
                     <fig id="fig_ht3_sz1_3vb">
                         <title>Upload Packages<image placement="break"
@@ -34,8 +35,8 @@
                 </info>
             </step>
             <step>
-                <cmd>Update the <filepath>package.json</filepath> file with the packages that is
-                    uploaded and with the application framework.</cmd>
+                <cmd>Update the <filepath>package.json</filepath> file to include the copied
+                    packages and the application framework.</cmd>
                 <info>
                     <codeblock id="codeblock_r4v_h1b_3vb">{
   "name": "todo",
@@ -93,13 +94,12 @@
   }
 }</codeblock>
                 </info>
-                <info>The application framework available in the cloud will provide the login page,
-                    authentication, authorization, and notifications required to use the web
-                    portal.</info>
+                <info>The included application framework provides the login page, authentication,
+                    authorization, and notifications required to use the web portal.</info>
             </step>
             <step>
-                <cmd>To use the application framework, update the <filepath>index.js</filepath> file
-                    with the following code:</cmd>
+                <cmd>Update the <filepath>index.js</filepath> file to use the application
+                    framework:</cmd>
                 <info>
                     <codeblock id="codeblock_jx1_mcb_3vb">import React from 'react';
 import ReactDOM from 'react-dom';
@@ -114,8 +114,6 @@ ReactDOM.render(
   document.getElementById('root')
 );</codeblock>
                 </info>
-                <info>The application framework with the Object Store package is ready to
-                    use.</info>
             </step>
             <step>
                 <cmd>Install the packages to the UI framework based on the node package manager that
