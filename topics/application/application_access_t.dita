@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_ohf_jxb_gvb">
-    <title>Access the Application Created by Object Store</title>
-    <shortdesc>Login to the application created by Object Store to manage the task. </shortdesc>
+    <title>Access the Application</title>
+    <shortdesc>Login to the application to manage and monitor the task. </shortdesc>
     <taskbody>
         <prereq id="prereq_f54_nxb_gvb">Before you begin, you need the following details:<ul
                 id="ul_qp1_pxb_gvb">
                 <li>Altair One credential</li>
-                <li>Deploy the ToDo bundled package in the UI by creating a session</li>
             </ul></prereq>
         <context>
-            <p>Once you include the bundled package in the Altair One application framework, you can
-                log in to the application to manage and monitor your task. The application framework
-                will request your Altair One credentials to access the application. The application
-                will provide the basic functionalities like the header, notifications, and footer
-                information from Altair One. </p>
-            <p/>
+            <p>Once you include the Object Store packages in the React application framework, you
+                can log in to the application to manage and monitor your task. The application
+                framework will request your Altair One credentials to access the application. The
+                application will provide basic functionalities like the header, notifications, and
+                footer information from Altair One. </p>
         </context>
         <steps>
             <step>
-                <cmd>Login to the application portal which has the ToDo package bundle is
-                    deployed.</cmd>
+                <cmd>Login to the React application portal which has the deployed ToDo
+                    packages.</cmd>
                 <stepresult>The Altair One login page is displayed to provide your credentials.<fig
                         id="fig_dq3_krc_gvb">
                         <title>Altair One Login Page</title>
@@ -30,7 +28,7 @@
             </step>
             <step>
                 <cmd>Enter your Altair One credentials.</cmd>
-                <stepresult>The ToDo package bundled to create, manage, and monitor the tasks is
+                <stepresult>The ToDo content packs deployed to manage and monitor the tasks is
                         displayed.<fig id="fig_cyz_ptc_gvb">
                         <title>ToDo Application</title>
                         <image placement="inline" href="../../images/application_access_1.png"
@@ -41,37 +39,39 @@
             </step>
             <step>
                 <cmd>Click <uicontrol>Add Todo</uicontrol> to create a new task.</cmd>
-                <stepresult>The Add Task dialog box is displayed.<fig id="fig_es2_35c_gvb">
-                        <title>Add Task</title>
+                <stepresult>The Add Todo dialog box is displayed.<fig id="fig_es2_35c_gvb">
+                        <title>Add Todo Task</title>
                         <image placement="inline" href="../../images/application_add_task.png"
-                            scale="75" id="image_jtk_j5c_gvb"/>
+                            scale="75" id="image_jtk_j5c_gvb">
+                            <alt>Add Todo Task</alt>
+                        </image>
                     </fig></stepresult>
             </step>
             <step>
-                <cmd>Enter the task and select the category from the dropdown list.</cmd>
+                <cmd>Enter the task and select the category from the dropdown menu.</cmd>
             </step>
             <step>
-                <cmd>Click <uicontrol>Submit</uicontrol>.</cmd>
+                <cmd>Click <uicontrol>Add</uicontrol>.</cmd>
                 <info>
                     <fig id="fig_asv_2dd_gvb">
-                        <title>Task Submit</title>
+                        <title>Add Todo Task</title>
                         <image placement="inline" href="../../images/application_add_task_1.png"
                             scale="75" id="image_bhy_w5c_gvb">
-                            <alt>Task Submit</alt>
+                            <alt>Add Todo Task</alt>
                         </image>
                     </fig>
                 </info>
-                <stepresult>The new task will be added to the list. <fig id="fig_o1c_cvc_gvb">
-                        <title>New Task</title>
+                <stepresult>The new Todo task will be added to the list. <fig id="fig_o1c_cvc_gvb">
+                        <title>Todo Task List</title>
                         <image placement="inline" href="../../images/application_add_task_2.png"
                             scale="75" id="image_tc1_dvc_gvb">
-                            <alt>New Task</alt>
+                            <alt>Todo Task List</alt>
                         </image>
                     </fig></stepresult>
             </step>
             <step>
-                <cmd>Click <image placement="break" href="../../images/icons/add_note_icon.png"
-                        scale="75" id="image_rbm_ftb_3vb"/> next to the task to add Note.</cmd>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_note_icon.png"
+                        scale="75" id="image_rbm_ftb_3vb"/> next to the task to add a Note.</cmd>
                 <stepresult>The Notes dialog box is displayed.<fig id="fig_f5s_cvb_3vb">
                         <title>Notes</title>
                         <image placement="break" href="../../images/note_add_1.png" scale="75"
@@ -92,7 +92,7 @@
             </step>
             <step>
                 <cmd>Enter the name and content for the note and click
-                    <uicontrol>Submit</uicontrol>.</cmd>
+                    <uicontrol>Add</uicontrol>.</cmd>
                 <info>
                     <fig id="fig_oq2_4vb_3vb">
                         <title>New Note</title>
@@ -102,8 +102,9 @@
                         </image>
                     </fig>
                 </info>
-                <info>The Notes added will be listed in the dropdown menu. You can select the note
-                    from the dropdown menu to associate it to the tasks.<fig id="fig_ocg_wvb_3vb">
+                <info>The Note is added and it will be displayed in the dropdown menu. You can
+                    select the note from the dropdown menu to associate it to the task.<fig
+                        id="fig_ocg_wvb_3vb">
                         <title>Notes Menu</title>
                         <image placement="break" href="../../images/note_add_4.png" scale="75"
                             id="image_xy3_xvb_3vb">
@@ -118,7 +119,9 @@
                     <fig id="fig_f1v_gvc_gvb">
                         <title>Task Status</title>
                         <image placement="inline" href="../../images/application_task_status.png"
-                            scale="75" id="image_w5s_nbd_gvb"/>
+                            scale="75" id="image_w5s_nbd_gvb">
+                            <alt>Task Status</alt>
+                        </image>
                     </fig>
                 </info>
             </step>
