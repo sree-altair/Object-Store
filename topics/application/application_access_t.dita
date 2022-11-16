@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_ohf_jxb_gvb">
     <title>Access the Application</title>
-    <shortdesc>login to the application with Altair One credentials. </shortdesc>
+    <shortdesc>Access the application with Altair One credentials. </shortdesc>
     <taskbody>
         <context>
             <p>Once you include the Object Store packages in the React application framework, you
@@ -17,7 +17,7 @@
                         id="fig_dq3_krc_gvb">
                         <title>Altair One Login Page</title>
                         <image placement="inline" href="../../images/applicaiton_access.png"
-                            scale="65" id="image_spd_4rc_gvb"/>
+                            scale="60" id="image_spd_4rc_gvb"/>
                     </fig></stepresult>
             </step>
             <step>
@@ -26,7 +26,7 @@
                         displayed.<fig id="fig_cyz_ptc_gvb">
                         <title>ToDo Application</title>
                         <image placement="inline" href="../../images/application_access_1.png"
-                            scale="50" id="image_iwg_rtc_gvb">
+                            scale="45" id="image_iwg_rtc_gvb">
                             <alt>ToDo Application</alt>
                         </image>
                     </fig></stepresult>
