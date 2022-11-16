@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_ikz_fr4_55b">
     <title>Create an Action for the Content Definition</title>
-    <shortdesc>Author the content definition by creating an action.</shortdesc>
+    <shortdesc>Let us add a Create action for our ToDo content definition.</shortdesc>
     <taskbody>
         <context>
             <p>Perform the following steps to create an action for the content definition.</p>

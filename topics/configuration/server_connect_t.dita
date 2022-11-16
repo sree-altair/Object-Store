@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_fvh_2vg_m5b">
-    <title>Connect to a Server</title>
-    <shortdesc>Create a profile using the Altair One tool in the VS Code to connect to a
-        server.</shortdesc>
+    <title>Connect to a Server and Create a Profile</title>
+    <shortdesc>Before we begin, we need to connect to the Object Store server, create a profile and
+        fetch the essential remote content packs.</shortdesc>
     <taskbody>
         <context>
-            <p>The authentication is integrated with VS Code, hence the credentials are not required
-                while creating a profile. The VS Code re-directs to Okta login page for
-                authentication. You can set the created profile as a default profile.</p>
-            <p>Refresh the Remote Packs after adding the profile to authenticate your credentials
-                using Okta login page. Remote packs get activated after authenticating your
-                credentials.</p>
-            <p>The following list of content packs will be available once you bootstrap the
-                    system:<ul id="ul_dv3_jxw_n5b">
-                    <li>altair.system - which has the details as to how to create content, a
-                        relation, an event, and other entities. This has the base interfaces. For
-                        example, what are an application, application version, and execution
-                        environment.</li>
-                    <li>altair.pbs - is an execution environment pack</li>
-                    <li>altair.local - is an execution environment pack</li>
-                    <li>altair.versioning - pack which provides the default way of versioning
-                        entities. It is based on the Git style of versioning. This is a decoupling
-                        way of versioning. You can create your own pack with your own versioning.
-                        You can also use the other user’s versioning packs as well.</li>
-                    <li>altair.open.faas - is an execution environment pack. Even the Execution
-                        Environment is a content pack within the Object Store.</li>
-                </ul></p>
-            <p>An administrator creates the execution environment, onboards the environment, and
-                shares it with other users. The other users can use the shared execution environment
-                and execute an action on top of it.</p>
             <p>Perform the following steps to create a profile.</p>
         </context>
         <steps>

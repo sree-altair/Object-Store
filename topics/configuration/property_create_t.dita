@@ -5,7 +5,8 @@
     <shortdesc>Author the content definition by creating a property.</shortdesc>
     <taskbody>
         <context>
-            <p>Perform the following steps to create property for the content definition.</p>
+            <p>For our ToDo content definition let's add a description property which will take
+                string values.</p>
         </context>
         <steps>
             <step>

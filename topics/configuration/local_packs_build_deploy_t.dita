@@ -6,7 +6,9 @@
         actions, events, and the relations. </shortdesc>
     <taskbody>
         <context>
-            <p>Perform the following steps to build, deploy and install the local pack.</p>
+            <p>Once the Build, Deploy and Install is complete, it will package the Python and NodeJS
+                code into a WHL file and the tar.gz respectively. This has to be used to build our
+                ToDo application.</p>
         </context>
         <steps>
             <step>
@@ -62,7 +64,7 @@
                     <fig id="fig_sp3_5cc_gvb">
                         <title>Build and Deploy Process</title>
                         <image placement="inline" href="../../images/todo_build_deploy_5.png"
-                            scale="75" id="image_z2x_wcc_gvb"/>
+                            scale="65" id="image_z2x_wcc_gvb"/>
                     </fig>
                 </info>
                 <stepresult>The Remote Packs pane lists the deployed local pack. You can browse the
@@ -72,7 +74,7 @@
                             respectively.<fig id="fig_frz_q2c_gvb">
                             <title>Packaged Files</title>
                             <image placement="inline" href="../../images/todo_build_deploy_6.png"
-                                scale="75" id="image_iyx_dfc_gvb">
+                                scale="50" id="image_iyx_dfc_gvb">
                                 <alt>Packaged Files</alt>
                             </image>
                         </fig></p><p>You can use the bundled package content in the UI and start

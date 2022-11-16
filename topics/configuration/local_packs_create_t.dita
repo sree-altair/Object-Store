@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_s15_s1l_t5b">
-    <title>Create Local Packs</title>
-    <shortdesc>Create local packs which is a content pack that a user can author.</shortdesc>
+    <title>Create a Local Content Pack</title>
+    <shortdesc>Now that we have connected to the server, created a profile and downloaded the
+        essential remote content packs, we can begin creating our local content pack.</shortdesc>
     <taskbody>
         <context>
-            <p>In this example, we will create a <varname>todo</varname> content pack with the
-                Altair as a provider.</p>
+            <p>In this example, we will create a <varname>todo</varname> content pack.</p>
         </context>
         <steps>
             <step>
@@ -33,13 +33,12 @@
                 <cmd>Enter the <uicontrol>Content pack name</uicontrol>. </cmd>
                 <info>The content pack name should be in lowercase which is the standard way used in
                     Python and nodejs package names. The content pack name links to the package name
-                    in Python or in nodejs (npm package) as this is the encapsulation of all the use
-                    cases.</info>
+                    in Python or in nodejs (npm package).</info>
             </step>
             <step>
                 <cmd>Enter the <uicontrol>Content pack provider</uicontrol>.</cmd>
-                <info>The content pack provider is a higher-level name spacing to differentiate
-                    package names at an account level.</info>
+                <info>The content pack provider is a higher-level namespace to differentiate package
+                    names at an account level.</info>
             </step>
             <step>
                 <cmd>Enter the <uicontrol>Content pack version number</uicontrol>.</cmd>

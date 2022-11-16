@@ -2,7 +2,8 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_nkq_lkb_3vb">
     <title>Apply the Web Content Pack</title>
-    <shortdesc>Apply the Object Store web content pack in the application framework.</shortdesc>
+    <shortdesc>For our ToDo application, we will update the javascript code to use the objects we
+    defined in our content pack.</shortdesc>
     <taskbody>
         <context>
             <p>Create the following files to use the Object Store web content pack:<ul
