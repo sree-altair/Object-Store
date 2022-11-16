@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_s2r_fbb_gvb">
-    <title>Note Code Snippets</title>
-    <shortdesc>View the python code that is generated when you create the notes for the content
-        definition.</shortdesc>
+    <title>Note Action Code Snippets</title>
+    <shortdesc>View the python code that is generated when you create and delete note actions for
+        the content definition.</shortdesc>
     <refbody>
         <section id="section_ncf_kbb_gvb">
             <title>Create</title>

@@ -19,7 +19,7 @@
                     <li>GitBash (on Windows)</li>
                     <li>Object Store Installer zip archive. <note id="note_rjz_sr4_nvb">Contact
                             Altair Support channels to obtain the installer.</note></li>
-                    <li>Visual Studio (VS) Code</li>
+                    <li>Visual Studio Code (VSCode)</li>
                 </ul>
             </context>
         </taskbody>
@@ -45,10 +45,7 @@
                     <cmd>Unzip the <keyword keyref="product"/> Installer zip file.</cmd>
                 </step>
                 <step>
-                    <cmd>Execute the following command:</cmd>
-                    <info>
-                        <pre id="pre_sld_rrg_m5b">execute reinstall.sh</pre>
-                    </info>
+                    <cmd>Run the <filepath>reinstall.sh</filepath> script.</cmd>
                     <info>This will install <keyword keyref="product"/> docker image with database
                         and VSCode plugin.</info>
                     <info>
