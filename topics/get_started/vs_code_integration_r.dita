@@ -2,8 +2,8 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_zqq_pmg_m5b">
     <title>Integration with VS Code</title>
-    <shortdesc>The <keyword keyref="product"/> uses Visual Studio (VS) Code as a plugin that helps
-        in creating, authoring, and configuring the content packs.</shortdesc>
+    <shortdesc>The <keyword keyref="product"/> plugin for Visual Studio Code (VSCode) provides an
+        efficient coding environment for authoring and onboarding content packs.</shortdesc>
     <refbody>
         <section id="section_ast_smg_m5b">
             <p>The VS Code helps to author the content which is easier for users to get onboarded to
@@ -13,33 +13,31 @@
                     <li><image href="../../images/icons/altair_one_tool.png" scale="60"
                             id="image_p2w_cng_m5b"/> - Altair One Tool icon</li>
                     <li><image href="../../images/icons/altair_one_content_pack.png" scale="60"
-                            id="image_mzx_2ng_m5b"/> - Altair One Content Pack icon. Content pack is
-                        an encapsulation of various Definitions, Events, Actions and Event Hook
-                        combined.</li>
+                            id="image_mzx_2ng_m5b"/> - Altair One Content Pack icon. </li>
                 </ul></p>
-            <p>The VS Code provides the following panel:<ul id="ul_rb3_gng_m5b">
-                    <li>Left Panel – which is the authoring panel to define a workflow for authoring
-                        a content pack and it consists of:<ul id="ul_mhx_gng_m5b">
-                            <li>Top pane - Remote Packs that are deployed on the server<image
-                                    placement="break"
-                                    href="../../images/vscode_leftpanel_remote_packs.png" scale="75"
-                                    id="image_zcf_jng_m5b">
-                                    <alt>Top pane - Remote Packs</alt>
-                                </image></li>
-                            <li>Middle pane - Local Packs that are authored by the user<image
-                                    placement="break"
-                                    href="../../images/vscode_leftpanel_local_packs.png" scale="75"
-                                    id="image_tly_kng_m5b">
-                                    <alt>Middle pane - Local Packs</alt>
-                                </image></li>
-                            <li>Bottom pane - Content Outline<image placement="break"
-                                    href="../../images/vscode_leftpanel_content_outline.png"
-                                    scale="75" id="image_u2h_mng_m5b">
-                                    <alt>Bottom pane - Content Outline</alt>
-                                </image></li>
-                        </ul></li>
-                    <li>Right Panel – to author the content pack</li>
+            <p>The VSCode plugin provides:</p>
+            <p>Authoring Panel: A panel on the left to define a workflow for authoring a content
+                pack. It consists of:<ul id="ul_xmq_p54_nvb">
+                    <li>Remote Packs Pane: A pane at the top that displays the packs that are
+                        deployed on the server.<image placement="break"
+                            href="../../images/vscode_leftpanel_remote_packs.png" scale="75"
+                            id="image_zcf_jng_m5b">
+                            <alt>Top pane - Remote Packs</alt>
+                        </image></li>
+                    <li>Local Packs Pane: A pane in the middle that displays the packs authored by
+                        the user.<image placement="break"
+                            href="../../images/vscode_leftpanel_local_packs.png" scale="75"
+                            id="image_tly_kng_m5b">
+                            <alt>Middle pane - Local Packs</alt>
+                        </image></li>
+                    <li>Content Outline Pane: A pane at the bottom that displays the contents of the
+                        content pack.<image placement="break"
+                            href="../../images/vscode_leftpanel_content_outline.png" scale="75"
+                            id="image_u2h_mng_m5b">
+                            <alt>Bottom pane - Content Outline</alt>
+                        </image></li>
                 </ul></p>
+            <p>Editor Panel: A panel on the right to edit the code of the content pack.</p>
         </section>
     </refbody>
 </reference>

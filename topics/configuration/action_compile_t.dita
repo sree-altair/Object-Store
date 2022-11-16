@@ -4,11 +4,6 @@
     <title>Compile the Action for the Content Definition</title>
     <shortdesc>Compile that actions provided for the content definition. </shortdesc>
     <taskbody>
-        <prereq id="prereq_rwr_fyq_55b">The prerequisites to compile that action are:<ul
-                id="ul_vgn_gyq_55b">
-                <li>Create Content definition</li>
-                <li>Define Actions for the content definition</li>
-            </ul></prereq>
         <context>
             <p>Once you compile the actions for the content definition, it will generate Python or
                 JavaScript of the defined actions. The generated Python or JavaScript is applied to
@@ -54,5 +49,8 @@
                     </fig></stepresult>
             </step>
         </steps>
+        <postreq id="postreq_c3c_bbp_nvb">Create more actions for the ToDo applications. For
+            example, GetAll, Delete, MarkAsCompleted, MarkAsPending, GetPending, GetCompleted,
+            GetNotes.</postreq>
     </taskbody>
 </task>

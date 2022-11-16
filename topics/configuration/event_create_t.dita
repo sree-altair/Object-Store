@@ -2,10 +2,11 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_avt_xj3_2vb">
     <title>Create an Event for the Content Definition</title>
-    <shortdesc>Author the content definition by creating an action.</shortdesc>
+    <shortdesc>Author the content definition by creating an event.</shortdesc>
     <taskbody>
         <context>
-            <p>Perform the following steps to create an event for the content definition.</p>
+            <p>Let's create a Create Event for our ToDo content definition. This event will be
+                triggered when a ToDo entity is created.</p>
         </context>
         <steps>
             <step>
@@ -70,5 +71,7 @@
                     </fig></stepresult>
             </step>
         </steps>
+        <postreq id="postreq_abk_hbp_nvb">Now that a Create event has been added, you also create
+            Delete and Modified events.</postreq>
     </taskbody>
 </task>

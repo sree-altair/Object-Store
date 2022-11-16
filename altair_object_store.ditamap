@@ -2,11 +2,11 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     
-    <title>Altair Object Store</title>
+    <title>Getting Started with Altair Object Store</title>
     
     <topicmeta>
         <prodinfo>
-            <prodname>Object Store</prodname>
+            <prodname>Getting Started with Altair Object Store</prodname>
         </prodinfo>
         <othermeta name="version" content="2022.1.0"/>
     </topicmeta>
@@ -61,22 +61,11 @@
         </topicmeta>
     </topicref>
     
-    <topicref href="topics/get_started/object_store_features_r.dita">
-        <topicref href="topics/get_started/content_packs_intro_r.dita"/>
-        <topicref href="topics/get_started/object_store_benefits_r.dita"/>
-        <topicref href="topics/get_started/object_store_architecture_r.dita"/>
-    </topicref>
+    <topicref href="topics/get_started/object_store_features_r.dita"/>
+    <topicref href="topics/get_started/object_store_benefits_r.dita"/>
+    <topicref href="topics/get_started/object_store_architecture_r.dita"/>
     
-    <topicref href="topics/install/object_store_install_t.dita">
-        <topicref href="topics/install/prerequisites_t.dita"/>
-        <topicref href="topics/install/object_store_install_steps_t.dita"/>
-        <topicref href="topics/install/object_store_service_commands_t.dita">
-            <topicref href="topics/install/object_store_start_t.dita"/>
-            <topicref href="topics/install/object_store_stop_t.dita"/>
-        </topicref>
-        <topicref href="topics/install/install_verification_t.dita"/>
-        <topicref href="topics/install/install_troubleshoot_t.dita"/>
-    </topicref>
+    <topicref href="topics/install/object_store_install_t.dita"/>
     <topicref href="topics/get_started/vs_code_integration_r.dita"/>
     <topicref href="topics/configuration/application_create_r.dita"/>
     <topicref href="topics/configuration/object_store_configuration_t.dita">

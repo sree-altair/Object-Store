@@ -16,7 +16,7 @@
                     <li>Global Action - Actions defined globally.</li>
                     <li>Global Event - Events defined globally. </li>
                 </ul></p>
-            <p>Perform the following steps to create a content definition.</p>
+            <p>Let's create a ToDo content definition for our application.</p>
         </context>
         <steps>
             <step>

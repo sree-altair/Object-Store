@@ -2,28 +2,22 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_ohf_jxb_gvb">
     <title>Access the Application</title>
-    <shortdesc>Login to the application to manage and monitor the task. </shortdesc>
+    <shortdesc>login to the application with Altair One credentials. </shortdesc>
     <taskbody>
-        <prereq id="prereq_f54_nxb_gvb">Before you begin, you need the following details:<ul
-                id="ul_qp1_pxb_gvb">
-                <li>Altair One credential</li>
-            </ul></prereq>
         <context>
             <p>Once you include the Object Store packages in the React application framework, you
-                can log in to the application to manage and monitor your task. The application
-                framework will request your Altair One credentials to access the application. The
-                application will provide basic functionalities like the header, notifications, and
-                footer information from Altair One. </p>
+                can login to the application with Altair One credentials. The application will
+                provide basic functionalities like the header, notifications, and footer information
+                from Altair One. </p>
         </context>
         <steps>
             <step>
-                <cmd>Login to the React application portal which has the deployed ToDo
-                    packages.</cmd>
+                <cmd>Login to the application portal to check the ToDo application.</cmd>
                 <stepresult>The Altair One login page is displayed to provide your credentials.<fig
                         id="fig_dq3_krc_gvb">
                         <title>Altair One Login Page</title>
                         <image placement="inline" href="../../images/applicaiton_access.png"
-                            scale="75" id="image_spd_4rc_gvb"/>
+                            scale="65" id="image_spd_4rc_gvb"/>
                     </fig></stepresult>
             </step>
             <step>
@@ -32,7 +26,7 @@
                         displayed.<fig id="fig_cyz_ptc_gvb">
                         <title>ToDo Application</title>
                         <image placement="inline" href="../../images/application_access_1.png"
-                            scale="75" id="image_iwg_rtc_gvb">
+                            scale="50" id="image_iwg_rtc_gvb">
                             <alt>ToDo Application</alt>
                         </image>
                     </fig></stepresult>
@@ -64,7 +58,7 @@
                 <stepresult>The new Todo task will be added to the list. <fig id="fig_o1c_cvc_gvb">
                         <title>Todo Task List</title>
                         <image placement="inline" href="../../images/application_add_task_2.png"
-                            scale="75" id="image_tc1_dvc_gvb">
+                            scale="60" id="image_tc1_dvc_gvb">
                             <alt>Todo Task List</alt>
                         </image>
                     </fig></stepresult>
@@ -119,7 +113,7 @@
                     <fig id="fig_f1v_gvc_gvb">
                         <title>Task Status</title>
                         <image placement="inline" href="../../images/application_task_status.png"
-                            scale="75" id="image_w5s_nbd_gvb">
+                            scale="60" id="image_w5s_nbd_gvb">
                             <alt>Task Status</alt>
                         </image>
                     </fig>

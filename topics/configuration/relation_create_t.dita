@@ -5,7 +5,7 @@
     <shortdesc>Author the content definition by creating a relation.</shortdesc>
     <taskbody>
         <context>
-            <p>Perform the following steps to create a relation for the content definition.</p>
+            <p>Let's create a relation between ToDos and Notes in our application.</p>
         </context>
         <steps>
             <step>

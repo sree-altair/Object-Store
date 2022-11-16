@@ -2,11 +2,132 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_ql5_png_m5b">
     <title>Install <keyword keyref="product"/></title>
-    <shortdesc>Instructions to install <keyword keyref="product"/>, prerequisites, and verification
-        of <keyword keyref="product"/> installation are provided in this chapter.</shortdesc>
-    <taskbody>
-        <context>
-            <p/>
-        </context>
-    </taskbody>
+    <shortdesc>This section provides the prerequisites, instructions to install <keyword
+            keyref="product"/>, verification of <keyword keyref="product"/> installation, and
+            <keyword keyref="product"/> service commands.</shortdesc>
+    <task id="task_ksv_hr4_nvb">
+        <title>Prerequisites</title>
+        <shortdesc>Prerequisites for installing <keyword keyref="product"/> components and <keyword
+                keyref="product"/>.</shortdesc>
+        <taskbody>
+            <context>
+                <ul id="ul_dhl_nr4_nvb">
+                    <li>Node.js 16 LTS</li>
+                    <li>Python 3.8.10</li>
+                    <li>Amazon Coretto OpenJDK 11</li>
+                    <li>Docker</li>
+                    <li>GitBash (on Windows)</li>
+                    <li>Object Store Installer zip archive. <note id="note_rjz_sr4_nvb">Contact
+                            Altair Support channels to obtain the installer.</note></li>
+                    <li>Visual Studio (VS) Code</li>
+                </ul>
+            </context>
+        </taskbody>
+    </task>
+    <task id="task_ams_jr4_nvb">
+        <title>Install <keyword keyref="product"/></title>
+        <shortdesc/>
+        <taskbody>
+            <context id="context_t5f_1s4_nvb"/>
+            <steps id="steps_hxw_ds4_nvb">
+                <step>
+                    <cmd>Copy the <keyword keyref="product"/> installer to the system where you want
+                        to install.</cmd>
+                </step>
+                <step>
+                    <cmd>Start the console as an administrator.</cmd>
+                </step>
+                <step>
+                    <cmd>Navigate to the location where you have copied the Object Store installer
+                        zip file.</cmd>
+                </step>
+                <step>
+                    <cmd>Unzip the <keyword keyref="product"/> Installer zip file.</cmd>
+                </step>
+                <step>
+                    <cmd>Execute the following command:</cmd>
+                    <info>
+                        <pre id="pre_sld_rrg_m5b">execute reinstall.sh</pre>
+                    </info>
+                    <info>This will install <keyword keyref="product"/> docker image with database
+                        and VSCode plugin.</info>
+                    <info>
+                        <note id="note_dqy_xrg_m5b">If there is an existing instance of the <keyword
+                                keyref="product"/>, then this command will reinstall the <keyword
+                                keyref="product"/> docker image with a new database and VSCode
+                            plugin.</note>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_y2w_xs4_nvb">
+        <title>Installation Verification</title>
+        <shortdesc>Run the sanity tests to verify the <keyword keyref="product"/>
+            installation.</shortdesc>
+        <taskbody>
+            <context id="context_y2d_bt4_nvb">To verify the installation: </context>
+            <steps id="steps_ujj_ct4_nvb">
+                <step>
+                    <cmd>Navigate to <filepath>client/tests/js</filepath>.</cmd>
+                </step>
+                <step>
+                    <cmd>Execute the following command:</cmd>
+                    <info>
+                        <pre id="pre_fd1_vtg_m5b">execute "npm test"</pre>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Navigate to <filepath>client/tests/python</filepath>.</cmd>
+                </step>
+                <step>
+                    <cmd>Execute the following command:</cmd>
+                    <info>
+                        <pre id="pre_yw5_vtg_m5b">execute "pytest -v"</pre>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_zhv_yr4_nvb">
+        <title><keyword keyref="product"/> Service Commands</title>
+        <shortdesc>Commands for starting and stopping of <keyword keyref="product"/>.</shortdesc>
+        <taskbody>
+            <context id="context_zv1_js4_nvb">You need administrator (sudo) permissions to start or
+                stop the Object Store services.</context>
+            <steps id="steps_p2x_ks4_nvb">
+                <step>
+                    <cmd>To start <keyword keyref="product"/> docker image:</cmd>
+                    <info>
+                        <pre id="pre_wgz_vsg_m5b">docker-compose up</pre>
+                    </info>
+                </step>
+                <step>
+                    <cmd>To stop <keyword keyref="product"/> docker image:</cmd>
+                    <info>
+                        <pre id="pre_hfg_vs4_nvb">docker-compose down</pre>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_d3s_lt4_nvb">
+        <title>Troubleshooting the Installation</title>
+        <shortdesc>Troubleshoot the <keyword keyref="product"/> installation.</shortdesc>
+        <taskbody>
+            <context id="context_vfh_nt4_nvb">Perform the steps if the following error is displayed
+                while starting the Object Store server on
+                Windows:<msgblock id="msgblock_ddk_35g_m5b">"A required privilege is not held by the client"</msgblock></context>
+            <steps id="steps_rqp_4t4_nvb">
+                <step>
+                    <cmd>Run <i>secpol.msc</i> and add the user to the list of users who can create
+                        symbolic links by navigating to Security Settings -> Local Policies -> User
+                        Rights Assignment -> Create symbolic links.</cmd>
+                </step>
+                <step>
+                    <cmd>Start the console used to launch Object store as administrator.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
 </task>

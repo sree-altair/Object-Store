@@ -2,11 +2,11 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="task_rxh_yxg_3vb">
     <title>Apply Object Store Packs to use the Application</title>
-    <shortdesc>Apply the Object Store packages and web content packs in the local UI framework to
-        use the application to manage and monitor the tasks. </shortdesc>
+    <shortdesc>Apply the Object Store packages and web content packs in the local UI framework. </shortdesc>
     <taskbody>
         <context>
-            <p></p>
+            <p>We will use the ToDo packages and the altair system package to continue authoring our
+                application.</p>
         </context>
         <steps>
             <step>

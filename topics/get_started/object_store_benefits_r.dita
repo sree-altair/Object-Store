@@ -6,16 +6,17 @@
     <refbody>
         <section id="section_cd4_nlg_m5b">
             <p>The benefits of <keyword keyref="product"/> are as follows:<ul id="ul_kxg_4lg_m5b">
-                    <li><keyword keyref="product"/> lets you model Engineering Objects, define
+                    <li><keyword keyref="product"/> enables you to model engineering objects, define
                         properties, and methods</li>
-                    <li>Ability to define and capture Objects (content, file, folder...)</li>
+                    <li>Ability to define and capture Objects (for example, content, file and
+                        folder)</li>
                     <li>Define the properties, behavior, and methods for these Objects</li>
                     <li>Write sample code for a method, action, and behavior</li>
                     <li>Objects can be independent rather than glued to the user interface</li>
-                    <li>Consume it in different applications (HyperWorks, HyperView, Inspire...)
-                        using the APIs</li>
+                    <li>Consume objects in different applications through APIs (for example, in
+                        HyperWorks, HyperView and Inspire)</li>
                     <li>Support for authoring the contents, actions, and deploying them</li>
-                <li>Users can author the content and get onboarded to the platform easily.</li>
+                <li>Users can author content and get it onboarded to the platform easily.</li>
                 </ul></p>
         </section>
     </refbody>
