@@ -2,7 +2,9 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_y2h_klg_m5b">
     <title>Benefits of <keyword keyref="product"/></title>
-    <shortdesc></shortdesc>
+    <shortdesc>The Altair Object Store allows you to model engineering objects that are independent
+        of the user interface and can be consumed in a variety of applications via APIs. Examine the
+        various benefits of the Altair Object Store.</shortdesc>
     <refbody>
         <section id="section_cd4_nlg_m5b">
             <p>The benefits of <keyword keyref="product"/> are as follows:<ul id="ul_kxg_4lg_m5b">

@@ -2,11 +2,20 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_usn_xlg_m5b">
     <title>Altair <keyword keyref="product"/> Platform Architecture</title>
-    <shortdesc></shortdesc>
+    <shortdesc>The Object Store architecture includes, in addition to the central Object Store
+        engine that manages configuration and execution, an environment manager, a multi-model
+        database, an event bus, and gateways. Investigate the many different parts that make up the
+        Object Store architecture.</shortdesc>
     <refbody>
         <section id="section_ubt_xlg_m5b">
-            <p> Altair <keyword keyref="product"/> platform architecture consists of:<ul
-                    id="ul_ttk_zlg_m5b">
+            <p> Altair <keyword keyref="product"/> platform architecture consists of:<fig
+                    id="fig_kst_tqq_nvb">
+                    <title>Object Store Architecture</title>
+                    <image placement="break" href="../../images/object_store_architecture.png"
+                        scale="50" id="image_whk_vqq_nvb">
+                        <alt>Object Store Architecture</alt>
+                    </image>
+                </fig><ul id="ul_ttk_zlg_m5b">
                     <li>Arango Database – a multi-model database that provides storage capability
                         and a graph model. The database provides Search capability and it indexes
                         the data based on the index definition. </li>

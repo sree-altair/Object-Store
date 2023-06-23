@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_avt_xj3_2vb">
+    <title>Create an Event for the Content Definition</title>
+    <shortdesc>Author the content definition by creating an event.</shortdesc>
+    <taskbody>
+        <context>
+            <p>Let's create a Create Event for our ToDo content definition. This event will be
+                triggered when a ToDo entity is created.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_bcp_yr4_55b"/> next to the
+                        <uicontrol>Events</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_nsj_zr4_55b">
+                        <title>Content Definition Events</title>
+                        <image placement="break" href="../../images/event_create_0.png" scale="80"
+                            id="image_i1l_bs4_55b">
+                            <alt>Content Definition Events</alt>
+                        </image>
+                    </fig>
+                </info>
+                <stepresult>The <uicontrol>Create Event</uicontrol> is displayed.<fig
+                        id="fig_e5q_pt4_55b">
+                        <title>Create Event</title>
+                        <image placement="break" href="../../images/event_create_1.png" scale="80"
+                            id="image_qp5_qt4_55b">
+                            <alt>Create Event</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Event name</uicontrol>. </cmd>
+                <info>By default, the <uicontrol>Extends from event content type</uicontrol> value
+                    is selected. </info>
+            </step>
+            <step>
+                <cmd importance="optional">Select <uicontrol>Static</uicontrol> checkbox if you do
+                    not want the event to be instantiated. Static content will not have any
+                    associated action.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <uicontrol>Description</uicontrol>.</cmd>
+                <info>The description is mandatory in all the places for documentation purpose. The
+                    information provided in this field will generate documentation for the content
+                    definition action.</info>
+            </step>
+            <step>
+                <cmd>Click <image placement="inline" href="../../images/icons/add_icon_1.png"
+                        scale="80" id="image_rz5_z2p_55b"/> next to the <uicontrol>Event
+                        Payload</uicontrol> to define the event payload information.</cmd>
+                <info>The <uicontrol>Event Payload</uicontrol> field are displayed.<fig
+                        id="fig_gbm_rhp_55b">
+                        <title>Event Payload</title>
+                        <image placement="break" href="../../images/event_create_payload_1.png"
+                            scale="80" id="image_zpt_5hp_55b">
+                            <alt>Event Payload</alt>
+                        </image>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The content definition lists the created event.<fig id="fig_efv_xq4_55b">
+                        <title>Created Content Definition Event</title>
+                        <image placement="break" href="../../images/event_create_3.png" scale="80"
+                            id="image_cpd_txq_55b">
+                            <alt>Created Content Definition Event</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+        </steps>
+        <example id="example_lhj_wnl_fvb">In this example, we have created a
+                <parmname>Create</parmname> event. Now, we can create <parmname>Delete</parmname>
+            and <parmname>Modified</parmname> events.</example>
+    </taskbody>
+</task>
