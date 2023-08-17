@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_tth_qty_lyb">
+    <title>Add Application and Models to Application</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_mcf_rty_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_as5_rty_lyb"># Add App 1
+dtActivateApp = await DTActivateApp.Create(session=session, name="Activate")
+status = (await dtControllerModule.addApplication(dtActivateApp)).status
+print(status)
+
+# Add model for app
+dtActivateApp = (await Content.getByRef(session=session, contentRef=dtActivateApp.getRef())).content
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/Controller.scm", dtActivateApp.data_dir,
+                              session)
+status = (await dtActivateApp.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)
+
+# Add App 2
+dtOptistructApp = await DTOptistructApp.Create(session=session, name="OptistructApp")
+status = (await dtControllerModule.addApplication(dtOptistructApp)).status
+print(status)
+
+# Add model for app
+dtOptistructApp = (await Content.getByRef(session=session, contentRef=dtOptistructApp.getRef())).content
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/plate.fem", dtOptistructApp.data_dir,
+                              session)
+status = (await dtOptistructApp.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)
+
+modules = (await dtProject.getModules()).modules
+print(modules)
+
+module = (await dtProject.getModule(name="Controller")).module
+print(module)</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

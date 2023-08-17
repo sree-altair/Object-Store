@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="untitled3">
-    <title>About Altair Object Store</title>
+    <title>About Altair <keyword keyref="product"/></title>
     <shortdesc><keyword keyref="product"/> is an enhanced next-generation platform core that has
         combined capabilities of numerous services. </shortdesc>
     <refbody>

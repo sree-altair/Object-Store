@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_cxr_t4y_lyb">
+    <title>Register the Content Pack with VS Code</title>
+    <shortdesc>You can register the content pack with VS Code to use the objects.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_iff_jpy_lyb">Before you begin, unzip the Content pack zip file in your
+            local system. </prereq>
+        <context/>
+        <steps>
+            <step>
+                <cmd>Click <image placement="inline"
+                        href="../../images/icons/register_content_pack.png" id="image_vqh_l4y_lyb"/>
+                    on the left panel of the VS Code.</cmd>
+                <info>
+                    <fig id="fig_x3x_bpy_lyb">
+                        <title>Register Content Pack</title>
+                        <image placement="break" href="../../images/register_content_pack_1.png"
+                            id="image_d5p_dpy_lyb"/>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the unzipped Content Pack folder from the Windows Explorer.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Select Folder</uicontrol>.</cmd>
+                <stepresult>The content pack will be registered in the VS Code.<fig
+                        id="fig_bjg_xpy_lyb">
+                        <title/>
+                        <image placement="break" href="../../images/registered_content_pack.png"
+                            id="image_rmb_ypy_lyb"/>
+                    </fig></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

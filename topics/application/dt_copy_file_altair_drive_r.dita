@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_tq2_ryy_lyb">
+    <title>Copying Files to Altair Drive (adcopy)</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_k1f_syy_lyb">
+            <title/>
+            <p>The following code is used for copying the files to Altair
+                Drive:<codeblock id="codeblock_npy_n5y_lyb"># Get Adcopy path from ExecutionEnvironment
+execEnvData = await action.getExecEnv()
+onboardedApps = execEnvData.json["installedApplications"]
+appConfig = await getApplicationLatestVersionConfig(onboardedApps, "adcopy")
+
+path = appConfig['installationPath']
+
+# Build Adcopy command
+logLocation = os.path.dirname(localPath)
+args = [
+    str(path),
+    '-serverURL', session.serverUrl.split("api/")[0],
+    '-logLocation', logLocation,
+    '-logLevel', 'DEBUG',
+    '-accessToken', session.bearerJwt,
+    '-clientID', session._authHeaders["x-client-id"],
+    '-refreshToken', session._authHeaders["Cookie"].split('refresh-token=')[-1],
+    '-oc',
+    '-f',
+    localPath,
+    'remote:' + remotePath
+]
+
+# Run adcopy command as a process
+await action.log('--DTActivateAppGenerateReportRun-- Executing Adcopy command : ' + str(args))
+process_env = os.environ.copy()
+process = subprocess.Popen(args, stdout=subprocess.PIPE, env=process_env, shell=False,
+                           cwd=os.path.dirname(str(path)))
+(out, err) = process.communicate()
+print(process.returncode)
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

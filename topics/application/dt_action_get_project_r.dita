@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_kbm_zry_lyb">
+    <title>Get Project</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_prm_1sy_lyb">
+            <p>
+                <codeblock id="codeblock_grw_bsy_lyb"># Get all Projects
+dtProjects = (await DTProject.GetProjects(session)).projects
+print(dtProjects)</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

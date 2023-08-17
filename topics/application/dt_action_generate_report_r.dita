@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_qyn_c5y_lyb">
+    <title>Generate Report</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_npw_d5y_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_h1w_25y_lyb">
+# Generate report
+await dtActivateApp.generateReport()</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

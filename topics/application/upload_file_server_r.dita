@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_hnj_wz2_myb">
+    <title>Uploading a Local File to Server</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_agw_zz2_myb">
+            <p>Let us say, we have a content-pack <varname>altair.datasheet</varname> with a
+                content-definition called <varname>MotorDataSheetCSV</varname> deployed in the
+                server.</p>
+            <p>
+                <codeblock id="codeblock_gk3_l1f_myb">{
+  "name": "MotorDataSheetCSV",
+  "defType": "content",
+  "extendsFrom": "altair.system.FileEntity",
+   "metadata": {
+ "exts": ["csv"]
+   }
+}
+
+Here, the MotorDataSheetCSV content extends from "altair.system.FileEntity". This denotes that all instances of this type are based on files in Object Store. 
+
+Following is the code snippet to upload a local file. 
+Here we upload “.csv” file – note that the content-type is automatically set to “altair.datasheet.MotorDataSheetCSV” since we have defined the extension in the content-definition
+
+from altair.system import Fs, FileEntity
+
+# Get the directory content by drive path. Here, "~" denotes the user home directory path
+        directory = (await Fs.info(session=session, path="~")).content
+
+        # Create a FileEntity instance
+        file = FileEntity(session)
+        file.filePath = "C:/Test/my_file.csv" # Local file path
+
+        # Add the file to the given directory
+        directory.addFile(file=file)
+
+        # Save it in Server
+        await session.save()
+</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

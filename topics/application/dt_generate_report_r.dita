@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ggz_25x_lyb">
+    <title>Generate Report for an Application</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_mfd_g5x_lyb">
+            <p>
+                <fig id="fig_ccc_b4t_jyb">
+                    <title/>
+                    <image placement="break" href="../../images/dt_generate_report.png"
+                        id="image_msy_b4t_jyb"/>
+                </fig>
+            </p>
+            <p>The code for generating report for an
+                application:<codeblock id="codeblock_vrw_d4t_jyb">import amat_run_activate_report
+
+# Get Input model file path
+modelFileInfoActionOutput = await Fs.info(session=session, contentRef=modelFile.getRef(),
+                                                      options={'path': True})
+filePath = modelFileInfoActionOutput.get('metadata.path')
+
+# Get the Activate application path from execution environment doc
+execEnvData = await action.getExecEnv()
+        onboardedApps = execEnvData.json["installedApplications"]
+        appConfig = await getApplicationLatestVersionConfig(onboardedApps, "Activate"
+        activatePath = appConfig['installationPath']
+        activateAppPath = os.path.dirname(activatePath) + "/Activate_batch.bat"
+
+# Execute the report generation
+amat_run_activate_report.create_report_for_model(fileMountPath, reportDirPath, activateAppPath)
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

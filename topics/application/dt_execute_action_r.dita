@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_hpw_h5x_lyb">
+    <title>Digital Twin Actions</title>
+    <shortdesc>DT actions that can be executed on a client (for example, HPC) using the UI or Python
+        script.</shortdesc>
+    <refbody/>
+</reference>

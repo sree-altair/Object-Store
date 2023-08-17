@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Altair <keyword keyref="product"></keyword> <keyword keyref="version"></keyword></mainbooktitle>
+        <booktitlealt>Getting Started with Altair Object Store</booktitlealt>
+        
+    </booktitle>
+    <bookmeta>
+        <data name="coverTitleDisplay" value="true"/>
+        <data name="coverImageFileName"
+            href="../../DITA_Template_Check/PBSWorks-Documentation/images/skin_images/cover_general.svg"
+            format="svg"/>
+        <data name="chapterNumbering" value="1"/>
+        <data name="logo" value="altair"/>
+        <data name="copyright" value="altair"/>
+        <data name="insertDate" value="true"/> 
+    </bookmeta>
+  
+    <frontmatter>
+        <keydef keys="product">
+            <topicmeta>
+                <keywords>
+                    <keyword>Object Store</keyword>
+                </keywords>
+            </topicmeta>
+        </keydef>
+        <keydef keys="version">
+            <topicmeta>
+                <keywords>
+                    <keyword>2022.1.0</keyword>
+                </keywords>
+            </topicmeta>
+        </keydef>
+        <topicref href="intellectual_property_rights_notice_pbsworks_r.dita"/>
+        <topicref href="technical_support_pbsworks_r.dita"/>
+        
+        
+        <booklists>
+            <toc/>
+        </booklists>
+        <topicref href="container_keydef_keywords_global.ditamap" format="ditamap"/>
+        <topicref href="container_keydef_href_contact_info.ditamap" format="ditamap"/>
+        <topicref href="subjectschemepbsworks.ditamap" format="ditamap"/>
+    </frontmatter>
+
+    <chapter href="topics/get_started/object_store_overview_r.dita" />
+
+    <chapter href="topics/get_started/object_store_features_r.dita"/>
+    <chapter href="topics/get_started/object_store_benefits_r.dita"/>
+    <chapter href="topics/get_started/object_store_architecture_r.dita"/>
+    
+    <chapter href="topics/install/object_store_install_t.dita"/>
+    <chapter href="topics/get_started/vs_code_integration_r.dita"/>
+    <chapter href="topics/configuration/application_create_r.dita"/>
+
+    <chapter href="topics/configuration/object_store_configuration_t.dita">
+        <topicref href="topics/configuration/server_connect_t.dita"/>
+        <topicref href="topics/configuration/local_packs_create_t.dita"/>
+        <topicref href="topics/configuration/content_definition_t.dita"/>
+        <topicref href="topics/configuration/property_create_t.dita"/>
+        <topicref href="topics/configuration/action_create_t.dita">
+            <topicref href="topics/configuration/action_compile_t.dita"/>
+            <topicref href="topics/code_snippets/actions_code_r.dita"/>
+            <topicref href="topics/code_snippets/notes_code_r.dita"/>
+        </topicref>
+        <topicref href="topics/configuration/event_create_t.dita"/>
+        <topicref href="topics/configuration/relation_create_t.dita"/>
+        <topicref href="topics/configuration/local_packs_build_deploy_t.dita"/>
+    </chapter>
+
+    <chapter href="topics/object_store_apis/apply_access_application_t.dita">
+        <topicref href="topics/object_store_apis/upload_packages_t.dita"/>
+        <topicref href="topics/object_store_apis/content_definition_usage_t.dita"/>
+        <topicref href="topics/application/application_access_t.dita"/>
+    </chapter>
+
+</bookmap>

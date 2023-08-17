@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_qhj_nxy_lyb">
+    <title>Mounting and Unmounting Altair Drive</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_qdh_qxy_lyb">
+            <title/>
+            <p>The following code is used for mounting and unmounting Altair
+                Drive:<codeblock id="codeblock_ex2_j5y_lyb"># Mount Adrive
+driveExecOptions = ActionExecOptions(execEnv="current")
+mountOutputs = await MountAdrive(session=session, execOptions=driveExecOptions)
+
+mountPath = mountOutputs.mountPath
+print(mountPath)
+
+# Unmount Adrive
+from altair.adrivemounter import UnmountDrive
+
+driveExecOptions = ActionExecOptions(execEnv="current")
+mountOutputs = await UnmountDrive(session=session, execOptions=driveExecOptions)
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

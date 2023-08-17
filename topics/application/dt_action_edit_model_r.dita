@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_m3j_wty_lyb">
+    <title>Edit Model Files</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_g3s_wty_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_pyd_zty_lyb">
+# Edit model file in Activate app
+await dtActivateApp.edit()</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

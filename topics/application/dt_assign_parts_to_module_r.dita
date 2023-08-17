@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_a3p_stx_lyb">
+    <title>Assign Parts to the Module</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_ydf_ttx_lyb">
+            <p>
+                <fig id="fig_j1n_hnt_jyb">
+                    <title/>
+                    <image placement="break" href="../../images/dt_assign_parts_module.png"
+                        id="image_o1f_3nt_jyb"/>
+                </fig>
+            </p>
+            <p>The code used to assign a
+                module:<codeblock id="codeblock_bkd_knt_jyb"># Set the array of partnames on the module specified in the inputs
+module.parts = inputs.partNames
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>
