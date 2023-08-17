@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ct5_ytx_lyb">
+    <title>Upload an Application Model Files</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_npw_ztx_lyb">
+            <p>The code used to upload an application model
+                files:<codeblock id="codeblock_bck_rnt_jyb">    # Get the Model File entity
+    modelDirectory = (await Fs.info(session=session, path=  modelFilePath)).content
+
+    # Create the File entity object with name and local file path
+    modelFile= FileEntity(session)
+    modelFile.name = “&lt;Model File Name>”
+    modelFile.filePath = “&lt;Model Local File Path>”
+
+    # Add the model file entity to the parent Model directory
+    directory.addFile(file=modelFile)
+
+    # Set the model fileRef to the Project as its main model file 
+   application.modelFile = modelFile.getRef()
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

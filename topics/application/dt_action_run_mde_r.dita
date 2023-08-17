@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_pnw_2ty_lyb">
+    <title>Run MDE on Model Files</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_nff_fty_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_ksh_gty_lyb">
+# Run MDE on model file
+status = (await dtModel.runMDE()).status
+print(status)</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

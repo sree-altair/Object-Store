@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_u33_mff_cyb">
+    <title>Create an Advanced Application using Object Store</title>
+    <shortdesc>Creating an advanced (Digital Twin) application to design, build, test, optimize,
+        evaluate the what-if scenarios, perform predictive maintenance, and extend the remaining
+        useful life (RUL) of their products without the need for physical prototypes.</shortdesc>
+    <refbody>
+        <section id="section_njw_4gf_cyb">
+            <p>The work flow for creating the Digital Twin application are:<ul id="ul_cg4_qgf_cyb">
+                    <li>Create a Project </li>
+                    <li>Upload project model files</li>
+                    <li>Set main model file for Project</li>
+                    <li>Run MDE &amp; get JSON model file</li>
+                    <li>Add a Module</li>
+                    <li>Assign parts to Module</li>
+                    <li>Add an Application</li>
+                    <li>Upload application model files</li>
+                    <li>Set main model file for the Application</li>
+                    <li>Edit the Application</li>
+                    <li>Generate report for the Application</li>
+                    <li>View Report</li>
+                </ul></p>
+        </section>
+        <section id="section_cpj_3hf_cyb">
+            <title>Digital Twin Data Model</title>
+            <p>The data model for the Digital Twin application is an abstract model that organizes
+                elements of data and standardizes how they relate to one another and to the
+                    entities.<fig id="fig_lgg_lhf_cyb">
+                    <title>Digital Twin Data Model</title>
+                    <image placement="break" href="../../images/digital_twin_data_model.png"
+                        id="image_enm_mhf_cyb">
+                        <alt>Digital Twin Data Model</alt>
+                    </image>
+                </fig></p>
+            <p>Create the required Content Pack Objects like Properties, Relations, and Actions for
+                each of the Data Models. <note id="note_cfz_b3f_cyb">Refer to <xref
+                        href="object_store_configuration_t.dita"/> for more information.</note><fig
+                    id="fig_onl_m3f_cyb">
+                    <title>Digital Twin Content Pack</title>
+                    <image placement="break" href="../../images/digital_twin_content_pack.png"
+                        id="image_wzx_43f_cyb">
+                        <alt>Digital Twin Content Pack</alt>
+                    </image>
+                </fig></p>
+            <p>You can download the Digital Content pack zip file from <b>&lt;Location Path to be
+                    provided by Chidambar></b> or obtained using your usual Altair support
+                channels.</p>
+            <p>To load the Digital Twin Content pack, refer to <xref
+                    href="../get_started/vs_code_integrate_register_t.dita"/>. </p>
+        </section>
+    </refbody>
+</reference>

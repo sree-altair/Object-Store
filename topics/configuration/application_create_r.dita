@@ -6,7 +6,7 @@
         applications.</shortdesc>
     <refbody>
         <section id="section_nrd_bv4_nvb">
-            <p> The main steps to build an application are:<ol id="ol_jht_dv4_nvb">
+            <p>The main steps to build an application are:<ol id="ol_jht_dv4_nvb">
                     <li>Connect to the Object Store server and create a profile.</li>
                     <li>Create a local content pack with content definitions.</li>
                     <li>Add properties, actions, events and relations to content definitions.</li>

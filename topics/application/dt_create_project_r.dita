@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_qg3_zsx_lyb">
+    <title>Create the DT Project and Set a Model by Default</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_drt_1tx_lyb">
+            <title/>
+            <p>The DT project content outline: <fig id="fig_vgv_hjt_jyb">
+                    <title>DT Project</title>
+                    <image placement="break" href="../../images/dt_content_outline.png"
+                        id="image_nl5_qjt_jyb"/>
+                </fig></p>
+            <p>The code used to create the DT project and to set a model by
+                default:<codeblock id="codeblock_zxm_3kt_jyb">from altair.dtwin import DTProject, DT3DModel
+
+	  # Create project
+        project = DTProject(session=context.session)
+        project.name = inputs.name
+
+        # Create Model and its data directory
+        model = DT3DModel(session=context.session)
+
+        # Add relation from Project to Model
+        await project.setModel_(model)
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

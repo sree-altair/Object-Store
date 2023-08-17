@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ecg_23t_jyb">
+    <title>Authoring the Digital Twin Application</title>
+    <shortdesc>Author the actions for the Digital Twin (DT) application in <keyword keyref="product"
+        />.</shortdesc>
+    <refbody/>
+</reference>

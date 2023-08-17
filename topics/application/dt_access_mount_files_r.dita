@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_a3h_vxy_lyb">
+    <title>Accessing Mounted File(s)</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_msm_wxy_lyb">
+            <title/>
+            <p>The following code is used for accessing the mounted file(s):<fig
+                    id="fig_oxc_5pf_cyb">
+                    <p>
+                        <codeblock id="codeblock_jn4_l5y_lyb"># Get Input File Mounted  Path
+output = await Fs.info(session=session, contentRef=modelFile.getRef(), options={'path': True})
+
+# File Path
+filePath = modelFile.get('path')
+
+# Or if its a Shared File
+filePath = output.get('metadata.path')
+if not filePath:
+    filePath = modelFile.get('path')
+
+fileMountPath = mountPath + filePath
+print(fileMountPath)
+</codeblock>
+                    </p>
+                </fig></p>
+        </section>
+    </refbody>
+</reference>

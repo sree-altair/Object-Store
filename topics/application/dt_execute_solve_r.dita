@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ddd_3yy_lyb">
+    <title>Executing Solve</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_c1v_jyy_lyb">
+            <title/>
+            <p>The following code is used for executing the
+                solver:<codeblock id="codeblock_vwj_wvy_lyb">memory = {
+    "value": 3750,
+    "valueWithUnits": "3750 MiB",
+    "normalizedValue": 3932160000
+}
+
+ncpu = 2
+version = "2022.2"
+options = ActionExecOptions(metadata={"queueType": "implicit"}, execEnv="Jobs")
+
+optistructJobAction = await (modelFile.solve(memory=memory,
+                                             ncpu=ncpu,
+                                             version=version,
+                                             execOptions=options))
+</codeblock></p>
+            <p>An example of the code that is executed in the UI:<fig id="fig_jtb_yvy_lyb">
+                    <title/>
+                    <image placement="break" href="../../images/solve_1.png" id="image_ylj_fwy_lyb"
+                    />
+                </fig></p>
+            <p>
+                <fig id="fig_g2h_yvy_lyb">
+                    <title/>
+                    <image placement="break" href="../../images/solve_2.png" id="image_lqz_fwy_lyb"
+                    />
+                </fig>
+            </p>
+            <p>The contents of the Job directory will have the result files once the job is
+                complete. </p>
+            <p>
+                <fig id="fig_efn_2wy_lyb">
+                    <title/>
+                    <image placement="break" href="../../images/solve_3.png" id="image_gcc_hwy_lyb"
+                    />
+                </fig>
+            </p>
+        </section>
+    </refbody>
+</reference>

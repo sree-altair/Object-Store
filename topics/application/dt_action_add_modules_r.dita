@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ijs_3ty_lyb">
+    <title>Add Modules</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_arh_jty_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_ptc_kty_lyb">
+# Add Module 1
+dtBatterModule = await DTModule.Create(session=session, name="Battery")
+status = (await dtProject.addModule(dtBatterModule)).status
+print(status)
+
+# Add Module 2
+dtControllerModule = await DTModule.Create(session=session, name="Controller")
+status = (await dtProject.addModule(dtControllerModule)).status
+print( status)</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

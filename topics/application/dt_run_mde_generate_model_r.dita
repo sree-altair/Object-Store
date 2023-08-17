@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_mrx_htx_lyb">
+    <title>Run MDE &amp; Generate the Model JSON</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_m55_3tx_lyb">
+            <p>
+                <fig id="fig_zcr_qlt_jyb">
+                    <title/>
+                    <image placement="break" href="../../images/dt_run_mde_generate_model_json.png"
+                        id="image_uqs_rlt_jyb"/>
+                </fig>
+            </p>
+            <p>The code used to run MDE and to generate the model JSON:
+                <codeblock id="codeblock_bvr_tlt_jyb">from altair.mde import GeneratePreview
+from altair.system import Fs, Content
+from altair.system import ActionExecOptions, WaitForActionCompletion
+
+# Specific where to run the MDE i.e on which Appliance
+        execOptions = ActionExecOptions(execEnvFilter={"path": "$.name", "value": "Sessions"})
+
+# Execute Preview Gen MDE for the given model file
+        mdeAction = await GeneratePreview(inputFile=modelFile.getRef(), session=session, execOptions=execOptions)
+
+# Wait for MDE to complete since it’s a long running action.
+# Alternately, we can subscribe to event handler instead of waiting here. 
+For event handlers, Refer section : x.x
+        mdeActionOutput = await WaitForActionCompletion(mdeAction, timeout=300)
+
+Note: the above code will be moved under HPC actions section later with a reference here
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

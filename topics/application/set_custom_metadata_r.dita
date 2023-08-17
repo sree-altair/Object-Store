@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ztq_m1f_myb">
+    <title>Set Custom Metadata on a Content</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_nvx_p1f_myb">
+            <p>
+                <codeblock id="codeblock_apd_q1f_myb"># Get the uploaded file from file path
+    csv_file = (await Fs.info(path="~/my_file.csv", session=session)).content
+
+ # Set some custom metadata on the file content
+        csv_file.set("string_key","foobar")
+        csv_file.set("integer_key", 5678)
+        csv_file.set("float_key", 12.34)
+
+        # Set nested metadata
+        csv_file.set("attributes.total_mass", 1234)
+
+        # Set UnitScalar metadata
+        from altair.system import UnitScalar
+        unitScalarType= UnitScalar(session)
+        unitScalarType.valueWithUnits="5 g"
+        csv_file.set("mass", unitScalarType)
+
+        # Save
+        await session.save()
+
+        # Get the metadata set previously
+        print(csv_file.get("attributes.total_mass").value) # 1234
+        print(csv_file.get("mass").value) # 5
+        print(csv_file.get("mass").unit) # g
+        print(csv_file.get("mass").valueWithUnits) # 5g
+        print(csv_file.get("mass").normalizedValue) # 0.005
+</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

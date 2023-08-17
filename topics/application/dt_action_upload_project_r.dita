@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_q3p_vsy_lyb">
+    <title>Upload Project Model</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_pny_vsy_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_cfz_wsy_lyb">
+# Upload Project Model
+dtModel = (await dtProject.getModel()).model
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/Drone.stmod", dtModel.data_dir, session)
+status = (await dtModel.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>

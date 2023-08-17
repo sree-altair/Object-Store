@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_k22_c5x_lyb">
+    <title>Edit an Application</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_erk_d5x_lyb">
+            <p>
+                <fig id="fig_lyl_xnt_jyb">
+                    <title/>
+                    <image placement="break" href="../../images/dt_edit_application.png"
+                        id="image_ygk_ynt_jyb"/>
+                </fig>
+            </p>
+            <p>The code for editing an application model
+                files:<codeblock id="codeblock_q4x_wnt_jyb"># Specify the application Name to edit from
+appName = "Activate"
+
+        # Set Command Criteria which contains the application details
+        commandCriteria = Criteria(session)
+        commandCriteria.applicationName = appName
+        commandCriteria.applicationVersion = appVersion
+        commandCriteria.associatedContentType = modelFile.contentType
+        commandCriteria.label = "windows"
+
+        # Set Template Values to fill the inputs in runtime
+        templateValues = {"INPUT_FILE": filePath}
+
+        # Launch Interactive RDP Session
+        await RDPSession.launchApp(session=session,
+        targetExecEnv="Sessions",
+        commandCriteria=commandCriteria,
+        templateValues=templateValues,
+        inputFile=modelFile.getRef(),
+        execOptions=ActionExecOptions(
+       metadata={"queueType": "interactive"}))
+</codeblock></p>
+        </section>
+    </refbody>
+</reference>

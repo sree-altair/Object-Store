@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ucx_fsy_lyb">
+    <title>Create Project</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_wjg_hsy_lyb">
+            <title/>
+            <p>
+                <codeblock id="codeblock_llp_hsy_lyb"># Create project
+dtProject = await DTProject.Create(session, name="TestProject")</codeblock>
+            </p>
+        </section>
+    </refbody>
+</reference>
