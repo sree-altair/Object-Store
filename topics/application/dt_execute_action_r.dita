@@ -2,8 +2,8 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_hpw_h5x_lyb">
     <title>Invoking Digital Twin Actions</title>
-    <shortdesc>DT actions that can be executed on a client (for example, HPC) using the UI or Python
-        script.</shortdesc>
+    <shortdesc>DT actions can be invoked from a client via a Python/Js script or using the Web-UI
+        client.</shortdesc>
     <refbody>
         <section id="section_hdg_zwp_nyb">
             <title>Get Project</title>

@@ -7,7 +7,7 @@
         useful life (RUL) of their products without the need for physical prototypes.</shortdesc>
     <refbody>
         <section id="section_njw_4gf_cyb">
-            <p>The work flow for creating the Digital Twin application are:<ul id="ul_cg4_qgf_cyb">
+            <p>Typical work flow of the Digital Twin application:<ul id="ul_cg4_qgf_cyb">
                     <li>Create a Project </li>
                     <li>Upload project model files</li>
                     <li>Set main model file for Project</li>
