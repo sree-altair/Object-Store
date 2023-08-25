@@ -5,21 +5,21 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_qdh_qxy_lyb">
-            <title/>
-            <p>The following code is used for mounting and unmounting Altair
-                Drive:<codeblock id="codeblock_ex2_j5y_lyb"># Mount Adrive
+            <p>The following code is used for mounting and unmounting Altair Drive:<ul
+                    id="ul_mwq_gbs_nyb">
+                    <li>Mount Adrive<codeblock id="codeblock_ghz_gbs_nyb"><b># Mount Adrive</b>
 driveExecOptions = ActionExecOptions(execEnv="current")
 mountOutputs = await MountAdrive(session=session, execOptions=driveExecOptions)
 
 mountPath = mountOutputs.mountPath
-print(mountPath)
-
-# Unmount Adrive
+print(mountPath)</codeblock></li>
+                    <li>Unmount
+                        Adrive<codeblock id="codeblock_cxw_3bs_nyb"><b># Unmount Adrive</b>
 from altair.adrivemounter import UnmountDrive
 
 driveExecOptions = ActionExecOptions(execEnv="current")
-mountOutputs = await UnmountDrive(session=session, execOptions=driveExecOptions)
-</codeblock></p>
+mountOutputs = await UnmountDrive(session=session, execOptions=driveExecOptions)</codeblock></li>
+                </ul></p>
         </section>
     </refbody>
 </reference>

@@ -5,16 +5,15 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_k1f_syy_lyb">
-            <title/>
             <p>The following code is used for copying the files to Altair
-                Drive:<codeblock id="codeblock_npy_n5y_lyb"># Get Adcopy path from ExecutionEnvironment
+                Drive:<codeblock id="codeblock_npy_n5y_lyb"><b># Get Adcopy path from ExecutionEnvironment</b>
 execEnvData = await action.getExecEnv()
 onboardedApps = execEnvData.json["installedApplications"]
 appConfig = await getApplicationLatestVersionConfig(onboardedApps, "adcopy")
 
 path = appConfig['installationPath']
 
-# Build Adcopy command
+<b># Build Adcopy command</b>
 logLocation = os.path.dirname(localPath)
 args = [
     str(path),
@@ -30,14 +29,13 @@ args = [
     'remote:' + remotePath
 ]
 
-# Run adcopy command as a process
+<b># Run adcopy command as a process</b>
 await action.log('--DTActivateAppGenerateReportRun-- Executing Adcopy command : ' + str(args))
 process_env = os.environ.copy()
 process = subprocess.Popen(args, stdout=subprocess.PIPE, env=process_env, shell=False,
                            cwd=os.path.dirname(str(path)))
 (out, err) = process.communicate()
-print(process.returncode)
-</codeblock></p>
+print(process.returncode)</codeblock></p>
         </section>
     </refbody>
 </reference>

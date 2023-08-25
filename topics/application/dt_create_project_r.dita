@@ -5,7 +5,6 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_drt_1tx_lyb">
-            <title/>
             <p>The DT project content outline: <fig id="fig_vgv_hjt_jyb">
                     <title>DT Project</title>
                     <image placement="break" href="../../images/dt_content_outline.png"
@@ -14,16 +13,15 @@
             <p>The code used to create the DT project and to set a model by
                 default:<codeblock id="codeblock_zxm_3kt_jyb">from altair.dtwin import DTProject, DT3DModel
 
-	  # Create project
-        project = DTProject(session=context.session)
-        project.name = inputs.name
+<b># Create project</b>
+project = DTProject(session=context.session)
+project.name = inputs.name
 
-        # Create Model and its data directory
-        model = DT3DModel(session=context.session)
+<b># Create Model and its data directory</b>
+model = DT3DModel(session=context.session)
 
-        # Add relation from Project to Model
-        await project.setModel_(model)
-</codeblock></p>
+<b># Add relation from Project to Model</b>
+await project.setModel_(model)</codeblock></p>
         </section>
     </refbody>
 </reference>

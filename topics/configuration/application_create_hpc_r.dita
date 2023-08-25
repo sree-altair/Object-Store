@@ -43,9 +43,10 @@
                         <alt>Digital Twin Content Pack</alt>
                     </image>
                 </fig></p>
-            <p>You can download the Digital Content pack zip file from <b>&lt;Location Path to be
-                    provided by Chidambar></b> or obtained using your usual Altair support
-                channels.</p>
+            <p>You can download the Digital Content pack zip file (<varname>dtwin.zip</varname>)
+                from Altair One Drive location at <xref
+                    href="https://altairone.com/Drive/dir/64e72c5c3c2985487dbb3595" format="html"
+                    scope="external"/> or obtained using your usual Altair support channels.</p>
             <p>To load the Digital Twin Content pack, refer to <xref
                     href="../get_started/vs_code_integrate_register_t.dita"/>. </p>
         </section>

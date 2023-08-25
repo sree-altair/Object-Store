@@ -5,9 +5,8 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_i2f_1yy_lyb">
-            <title/>
             <p>The following code is used for getting the application path from execution
-                environment:<codeblock id="codeblock_g1n_y5y_lyb"># Get installed Activate Path &amp; check "/Activate_batch.bat" is present
+                environment:<codeblock id="codeblock_g1n_y5y_lyb"><b># Get installed Activate Path &amp; check "/Activate_batch.bat" is present</b>
 execEnvData = await action.getExecEnv()
 onboardedApps = execEnvData.json["installedApplications"]
 
@@ -15,8 +14,7 @@ appConfig = await getApplicationLatestVersionConfig(onboardedApps, "Activate")
 activatePath = appConfig['installationPath']
 
 activateAppPath = os.path.dirname(activatePath) + "/Activate_batch.bat"
-print(activateAppPath)
-</codeblock></p>
+print(activateAppPath)</codeblock></p>
         </section>
     </refbody>
 </reference>

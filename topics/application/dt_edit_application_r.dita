@@ -13,28 +13,26 @@
                 </fig>
             </p>
             <p>The code for editing an application model
-                files:<codeblock id="codeblock_q4x_wnt_jyb"># Specify the application Name to edit from
-appName = "Activate"
+                files:<codeblock id="codeblock_q4x_wnt_jyb"><b># Specify the application Name to edit from appName = "Activate"</b>
 
-        # Set Command Criteria which contains the application details
-        commandCriteria = Criteria(session)
-        commandCriteria.applicationName = appName
-        commandCriteria.applicationVersion = appVersion
-        commandCriteria.associatedContentType = modelFile.contentType
-        commandCriteria.label = "windows"
+<b># Set Command Criteria which contains the application details</b>
+commandCriteria = Criteria(session)
+commandCriteria.applicationName = appName
+commandCriteria.applicationVersion = appVersion
+commandCriteria.associatedContentType = modelFile.contentType
+commandCriteria.label = "windows"
 
-        # Set Template Values to fill the inputs in runtime
-        templateValues = {"INPUT_FILE": filePath}
+<b># Set Template Values to fill the inputs in runtime</b>
+templateValues = {"INPUT_FILE": filePath}
 
-        # Launch Interactive RDP Session
-        await RDPSession.launchApp(session=session,
-        targetExecEnv="Sessions",
-        commandCriteria=commandCriteria,
-        templateValues=templateValues,
-        inputFile=modelFile.getRef(),
-        execOptions=ActionExecOptions(
-       metadata={"queueType": "interactive"}))
-</codeblock></p>
+<b># Launch Interactive RDP Session</b>
+await RDPSession.launchApp(session=session,
+targetExecEnv="Sessions",
+commandCriteria=commandCriteria,
+templateValues=templateValues,
+inputFile=modelFile.getRef(),
+execOptions=ActionExecOptions(
+metadata={"queueType": "interactive"}))</codeblock></p>
         </section>
     </refbody>
 </reference>

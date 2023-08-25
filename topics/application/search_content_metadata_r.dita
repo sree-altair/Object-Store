@@ -17,32 +17,30 @@
             <p>Following is the code snippet to programmatically search by
                 metadata:<codeblock id="codeblock_ofd_z1f_myb">from altair.system.Search import Search
 
-# Search for all entities with content-type 'altair.datasheet.MotorDataSheetCSV' whose total_mass is 1234
+<b># Search for all entities with content-type 'altair.datasheet.MotorDataSheetCSV' whose total_mass is 1234</b>
 result = await Search.search(session=session,
-                filter='system.contentType == @contentType &amp;&amp; 				            attributes.total_mass == 1234',
-                            bindVars={
-                             'weightArg': "4 g",
-                             'contentType': "altair.datasheet.MotorDataSheetCSV"
-                            })
+  filter='system.contentType == @contentType &amp;&amp; attributes.total_mass == 1234',
+  bindVars={
+    'weightArg': "4 g",
+    'contentType': "altair.datasheet.MotorDataSheetCSV"
+            })
 print(result.entities)
 
-# Search for all entities with content-type 'altair.datasheet.MotorDataSheetCSV' whose total_mass > 4 grams
+<b># Search for all entities with content-type 'altair.datasheet.MotorDataSheetCSV' whose total_mass > 4 grams</b>
 result = await Search.search(session=session, 
-                            filter='system.contentType == @contentType &amp;&amp; 
-mass > @weightArg',
-                            bindVars= {
-                             'weightArg': "4 g",
-                             'contentType': "altair.datasheet.MotorDataSheetCSV"
-                           },
-                           typeHints= {
-                             "mass": "UNIT_SCALAR",
-                             "@weightArg": "UNIT_SCALAR"
-                           },
-                           searchOptions= {
-                             'returnCounts': True
-                           })
-print(result.entities)
-</codeblock></p>
+ filter='system.contentType == @contentType &amp;&amp; mass > @weightArg',
+    bindVars= {
+        'weightArg': "4 g",
+        'contentType': "altair.datasheet.MotorDataSheetCSV"
+                },
+    typeHints= {
+        "mass": "UNIT_SCALAR",
+        "@weightArg": "UNIT_SCALAR"
+                },
+    searchOptions= {
+        'returnCounts': True
+                    })
+print(result.entities)</codeblock></p>
         </section>
     </refbody>
 </reference>

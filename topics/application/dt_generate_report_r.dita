@@ -15,21 +15,20 @@
             <p>The code for generating report for an
                 application:<codeblock id="codeblock_vrw_d4t_jyb">import amat_run_activate_report
 
-# Get Input model file path
+<b># Get Input model file path</b>
 modelFileInfoActionOutput = await Fs.info(session=session, contentRef=modelFile.getRef(),
                                                       options={'path': True})
 filePath = modelFileInfoActionOutput.get('metadata.path')
 
-# Get the Activate application path from execution environment doc
+<b># Get the Activate application path from execution environment doc</b>
 execEnvData = await action.getExecEnv()
-        onboardedApps = execEnvData.json["installedApplications"]
-        appConfig = await getApplicationLatestVersionConfig(onboardedApps, "Activate"
-        activatePath = appConfig['installationPath']
-        activateAppPath = os.path.dirname(activatePath) + "/Activate_batch.bat"
+onboardedApps = execEnvData.json["installedApplications"]
+appConfig = await getApplicationLatestVersionConfig(onboardedApps, "Activate"
+activatePath = appConfig['installationPath']
+activateAppPath = os.path.dirname(activatePath) + "/Activate_batch.bat"
 
-# Execute the report generation
-amat_run_activate_report.create_report_for_model(fileMountPath, reportDirPath, activateAppPath)
-</codeblock></p>
+<b># Execute the report generation</b>
+amat_run_activate_report.create_report_for_model(fileMountPath, reportDirPath, activateAppPath)</codeblock></p>
         </section>
     </refbody>
 </reference>

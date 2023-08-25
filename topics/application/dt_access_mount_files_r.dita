@@ -5,24 +5,22 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_msm_wxy_lyb">
-            <title/>
             <p>The following code is used for accessing the mounted file(s):<fig
                     id="fig_oxc_5pf_cyb">
                     <p>
-                        <codeblock id="codeblock_jn4_l5y_lyb"># Get Input File Mounted  Path
+                        <codeblock id="codeblock_jn4_l5y_lyb"><b># Get Input File Mounted  Path</b>
 output = await Fs.info(session=session, contentRef=modelFile.getRef(), options={'path': True})
 
-# File Path
+<b># File Path</b>
 filePath = modelFile.get('path')
 
-# Or if its a Shared File
+<b># Or if its a Shared File</b>
 filePath = output.get('metadata.path')
 if not filePath:
     filePath = modelFile.get('path')
 
 fileMountPath = mountPath + filePath
-print(fileMountPath)
-</codeblock>
+print(fileMountPath)</codeblock>
                     </p>
                 </fig></p>
         </section>

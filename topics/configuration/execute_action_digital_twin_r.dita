@@ -2,11 +2,11 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_rcz_t3f_cyb">
     <title>Execute Actions on HPC</title>
-    <shortdesc>Execute actions on HPC for accessing the files, creating models, executing solver,
-        and editing the model.</shortdesc>
+    <shortdesc>The following sections shows how to execute actions on HPC for accessing the files,
+        creating models, executing solver, and editing the model.</shortdesc>
     <refbody>
         <section id="section_syl_2jf_cyb">
-            <p>The following actions must be created for Digital Twin to execute actions on HPC:</p>
+            <p/>
         </section>
     </refbody>
 </reference>
