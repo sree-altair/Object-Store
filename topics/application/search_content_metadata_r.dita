@@ -21,7 +21,6 @@
 result = await Search.search(session=session,
   filter='system.contentType == @contentType &amp;&amp; attributes.total_mass == 1234',
   bindVars={
-    'weightArg': "4 g",
     'contentType': "altair.datasheet.MotorDataSheetCSV"
             })
 print(result.entities)
