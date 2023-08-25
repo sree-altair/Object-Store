@@ -16,29 +16,26 @@
    "metadata": {
  "exts": ["csv"]
    }
-}
-
-Here, the MotorDataSheetCSV content extends from "altair.system.FileEntity". This denotes that all instances of this type are based on files in Object Store. 
-
-Following is the code snippet to upload a local file. 
-Here we upload “.csv” file – note that the content-type is automatically set to “altair.datasheet.MotorDataSheetCSV” since we have defined the extension in the content-definition
-
-from altair.system import Fs, FileEntity
-
-# Get the directory content by drive path. Here, "~" denotes the user home directory path
-        directory = (await Fs.info(session=session, path="~")).content
-
-        # Create a FileEntity instance
-        file = FileEntity(session)
-        file.filePath = "C:/Test/my_file.csv" # Local file path
-
-        # Add the file to the given directory
-        directory.addFile(file=file)
-
-        # Save it in Server
-        await session.save()
-</codeblock>
+}</codeblock>
             </p>
+            <p>Here, the MotorDataSheetCSV content extends from "altair.system.FileEntity". This
+                denotes that all instances of this type are based on files in Object Store. </p>
+            <p>Following is the code snippet to upload a local file. Here we upload “.csv” file –
+                note that the content-type is automatically set to
+                “altair.datasheet.MotorDataSheetCSV” since we have defined the extension in the
+                content-definition from altair.system import Fs, FileEntity</p>
+            <codeblock id="codeblock_mtd_bzp_nyb"><b># Get the directory content by drive path. Here, "~" denotes the user home directory path</b>
+directory = (await Fs.info(session=session, path="~")).content
+
+<b># Create a FileEntity instance</b>
+file = FileEntity(session)
+file.filePath = "C:/Test/my_file.csv" # Local file path
+
+<b># Add the file to the given directory</b>
+directory.addFile(file=file)
+
+<b># Save it in Server</b>
+await session.save()</codeblock>
         </section>
     </refbody>
 </reference>

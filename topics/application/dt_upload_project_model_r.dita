@@ -6,20 +6,19 @@
     <refbody>
         <section id="section_y1m_ftx_lyb">
             <p>The code used to upload project model
-                files:<codeblock id="codeblock_cts_3lt_jyb">        # Get the Model File entity
-    modelDirectory = (await Fs.info(session=session, path=  modelFilePath)).content
+                files:<codeblock id="codeblock_cts_3lt_jyb"><b># Get the Model File entity</b>
+modelDirectory = (await Fs.info(session=session, path=  modelFilePath)).content
 
-    # Create the File entity object with name and local file path
-    modelFile= FileEntity(session)
-    modelFile.name = “&lt;Model File Name>”
-    modelFile.filePath = “&lt;Model Local File Path>”
+<b># Create the File entity object with name and local file path</b>
+modelFile= FileEntity(session)
+modelFile.name = “&lt;Model File Name>”
+modelFile.filePath = “&lt;Model Local File Path>”
 
-    # Add the model file entity to the parent Model directory
-    directory.addFile(file=modelFile)
+<b># Add the model file entity to the parent Model directory</b>
+directory.addFile(file=modelFile)
 
-    # Set the model fileRef to the Project as its main model file 
-   project.modelFile = modelFile.getRef()
-</codeblock></p>
+<b># Set the model fileRef to the Project as its main model file</b> 
+project.modelFile = modelFile.getRef()</codeblock></p>
         </section>
     </refbody>
 </reference>

@@ -9,26 +9,25 @@
             <p>The following code is used for editing an
                 application:<codeblock id="codeblock_qxd_nwy_lyb">appName = "Hypermesh"
 
-        # Set Command Criteria which contains the application details
-        commandCriteria = Criteria(session)
-        commandCriteria.applicationName = appName
-        commandCriteria.applicationVersion = appVersion
-        commandCriteria.associatedContentType = modelFile.contentType
-        commandCriteria.label = "windows"
+<b># Set Command Criteria which contains the application details</b>
+commandCriteria = Criteria(session)
+commandCriteria.applicationName = appName
+commandCriteria.applicationVersion = appVersion
+commandCriteria.associatedContentType = modelFile.contentType
+commandCriteria.label = "windows"
 
-        # Set Template Values to fill the inputs in runtime
-        templateValues = {"INPUT_FILE": filePath}
+<b># Set Template Values to fill the inputs in runtime</b>
+templateValues = {"INPUT_FILE": filePath}
 
-        # Launch Interactive RDP Session
-        await RDPSession.launchApp(session=session,
-        targetExecEnv="Sessions",
-        commandCriteria=commandCriteria,
-        templateValues=templateValues,
-        inputFile=modelFile.getRef(),
-        execOptions=ActionExecOptions(
-       metadata={"queueType": "interactive"}))
-</codeblock></p>
-            <p>An example of the code that is executed in the UI:</p>
+<b># Launch Interactive RDP Session</b>
+await RDPSession.launchApp(session=session,
+targetExecEnv="Sessions",
+commandCriteria=commandCriteria,
+templateValues=templateValues,
+inputFile=modelFile.getRef(),
+execOptions=ActionExecOptions(
+metadata={"queueType": "interactive"}))</codeblock></p>
+            <p>You can achieve this in the UI using View Definition file:</p>
             <p>
                 <fig id="fig_aj3_4wy_lyb">
                     <title/>
@@ -43,6 +42,7 @@
                         id="image_jf1_vwy_lyb"/>
                 </fig>
             </p>
+            <p>The file will be opened in the application that is selected.</p>
             <p>
                 <fig id="fig_lwk_twy_lyb">
                     <title/>

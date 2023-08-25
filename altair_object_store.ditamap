@@ -75,23 +75,12 @@
             <topicref href="topics/application/dt_run_mde_generate_model_r.dita"/>
             <topicref href="topics/application/dt_get_json_model_r.dita"/>
             <topicref href="topics/application/dt_add_module_r.dita"/>
-            <topicref href="topics/application/dt_assign_parts_to_module_r.dita"/>
             <topicref href="topics/application/dt_add_application_r.dita"/>
             <topicref href="topics/application/dt_upload_application_r.dita"/>
             <topicref href="topics/application/dt_edit_application_r.dita"/>
             <topicref href="topics/application/dt_generate_report_r.dita"/>
         </topicref>
-        <topicref href="topics/application/dt_execute_action_r.dita">
-            <topicref href="topics/application/dt_action_get_project_r.dita"/>
-            <topicref href="topics/application/dt_action_create_project_r.dita"/>
-            <topicref href="topics/application/dt_action_get_project_name_r.dita"/>
-            <topicref href="topics/application/dt_action_upload_project_r.dita"/>
-            <topicref href="topics/application/dt_action_run_mde_r.dita"/>
-            <topicref href="topics/application/dt_action_add_modules_r.dita"/>
-            <topicref href="topics/application/dt_action_add_application_model_r.dita"/>
-            <topicref href="topics/application/dt_action_edit_model_r.dita"/>
-            <topicref href="topics/application/dt_action_generate_report_r.dita"/>
-        </topicref>
+        <topicref href="topics/application/dt_execute_action_r.dita"/>
         <topicref href="topics/configuration/execute_action_digital_twin_r.dita">
             <topicref href="topics/application/dt_mount_altair_drive_r.dita"/>
             <topicref href="topics/application/dt_access_mount_files_r.dita"/>
@@ -100,11 +89,14 @@
             <topicref href="topics/application/dt_execute_solve_r.dita"/>
             <topicref href="topics/application/dt_editing_application_r.dita"/>
             <topicref href="topics/application/dt_copy_file_altair_drive_r.dita"/>
-            <topicref href="topics/application/upload_file_server_r.dita"/>
-            <topicref href="topics/application/set_custom_metadata_r.dita"/>
-            <topicref href="topics/application/search_content_metadata_r.dita"/>
         </topicref>
-    </topicref>         
+    </topicref>
+    <topicref href="topics/application/general_faq_r.dita">
+        <topicref href="topics/application/upload_file_server_r.dita"/>
+        <topicref href="topics/application/set_custom_metadata_r.dita"/>
+        <topicref href="topics/application/search_content_metadata_r.dita"/>
+    </topicref>
+    <topicref href="topics/api_documentation/api_documentation_r.dita"/>         
     
 
     <mapref href="footer.ditamap"/>
@@ -120,7 +112,7 @@
         </relheader>
         <relrow>
             <relcell>
-                <topicref href="topics/whats_new/whats_new_object_store_r.dita"/>
+                <topicref href="topics/get_started/object_store_overview_r.dita"/>
             </relcell>
             <relcell>
                 <topicref href="topics/videos/tutorials_object_store_r.dita"/>

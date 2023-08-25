@@ -5,7 +5,6 @@
     <shortdesc></shortdesc>
     <refbody>
         <section id="section_c1v_jyy_lyb">
-            <title/>
             <p>The following code is used for executing the
                 solver:<codeblock id="codeblock_vwj_wvy_lyb">memory = {
     "value": 3750,
@@ -22,7 +21,7 @@ optistructJobAction = await (modelFile.solve(memory=memory,
                                              version=version,
                                              execOptions=options))
 </codeblock></p>
-            <p>An example of the code that is executed in the UI:<fig id="fig_jtb_yvy_lyb">
+            <p>You can achieve this in the UI using View Definition file:<fig id="fig_jtb_yvy_lyb">
                     <title/>
                     <image placement="break" href="../../images/solve_1.png" id="image_ylj_fwy_lyb"
                     />

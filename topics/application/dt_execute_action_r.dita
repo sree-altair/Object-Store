@@ -1,8 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="reference_hpw_h5x_lyb">
-    <title>Digital Twin Actions</title>
+    <title>Invoking Digital Twin Actions</title>
     <shortdesc>DT actions that can be executed on a client (for example, HPC) using the UI or Python
         script.</shortdesc>
-    <refbody/>
+    <refbody>
+        <section id="section_hdg_zwp_nyb">
+            <title>Get Project</title>
+            <p>Get all projects.</p>
+            <codeblock id="codeblock_grw_bsy_lyb">dtProjects = (await DTProject.GetProjects(session)).projects
+print(dtProjects)</codeblock>
+        </section>
+        <section id="section_i2l_bxp_nyb">
+            <title>Create Project</title>
+            <p>Create project.</p>
+            <codeblock id="codeblock_llp_hsy_lyb">dtProject = await DTProject.Create(session, name="TestProject")</codeblock>
+        </section>
+        <section id="section_b1w_dxp_nyb">
+            <title>Get Project by Name</title>
+            <p>Get project by name.</p>
+            <codeblock id="codeblock_jg3_ssy_lyb">dtProject = (await DTProject.GetProject(session, name=dtProject.name)).project
+print(dtProject.name)</codeblock>
+        </section>
+        <section id="section_oq4_gxp_nyb">
+            <title>Upload Project Model</title>
+            <p>Upload project model.</p>
+            <codeblock id="codeblock_cfz_wsy_lyb">dtModel = (await dtProject.getModel()).model
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/Drone.stmod", dtModel.data_dir, session)
+status = (await dtModel.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)</codeblock>
+        </section>
+        <section id="section_s4d_mxp_nyb">
+            <title>Run MDE on Model File</title>
+            <p>Run MDE on a model file.</p>
+            <codeblock id="codeblock_ksh_gty_lyb">status = (await dtModel.runMDE()).status
+print(status)</codeblock>
+        </section>
+        <section id="section_znz_nxp_nyb">
+            <title>Add Modules</title>
+            <p>Add modules.</p>
+            <codeblock id="codeblock_ptc_kty_lyb"><b># Add Module 1</b>
+dtBatterModule = await DTModule.Create(session=session, name="Battery")
+status = (await dtProject.addModule(dtBatterModule)).status
+print(status)
+
+<b># Add Module 2</b>
+dtControllerModule = await DTModule.Create(session=session, name="Controller")
+status = (await dtProject.addModule(dtControllerModule)).status
+print( status)</codeblock>
+        </section>
+        <section id="section_crk_sxp_nyb">
+            <title>Add Application and Models to Application</title>
+            <p>Add application and models to the application.</p>
+            <p>
+                <codeblock id="codeblock_as5_rty_lyb"><b># Add App 1</b>
+dtActivateApp = await DTActivateApp.Create(session=session, name="Activate")
+status = (await dtControllerModule.addApplication(dtActivateApp)).status
+print(status)
+
+<b># Add model for app</b>
+dtActivateApp = (await Content.getByRef(session=session, contentRef=dtActivateApp.getRef())).content
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/Controller.scm", dtActivateApp.data_dir,
+                              session)
+status = (await dtActivateApp.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)
+
+<b># Add App 2</b>
+dtOptistructApp = await DTOptistructApp.Create(session=session, name="OptistructApp")
+status = (await dtControllerModule.addApplication(dtOptistructApp)).status
+print(status)
+
+<b># Add model for app</b>
+dtOptistructApp = (await Content.getByRef(session=session, contentRef=dtOptistructApp.getRef())).content
+modelFile = await uploadModel(os.path.dirname(__file__) + "/test_data/plate.fem", dtOptistructApp.data_dir,
+                              session)
+status = (await dtOptistructApp.setMainModelFile(modelFile=modelFile.getRef())).status
+print(status)
+
+modules = (await dtProject.getModules()).modules
+print(modules)
+
+module = (await dtProject.getModule(name="Controller")).module
+print(module)</codeblock>
+            </p>
+        </section>
+        <section id="section_dl1_wxp_nyb">
+            <title>Edit Model Files</title>
+            <p>Edit model file in activate application.</p>
+            <p>
+                <codeblock id="codeblock_pyd_zty_lyb">await dtActivateApp.edit()</codeblock>
+            </p>
+        </section>
+        <section id="section_nmh_zxp_nyb">
+            <title>Generate Report</title>
+            <p>Generate reports.</p>
+            <p>
+                <codeblock id="codeblock_h1w_25y_lyb">await dtActivateApp.generateReport()</codeblock>
+            </p>
+        </section>
+    </refbody>
 </reference>

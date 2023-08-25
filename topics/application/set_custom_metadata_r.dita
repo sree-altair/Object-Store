@@ -4,35 +4,59 @@
     <title>Set Custom Metadata on a Content</title>
     <shortdesc></shortdesc>
     <refbody>
-        <section id="section_nvx_p1f_myb">
+        <section id="section_z5p_xzp_nyb">
+            <p>In this section, we will perform:<ul id="ul_xnx_yzp_nyb">
+                    <li>Get the uploaded file from the file path</li>
+                    <li>Set metadata<ul id="ul_hhy_n1q_nyb">
+                            <li>Custom metadata on the file content</li>
+                            <li>Set netsted metadata</li>
+                            <li>set UnitScalar metadata</li>
+                        </ul></li>
+                    <li>Save the session</li>
+                    <li>Get the metadata that is set previously</li>
+                </ul></p>
+        </section>
+        <section id="section_ods_k1q_nyb">
+            <title>Get the Uploaded File</title>
             <p>
-                <codeblock id="codeblock_apd_q1f_myb"># Get the uploaded file from file path
-    csv_file = (await Fs.info(path="~/my_file.csv", session=session)).content
+                <codeblock id="codeblock_qkt_l1q_nyb"><b># Get the uploaded file from file path</b>
+csv_file = (await Fs.info(path="~/my_file.csv", session=session)).content</codeblock>
+            </p>
+        </section>
+        <section id="section_pzg_m1q_nyb">
+            <title>Set Metadata</title>
+            <p>
+                <codeblock id="codeblock_q35_m1q_nyb"><b># Set some custom metadata on the file content</b>
+csv_file.set("string_key","foobar")
+csv_file.set("integer_key", 5678)
+csv_file.set("float_key", 12.34)
 
- # Set some custom metadata on the file content
-        csv_file.set("string_key","foobar")
-        csv_file.set("integer_key", 5678)
-        csv_file.set("float_key", 12.34)
+<b># Set nested metadata</b>
+csv_file.set("attributes.total_mass", 1234)
 
-        # Set nested metadata
-        csv_file.set("attributes.total_mass", 1234)
-
-        # Set UnitScalar metadata
-        from altair.system import UnitScalar
-        unitScalarType= UnitScalar(session)
-        unitScalarType.valueWithUnits="5 g"
-        csv_file.set("mass", unitScalarType)
-
-        # Save
-        await session.save()
-
-        # Get the metadata set previously
-        print(csv_file.get("attributes.total_mass").value) # 1234
-        print(csv_file.get("mass").value) # 5
-        print(csv_file.get("mass").unit) # g
-        print(csv_file.get("mass").valueWithUnits) # 5g
-        print(csv_file.get("mass").normalizedValue) # 0.005
-</codeblock>
+<b># Set UnitScalar metadata from altair.system</b> 
+import UnitScalar
+unitScalarType= UnitScalar(session)
+unitScalarType.valueWithUnits="5 g"
+csv_file.set("mass", unitScalarType)</codeblock>
+            </p>
+        </section>
+        <section id="section_sgp_q1q_nyb">
+            <title>Save the Session</title>
+            <p>
+                <codeblock id="codeblock_sjg_r1q_nyb"><b># Save</b>
+await session.save()</codeblock>
+            </p>
+        </section>
+        <section id="section_i3r_r1q_nyb">
+            <title>Get Metadata that is Set</title>
+            <p>
+                <codeblock id="codeblock_apd_q1f_myb"><b># Get the metadata set previously</b>
+print(csv_file.get("attributes.total_mass").value) # 1234
+print(csv_file.get("mass").value) # 5
+print(csv_file.get("mass").unit) # g
+print(csv_file.get("mass").valueWithUnits) # 5g
+print(csv_file.get("mass").normalizedValue) # 0.005</codeblock>
             </p>
         </section>
     </refbody>
