@@ -1,0 +1,740 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../../iconAltair-32.png"><!----></link><link rel="icon" href="../../iconAltair-32.png"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2023" /><meta name="DC.rights.owner" content="(C) Copyright 2023" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Actions Code Snippets" /><meta name="abstract" content="View the python code that is generated when you create the actions for the content definition." /><meta name="description" content="View the python code that is generated when you create the actions for the content definition." /><meta name="DC.Relation" scheme="URI" content="../../topics/configuration/action_create_t.htm" /><meta name="DC.Relation" scheme="URI" content="../../topics/configuration/action_compile_t.htm" /><meta name="DC.Relation" scheme="URI" content="../../topics/code_snippets/notes_code_r.htm" /><meta name="prodname" content="Getting Started with Altair Object Store" /><meta name="version" content="2022.1.0" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_h23_m4l_fvb" /><title>Actions Code Snippets</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><meta name="wh-path2root" content="../../" /><meta name="wh-toc-id" content="reference_h23_m4l_fvb-d46e719" />
+    	<!--ZOOMSTOP-->
+        <link rel="preload" href="../../oxygen-webhelp/template/resources/images/unity_gradient_resized.png" as="image" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript">
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MQVBBP7');
+        </script>
+        <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="deA2r3tvs" async="true"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/app/topic-page.css?buildId=2018042310" />
+        
+
+        <script type="text/javascript" src="../../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"></script>
+
+        <script data-main="../../oxygen-webhelp/app/topic-page.js" src="../../oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../../oxygen-webhelp/template/oxygen.css?buildId=2018042310" />
+        <link rel="stylesheet" type="text/css" href="../../altair-resources/css/bootstrap-toc.css" /><link rel="stylesheet" type="text/css" href="../../altair-resources/css/altair.css" /><link rel="icon" sizes="180x180" href="../../altair-resources/img/altair-icon.png" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+        <!--ZOOMRESTART-->
+    </head>
+
+    <body class="wh_topic_page dita_topic frmBody" id="reference_h23_m4l_fvb" data-target="#toc" data-spy="scroll">
+        <!-- Sets the current theme (light/dark) based on local storage. The script is placed here rather than
+            at the end of the body tag with the rest of the js. This prevents page flickering on refresh.-->        
+        <script>
+         if (localStorage.getItem('darkTheme') === 'true'){
+                document.body.classList.toggle("dark-theme");
+            }
+        </script>        
+    	<!--ZOOMSTOP-->
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_logo_and_publication_title_container">
+            <div class="wh_logo_and_publication_title">
+                
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url' and 'webhelp.prod.version'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../index.htm" class=" wh_logo "><img src="../../logo_PBSWorks_color_hw.svg" alt="Getting Started with Altair Object Store" /></a>
+                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Getting Started with Altair Object Store</span></a></div>
+                    <div class=" wh_version "><p>2023</p></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        <div class="wh_header_flex_container">
+            <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../../index.htm"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm">Create Objects in <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create the objects in <span class="keyword">Object Store</span> to generate the APIs for the ToDo         application.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="task_ikz_fr4_55b"><span class="title"><a href="../../topics/configuration/action_create_t.htm">Create an Action for the Content Definition</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Let us add a Create action for our ToDo content definition.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="reference_h23_m4l_fvb"><span class="title"><a href="../../topics/code_snippets/actions_code_r.htm">Actions Code Snippets</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">View the python code that is generated when you create the actions for the content         definition.</p>
+               </span></span></span></li>
+</ol></div>
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../../topics/configuration/action_compile_t.htm" title="Compile the Action for the Content Definition"></a></span>  
+<span class="navnext"><a class="link" href="../../topics/code_snippets/notes_code_r.htm" title="Note Action Code Snippets"></a></span>  </span></div>
+            <div class=" wh_search_input "><form id="searchForm" method="get" action="../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search Help</span></button></div></form></div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li><span data-tocid="untitled3-d46e422" data-state="leaf" class=" topicref " data-id="untitled3"><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">About Altair <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_ogh_541_wtb-d46e444" data-state="leaf" class=" topicref " data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span class="keyword">Object Store</span> Features
+               </a></span></span></li>
+   <li><span data-tocid="reference_y2h_klg_m5b-d46e467" data-state="leaf" class=" topicref " data-id="reference_y2h_klg_m5b"><span class="title"><a href="../../topics/get_started/object_store_benefits_r.htm">Benefits of <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_usn_xlg_m5b-d46e487" data-state="leaf" class=" topicref " data-id="reference_usn_xlg_m5b"><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span class="keyword">Object Store</span> Platform Architecture
+               </a></span></span></li>
+   <li><span data-tocid="task_ql5_png_m5b-d46e508" data-state="leaf" class=" topicref " data-id="task_ql5_png_m5b"><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e537" data-state="leaf" class=" topicref " data-id="reference_zqq_pmg_m5b"><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a></span></span></li>
+   <li><span data-tocid="task_cxr_t4y_lyb-d46e559" data-state="leaf" class=" topicref " data-id="task_cxr_t4y_lyb"><span class="title"><a href="../../topics/get_started/vs_code_integrate_register_t.htm">Register the Content Pack with VS Code</a></span></span></li>
+   <li><span data-tocid="reference_qhy_qnl_2vb-d46e577" data-state="leaf" class=" topicref " data-id="reference_qhy_qnl_2vb"><span class="title"><a href="../../topics/configuration/application_create_r.htm">Create an Application using Object Store </a></span></span></li>
+   <li class="has-children"><span data-tocid="task_sr5_v5g_m5b-d46e595" data-state="not-ready" class=" topicref " data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm">Create Objects in <span class="keyword">Object Store</span></a></span></span></li>
+   <li class="has-children"><span data-tocid="task_rxh_yxg_3vb-d46e805" data-state="not-ready" class=" topicref " data-id="task_rxh_yxg_3vb"><span class="title"><a href="../../topics/object_store_apis/apply_access_application_t.htm">Apply Object Store Packs to use the Application</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_u33_mff_cyb-d46e874" data-state="not-ready" class=" topicref " data-id="reference_u33_mff_cyb"><span class="title"><a href="../../topics/configuration/application_create_hpc_r.htm">Create an Advanced Application using Object Store</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_kt4_5bq_nyb-d46e1202" data-state="not-ready" class=" topicref " data-id="reference_kt4_5bq_nyb"><span class="title"><a href="../../topics/application/general_faq_r.htm">Object Store Examples</a></span></span></li>
+   <li><span data-tocid="reference_z5r_3ml_4yb-d46e1269" data-state="leaf" class=" topicref " data-id="reference_z5r_3ml_4yb"><span class="title"><a href="../../topics/api_documentation/api_documentation_r.htm">API Documentation</a></span></span></li>
+</ul></div>
+                
+                <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page" class="print_button"></a></div>
+                
+            </div>
+        </div>
+        <div class="nav_tools">
+            <nav class="wh_tools hidden-print">
+                <div class="wh_right_tools hidden-sm hidden-xs">  
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+
+        <div class="container-fluid">
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 navbar hidden-print">
+                            <div class="wh_logo_and_publication_title_container">
+                                <div class="wh_logo_and_publication_title">
+                                    
+                                    <a href="../../index.htm" class=" wh_logo hidden-xs "><img src="../../logo_PBSWorks_color_hw.svg" alt="Getting Started with Altair Object Store" /></a>
+                                    <div class=" wh_version "><p>2023</p></div>
+                                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Getting Started with Altair Object Store</span></a></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="nav_spacer"></div>
+                            <div class=" wh_publication_toc "><ul>
+   <li><span data-tocid="untitled3-d46e422" class="topicref" data-id="untitled3" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">About Altair <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"><span class="keyword">Object Store</span> is an enhanced next-generation platform core that has         combined capabilities of numerous services. 
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_ogh_541_wtb-d46e444" class="topicref" data-id="reference_ogh_541_wtb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Features
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"> Altair <span class="keyword">Object Store</span> is an advanced content management system that         combines the capabilities of numerous services and an action execution
+                  engine that applies         Access Control List (ACL) and other authorization policies for enhanced         security.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_y2h_klg_m5b-d46e467" class="topicref" data-id="reference_y2h_klg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_benefits_r.htm">Benefits of <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The Altair Object Store allows you to model engineering objects that are independent         of the user interface and can
+                  be consumed in a variety of applications via APIs.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_usn_xlg_m5b-d46e487" class="topicref" data-id="reference_usn_xlg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span> Platform Architecture
+               </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The Object Store architecture includes, in addition to the central Object Store         engine that manages configuration
+                  and execution, an environment manager, a multi-model         database, an event bus, and gateways. Investigate the many different
+                  parts that make up the         Object Store architecture.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="task_ql5_png_m5b-d46e508" class="topicref" data-id="task_ql5_png_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section provides the prerequisites, instructions to install <span class="keyword">Object Store</span>, verification of <span class="keyword">Object Store</span> installation, and             <span class="keyword">Object Store</span> service commands.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e537" class="topicref" data-id="reference_zqq_pmg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The <span class="keyword">Object Store</span> plugin for Visual Studio Code (VSCode) provides an         efficient coding environment for authoring and onboarding content
+                  packs.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="task_cxr_t4y_lyb-d46e559" class="topicref" data-id="task_cxr_t4y_lyb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/get_started/vs_code_integrate_register_t.htm">Register the Content Pack with VS Code</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">You can register the content pack with VS Code to use the objects.</p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_qhy_qnl_2vb-d46e577" class="topicref" data-id="reference_qhy_qnl_2vb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/application_create_r.htm">Create an Application using Object Store </a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Altair Object Store provides the building blocks required to create and deploy         applications.</p>
+               </span></span></span></li>
+   <li><span data-tocid="task_sr5_v5g_m5b-d46e595" class="topicref" data-id="task_sr5_v5g_m5b" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm">Create Objects in <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create the objects in <span class="keyword">Object Store</span> to generate the APIs for the ToDo         application.
+                  
+               </p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="task_fvh_2vg_m5b-d46e617" class="topicref" data-id="task_fvh_2vg_m5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/server_connect_t.htm">Connect to a Server and Create a Profile</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Before we begin, we need to connect to the Object Store server, create a profile and         fetch the essential remote content
+                        packs.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_s15_s1l_t5b-d46e634" class="topicref" data-id="task_s15_s1l_t5b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/local_packs_create_t.htm">Create a Local Content Pack</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Now that we have connected to the server, created a profile and downloaded the         essential remote content packs, we
+                        can begin creating our local content pack.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_arr_4vb_55b-d46e651" class="topicref" data-id="task_arr_4vb_55b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/content_definition_t.htm">Create Content Definition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create the content definition in the local packs.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_wn1_nh4_55b-d46e668" class="topicref" data-id="task_wn1_nh4_55b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/property_create_t.htm">Create Property for the Content Definition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Author the content definition by creating a property.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_ikz_fr4_55b-d46e685" class="topicref" data-id="task_ikz_fr4_55b" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/action_create_t.htm">Create an Action for the Content Definition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Let us add a Create action for our ToDo content definition.</p>
+                     </span></span></span><ul class="nav nav-list">
+               <li><span data-tocid="task_u24_byq_55b-d46e702" class="topicref" data-id="task_u24_byq_55b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/action_compile_t.htm">Compile the Action for the Content Definition</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Compile that actions provided for the content definition. </p>
+                           </span></span></span></li>
+               <li class="active"><span data-tocid="reference_h23_m4l_fvb-d46e719" class="topicref" data-id="reference_h23_m4l_fvb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/code_snippets/actions_code_r.htm">Actions Code Snippets</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">View the python code that is generated when you create the actions for the content         definition.</p>
+                           </span></span></span></li>
+               <li><span data-tocid="reference_s2r_fbb_gvb-d46e736" class="topicref" data-id="reference_s2r_fbb_gvb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/code_snippets/notes_code_r.htm">Note Action Code Snippets</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">View the python code that is generated when you create and delete note actions for         the content definition.</p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+         <li><span data-tocid="task_avt_xj3_2vb-d46e753" class="topicref" data-id="task_avt_xj3_2vb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/event_create_t.htm">Create an Event for the Content Definition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Author the content definition by creating an event.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_nkg_dbj_2vb-d46e770" class="topicref" data-id="task_nkg_dbj_2vb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/relation_create_t.htm">Create a Relation for the Content Definition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Author the content definition by creating a relation.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="task_l4f_tqr_55b-d46e787" class="topicref" data-id="task_l4f_tqr_55b" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/local_packs_build_deploy_t.htm">Build and Deploy the Local Pack</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Build, deploy and install the local pack with the content definition, its property,         actions, events, and the relations.
+                        
+                        
+                     </p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+   <li><span data-tocid="task_rxh_yxg_3vb-d46e805" class="topicref" data-id="task_rxh_yxg_3vb" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/object_store_apis/apply_access_application_t.htm">Apply Object Store Packs to use the Application</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Apply the Object Store packages and web content packs in the local UI framework. </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_u33_mff_cyb-d46e874" class="topicref" data-id="reference_u33_mff_cyb" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/configuration/application_create_hpc_r.htm">Create an Advanced Application using Object Store</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Creating an advanced (Digital Twin) application to design, build, test, optimize,         evaluate the what-if scenarios,
+                  perform predictive maintenance, and extend the remaining         useful life (RUL) of their products without the need for
+                  physical prototypes.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_kt4_5bq_nyb-d46e1202" class="topicref" data-id="reference_kt4_5bq_nyb" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/application/general_faq_r.htm">Object Store Examples</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The following sections provides the list of Object Store examples. </p>
+               </span></span></span></li>
+   <li><span data-tocid="reference_z5r_3ml_4yb-d46e1269" class="topicref" data-id="reference_z5r_3ml_4yb" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../../topics/api_documentation/api_documentation_r.htm">API Documentation</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section will provide the Object Store API documentation.</p>
+               </span></span></span></li>
+</ul></div>
+                            <div></div>
+
+                        </nav>
+                    
+                    <div class="contentbody col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header">
+                            
+<nav class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_logo_and_publication_title_container">
+            <div class="wh_logo_and_publication_title">
+                
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url' and 'webhelp.prod.version'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../index.htm" class=" wh_logo "><img src="../../logo_PBSWorks_color_hw.svg" alt="Getting Started with Altair Object Store" /></a>
+                    <div class=" wh_publication_title "><a href="../../index.htm"><span class="title">Getting Started with Altair Object Store</span></a></div>
+                    <div class=" wh_version "><p>2023</p></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        <div class="wh_header_flex_container">
+            <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../../index.htm"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm">Create Objects in <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">Object Store</span></a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create the objects in <span class="keyword">Object Store</span> to generate the APIs for the ToDo         application.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="task_ikz_fr4_55b"><span class="title"><a href="../../topics/configuration/action_create_t.htm">Create an Action for the Content Definition</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Let us add a Create action for our ToDo content definition.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="reference_h23_m4l_fvb"><span class="title"><a href="../../topics/code_snippets/actions_code_r.htm">Actions Code Snippets</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">View the python code that is generated when you create the actions for the content         definition.</p>
+               </span></span></span></li>
+</ol></div>
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../../topics/configuration/action_compile_t.htm" title="Compile the Action for the Content Definition"></a></span>  
+<span class="navnext"><a class="link" href="../../topics/code_snippets/notes_code_r.htm" title="Note Action Code Snippets"></a></span>  </span></div>
+            <div class=" wh_search_input "><form id="searchForm" method="get" action="../../search.htm"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search Help</span></button></div></form></div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li><span data-tocid="untitled3-d46e422" data-state="leaf" class=" topicref " data-id="untitled3"><span class="title"><a href="../../topics/get_started/object_store_overview_r.htm">About Altair <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_ogh_541_wtb-d46e444" data-state="leaf" class=" topicref " data-id="reference_ogh_541_wtb"><span class="title"><a href="../../topics/get_started/object_store_features_r.htm"><span class="keyword">Object Store</span> Features
+               </a></span></span></li>
+   <li><span data-tocid="reference_y2h_klg_m5b-d46e467" data-state="leaf" class=" topicref " data-id="reference_y2h_klg_m5b"><span class="title"><a href="../../topics/get_started/object_store_benefits_r.htm">Benefits of <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_usn_xlg_m5b-d46e487" data-state="leaf" class=" topicref " data-id="reference_usn_xlg_m5b"><span class="title"><a href="../../topics/get_started/object_store_architecture_r.htm">Altair <span class="keyword">Object Store</span> Platform Architecture
+               </a></span></span></li>
+   <li><span data-tocid="task_ql5_png_m5b-d46e508" data-state="leaf" class=" topicref " data-id="task_ql5_png_m5b"><span class="title"><a href="../../topics/install/object_store_install_t.htm">Install <span class="keyword">Object Store</span></a></span></span></li>
+   <li><span data-tocid="reference_zqq_pmg_m5b-d46e537" data-state="leaf" class=" topicref " data-id="reference_zqq_pmg_m5b"><span class="title"><a href="../../topics/get_started/vs_code_integration_r.htm">Integration with VS Code</a></span></span></li>
+   <li><span data-tocid="task_cxr_t4y_lyb-d46e559" data-state="leaf" class=" topicref " data-id="task_cxr_t4y_lyb"><span class="title"><a href="../../topics/get_started/vs_code_integrate_register_t.htm">Register the Content Pack with VS Code</a></span></span></li>
+   <li><span data-tocid="reference_qhy_qnl_2vb-d46e577" data-state="leaf" class=" topicref " data-id="reference_qhy_qnl_2vb"><span class="title"><a href="../../topics/configuration/application_create_r.htm">Create an Application using Object Store </a></span></span></li>
+   <li class="has-children"><span data-tocid="task_sr5_v5g_m5b-d46e595" data-state="not-ready" class=" topicref " data-id="task_sr5_v5g_m5b"><span class="title"><a href="../../topics/configuration/object_store_configuration_t.htm">Create Objects in <span class="keyword">Object Store</span></a></span></span></li>
+   <li class="has-children"><span data-tocid="task_rxh_yxg_3vb-d46e805" data-state="not-ready" class=" topicref " data-id="task_rxh_yxg_3vb"><span class="title"><a href="../../topics/object_store_apis/apply_access_application_t.htm">Apply Object Store Packs to use the Application</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_u33_mff_cyb-d46e874" data-state="not-ready" class=" topicref " data-id="reference_u33_mff_cyb"><span class="title"><a href="../../topics/configuration/application_create_hpc_r.htm">Create an Advanced Application using Object Store</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_kt4_5bq_nyb-d46e1202" data-state="not-ready" class=" topicref " data-id="reference_kt4_5bq_nyb"><span class="title"><a href="../../topics/application/general_faq_r.htm">Object Store Examples</a></span></span></li>
+   <li><span data-tocid="reference_z5r_3ml_4yb-d46e1269" data-state="leaf" class=" topicref " data-id="reference_z5r_3ml_4yb"><span class="title"><a href="../../topics/api_documentation/api_documentation_r.htm">API Documentation</a></span></span></li>
+</ul></div>
+                
+                <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page" class="print_button"></a></div>
+                
+            </div>
+        </div>
+        <div class="nav_tools">
+            <nav class="wh_tools hidden-print">
+                <div class="wh_right_tools hidden-sm hidden-xs">  
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+
+                        </div>
+                        <div class="content_spacer"></div>
+                        <div class="wrapper">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 min">
+                                <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+                            </div>
+                            <!--ZOOMRESTART-->
+                            <div id="wh_topic_body" class="contentarea col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Actions Code Snippets</h1>
+
+    
+    <div class="body refbody"><p class="shortdesc">View the python code that is generated when you create the actions for the content
+        definition.</p>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_lv2_q4l_fvb"><h2 class="title sectiontitle">Create</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">description</span> action is
+                as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_pqr_t4l_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoCreate generated by Altair One content definition compiler.
+# ToDoCreatePre  [optional] precheck and setup resources required for action.
+# ToDoCreateRun  business logic of action and set outputs.
+# ToDoCreatePost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoCreateInputs
+from altair.todo import ToDoCreateOutputs
+from altair.todo.ToDo import ToDo
+
+
+async def ToDoCreateRun(inputs: ToDoCreateInputs, outputs: ToDoCreateOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoCreateInputs): action inputs
+        outputs (ToDoCreateOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    # Creating the todo instance
+    todo = ToDo(session=context.session)
+    
+    # Update the attributes
+    todo.description = inputs.description
+    todo.category = inputs.category
+    todo.status = 'Pending'
+    await context.session.save()
+
+    # Emit the ToDo create event
+    await todo.emitToDoCreatedEvent(todoRef=todo)
+
+    # Assign the todo object to the output content
+    outputs.content = todo</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_u24_3ql_fvb"><h2 class="title sectiontitle">GetAll</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">status</span> action is as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_fmw_jql_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoGetAll generated by Altair One content definition compiler.
+# ToDoGetAllPre  [optional] precheck and setup resources required for action.
+# ToDoGetAllRun  business logic of action and set outputs.
+# ToDoGetAllPost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoGetAllInputs
+from altair.todo import ToDoGetAllOutputs
+from altair.system import Search
+
+
+async def ToDoGetAllRun(inputs: ToDoGetAllInputs, outputs: ToDoGetAllOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoGetAllInputs): action inputs
+        outputs (ToDoGetAllOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    result = await Search.search(session=context.session, filter= 'system.contentType in ["altair.todo.ToDo"]')
+    outputs.todos = result.entities</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_z41_kql_fvb"><h2 class="title sectiontitle">Delete</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">category</span> action is as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_qlh_lql_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoDelete generated by Altair One content definition compiler.
+# ToDoDeletePre  [optional] precheck and setup resources required for action.
+# ToDoDeleteRun  business logic of action and set outputs.
+# ToDoDeletePost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoDeleteInputs
+from altair.todo import ToDoDeleteOutputs
+
+
+async def ToDoDeleteRun(inputs: ToDoDeleteInputs, outputs: ToDoDeleteOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoDeleteInputs): action inputs
+        outputs (ToDoDeleteOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    await inputs.thisContent.delete()
+    await inputs.thisContent.emitToDoDeletedEvent(todoId=inputs.thisContent.id)
+    outputs.status = True</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_zkt_qyl_fvb"><h2 class="title sectiontitle">MarkAsCompleted</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">MarkAsCompleted</span> action
+                is as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_rmn_5yl_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoMarkAsComplete generated by Altair One content definition compiler.
+# ToDoMarkAsCompletePre  [optional] precheck and setup resources required for action.
+# ToDoMarkAsCompleteRun  business logic of action and set outputs.
+# ToDoMarkAsCompletePost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoMarkAsCompleteInputs
+from altair.todo import ToDoMarkAsCompleteOutputs
+
+
+async def ToDoMarkAsCompleteRun(inputs: ToDoMarkAsCompleteInputs, outputs: ToDoMarkAsCompleteOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoMarkAsCompleteInputs): action inputs
+        outputs (ToDoMarkAsCompleteOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    inputs.thisContent.status = 'Completed'
+    outputs.status = True
+    await inputs.thisContent.emitToDoModifiedEvent(todoRef=inputs.thisContent)</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_zhr_vyl_fvb"><h2 class="title sectiontitle">MarkAsPending</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">MarkAsPending</span> action
+                is as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_off_xyl_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoMarkAsPending generated by Altair One content definition compiler.
+# ToDoMarkAsPendingPre  [optional] precheck and setup resources required for action.
+# ToDoMarkAsPendingRun  business logic of action and set outputs.
+# ToDoMarkAsPendingPost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoMarkAsPendingInputs
+from altair.todo import ToDoMarkAsPendingOutputs
+
+
+async def ToDoMarkAsPendingRun(inputs: ToDoMarkAsPendingInputs, outputs: ToDoMarkAsPendingOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoMarkAsPendingInputs): action inputs
+        outputs (ToDoMarkAsPendingOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    inputs.thisContent.status = 'Pending'
+    outputs.status = True
+    await inputs.thisContent.emitToDoModifiedEvent(todoRef=inputs.thisContent)</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_pnk_xyl_fvb"><h2 class="title sectiontitle">GetPending</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">GetPending</span> action is
+                as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_zdr_yyl_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoGetPending generated by Altair One content definition compiler.
+# ToDoGetPendingPre  [optional] precheck and setup resources required for action.
+# ToDoGetPendingRun  business logic of action and set outputs.
+# ToDoGetPendingPost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoGetPendingInputs
+from altair.todo import ToDoGetPendingOutputs
+from altair.system import Search
+
+
+async def ToDoGetPendingRun(inputs: ToDoGetPendingInputs, outputs: ToDoGetPendingOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoGetPendingInputs): action inputs
+        outputs (ToDoGetPendingOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    result = await Search.search(session=context.session, 
+                                 filter= 'status like "Pending" &amp;&amp; system.contentType in ["altair.todo.ToDo"]'
+                                )
+    outputs.pendingToDos = result.entities</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_hc5_yyl_fvb"><h2 class="title sectiontitle">GetCompleted</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">GetPending</span> action is
+                as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_n2q_zyl_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoGetCompleted generated by Altair One content definition compiler.
+# ToDoGetCompletedPre  [optional] precheck and setup resources required for action.
+# ToDoGetCompletedRun  business logic of action and set outputs.
+# ToDoGetCompletedPost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoGetCompletedInputs
+from altair.todo import ToDoGetCompletedOutputs
+from altair.system import Search
+
+
+async def ToDoGetCompletedRun(inputs: ToDoGetCompletedInputs, outputs: ToDoGetCompletedOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoGetCompletedInputs): action inputs
+        outputs (ToDoGetCompletedOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    result = await Search.search(session=context.session, 
+                                 filter= 'status like "Completed" &amp;&amp; system.contentType in ["altair.todo.ToDo"]'
+                                )
+                                
+    outputs.completedToDos = result.entities</code></pre></div>
+
+        </section>
+
+        <section class="section" id="reference_h23_m4l_fvb__section_hcv_nzl_fvb"><h2 class="title sectiontitle">GetNotes</h2>
+            
+            <div class="p">The python code generated when creating a <span class="keyword parmname">GetNotes</span> action is as
+                follows:<pre class="pre codeblock" id="reference_h23_m4l_fvb__codeblock_xzp_pzl_fvb"><code># --------------------------------------------------------------------------------
+# stubs for action ToDoGetNotes generated by Altair One content definition compiler.
+# ToDoGetNotesPre  [optional] precheck and setup resources required for action.
+# ToDoGetNotesRun  business logic of action and set outputs.
+# ToDoGetNotesPost [optional] postchecks and free resources aquired by action.
+# *** DO NOT MODIFY STUB DEFINITIONS ***.
+# --------------------------------------------------------------------------------
+
+#Created from PythonActionSrcTemplate
+
+from altair.system import ActionContext
+from altair.todo import ToDoGetNotesInputs
+from altair.todo import ToDoGetNotesOutputs
+
+
+async def ToDoGetNotesRun(inputs: ToDoGetNotesInputs, outputs: ToDoGetNotesOutputs, context: ActionContext):
+    '''Implement business logic of action and set outputs
+
+    Args:
+        inputs (ToDoGetNotesInputs): action inputs
+        outputs (ToDoGetNotesOutputs): action outputs
+        context (ActionContext): action context
+    '''
+    notes = await inputs.thisContent.getNotes()
+    outputs.notes = notes
+    pass</code></pre></div>
+
+        </section>
+
+    </div>
+
+</article></main></div>
+                                
+                                
+                                
+                            </div>
+                            <!--ZOOMSTOP-->
+                            <!--Turning off Oxygen Topic TOC, and using Bootstrap Topic Toc instead -->
+                            <!--<whc:webhelp_topic_toc>
+                                <nav role="navigation"  id="wh_topic_toc" 
+                                    class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navbar hidden-print"> 
+                                    <whc:component_content/>
+                                </nav>
+                            </whc:webhelp_topic_toc> -->
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 max">
+                                <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    
+        
+        <div>
+            <p>© 2022 Altair Engineering, Inc. All Rights Reserved.</p>
+            <p><a href="../../front_matter/intellectual_property_rights_notice_pbsworks_r.htm" onclick="window.open(this.href, 'windowOpenTab', 'scrollbars=1,resizable=1,width=740,height=500,left=0,top=0'); return false;">Intellectual Property Rights Notice</a>  |  <a href="../../front_matter/technical_support_pbsworks_r.htm" onclick="window.open(this.href, 'windowOpenTab', 'scrollbars=1,resizable=1,width=740,height=500,left=0,top=0'); return false;">Technical Support</a>  |  <a onclick="UC_UI.showSecondLayer();">Cookie Consent</a></p>   
+        </div>
+
+
+		<!-- Generates the dark theme slider -->
+		
+		<label class="darkModeToggle">
+			<span class="onoff"></span>
+				<input type="checkbox" id="toggleState" />
+			<span class="slider round"></span>
+		</label>		
+		
+		
+    
+  </div>
+</nav>
+
+                    </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../../altair-resources/js/bootstrap-toc.js"></script><script type="text/javascript" src="../../altair-resources/js/breadcrumbs.js"></script><script type="text/javascript" src="../../altair-resources/js/darkTheme.js"></script><script type="text/javascript" src="../../altair-resources/js/splash.js"></script><script type="text/javascript" src="../../altair-resources/js/homepage.js"></script><script type="text/javascript" src="../../altair-resources/js/topics.js"></script><script type="text/javascript" src="../../altair-resources/js/offlinecheck.js"></script><script type="text/javascript" src="../../altair-resources/js/moreoptions.js"></script><script type="text/javascript" src="../../altair-resources/js/collapsibles.js"></script><script type="text/javascript" src="../../altair-resources/js/version-navigator.js"></script>
+        
+        <!--ZOOMRESTART-->
+    </body>
+</html>

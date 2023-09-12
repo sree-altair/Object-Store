@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="untitled3" path="topics/get_started/object_store_overview_r.htm"/>
+   <appContext helpID="reference_ogh_541_wtb"
+               path="topics/get_started/object_store_features_r.htm"/>
+   <appContext helpID="reference_y2h_klg_m5b"
+               path="topics/get_started/object_store_benefits_r.htm"/>
+   <appContext helpID="reference_usn_xlg_m5b"
+               path="topics/get_started/object_store_architecture_r.htm"/>
+   <appContext helpID="task_ql5_png_m5b" path="topics/install/object_store_install_t.htm"/>
+   <appContext helpID="reference_zqq_pmg_m5b"
+               path="topics/get_started/vs_code_integration_r.htm"/>
+   <appContext helpID="task_cxr_t4y_lyb"
+               path="topics/get_started/vs_code_integrate_register_t.htm"/>
+   <appContext helpID="reference_qhy_qnl_2vb"
+               path="topics/configuration/application_create_r.htm"/>
+   <appContext helpID="task_sr5_v5g_m5b"
+               path="topics/configuration/object_store_configuration_t.htm"/>
+   <appContext helpID="task_fvh_2vg_m5b" path="topics/configuration/server_connect_t.htm"/>
+   <appContext helpID="task_s15_s1l_t5b" path="topics/configuration/local_packs_create_t.htm"/>
+   <appContext helpID="task_arr_4vb_55b" path="topics/configuration/content_definition_t.htm"/>
+   <appContext helpID="task_wn1_nh4_55b" path="topics/configuration/property_create_t.htm"/>
+   <appContext helpID="task_ikz_fr4_55b" path="topics/configuration/action_create_t.htm"/>
+   <appContext helpID="task_u24_byq_55b" path="topics/configuration/action_compile_t.htm"/>
+   <appContext helpID="reference_h23_m4l_fvb" path="topics/code_snippets/actions_code_r.htm"/>
+   <appContext helpID="reference_s2r_fbb_gvb" path="topics/code_snippets/notes_code_r.htm"/>
+   <appContext helpID="task_avt_xj3_2vb" path="topics/configuration/event_create_t.htm"/>
+   <appContext helpID="task_nkg_dbj_2vb" path="topics/configuration/relation_create_t.htm"/>
+   <appContext helpID="task_l4f_tqr_55b"
+               path="topics/configuration/local_packs_build_deploy_t.htm"/>
+   <appContext helpID="task_rxh_yxg_3vb"
+               path="topics/object_store_apis/apply_access_application_t.htm"/>
+   <appContext helpID="task_lbj_gy1_3vb" path="topics/object_store_apis/upload_packages_t.htm"/>
+   <appContext helpID="task_nkq_lkb_3vb"
+               path="topics/object_store_apis/content_definition_usage_t.htm"/>
+   <appContext helpID="task_ohf_jxb_gvb" path="topics/application/application_access_t.htm"/>
+   <appContext helpID="reference_u33_mff_cyb"
+               path="topics/configuration/application_create_hpc_r.htm"/>
+   <appContext helpID="reference_ecg_23t_jyb"
+               path="topics/configuration/dt_workflow_code_r.htm"/>
+   <appContext helpID="reference_qg3_zsx_lyb"
+               path="topics/application/dt_create_project_r.htm"/>
+   <appContext helpID="reference_hvg_2tx_lyb"
+               path="topics/application/dt_upload_project_model_r.htm"/>
+   <appContext helpID="reference_mrx_htx_lyb"
+               path="topics/application/dt_run_mde_generate_model_r.htm"/>
+   <appContext helpID="reference_ync_mtx_lyb"
+               path="topics/application/dt_get_json_model_r.htm"/>
+   <appContext helpID="reference_e1h_ptx_lyb" path="topics/application/dt_add_module_r.htm"/>
+   <appContext helpID="reference_ywc_wtx_lyb"
+               path="topics/application/dt_add_application_r.htm"/>
+   <appContext helpID="reference_ct5_ytx_lyb"
+               path="topics/application/dt_upload_application_r.htm"/>
+   <appContext helpID="reference_k22_c5x_lyb"
+               path="topics/application/dt_edit_application_r.htm"/>
+   <appContext helpID="reference_ggz_25x_lyb"
+               path="topics/application/dt_generate_report_r.htm"/>
+   <appContext helpID="reference_hpw_h5x_lyb"
+               path="topics/application/dt_execute_action_r.htm"/>
+   <appContext helpID="reference_rcz_t3f_cyb"
+               path="topics/configuration/execute_action_digital_twin_r.htm"/>
+   <appContext helpID="reference_qhj_nxy_lyb"
+               path="topics/application/dt_mount_altair_drive_r.htm"/>
+   <appContext helpID="reference_a3h_vxy_lyb"
+               path="topics/application/dt_access_mount_files_r.htm"/>
+   <appContext helpID="reference_ubd_zxy_lyb"
+               path="topics/application/dt_get_application_path_r.htm"/>
+   <appContext helpID="reference_znl_dyy_lyb" path="topics/application/dt_running_mde_r.htm"/>
+   <appContext helpID="reference_ddd_3yy_lyb" path="topics/application/dt_execute_solve_r.htm"/>
+   <appContext helpID="reference_orr_myy_lyb"
+               path="topics/application/dt_editing_application_r.htm"/>
+   <appContext helpID="reference_tq2_ryy_lyb"
+               path="topics/application/dt_copy_file_altair_drive_r.htm"/>
+   <appContext helpID="reference_kt4_5bq_nyb" path="topics/application/general_faq_r.htm"/>
+   <appContext helpID="reference_hnj_wz2_myb"
+               path="topics/application/upload_file_server_r.htm"/>
+   <appContext helpID="reference_ztq_m1f_myb"
+               path="topics/application/set_custom_metadata_r.htm"/>
+   <appContext helpID="reference_jv1_r1f_myb"
+               path="topics/application/search_content_metadata_r.htm"/>
+   <appContext helpID="reference_z5r_3ml_4yb"
+               path="topics/api_documentation/api_documentation_r.htm"/>
+   <appContext helpID="reference_u3r_spb_3r"
+               path="front_matter/intellectual_property_rights_notice_pbsworks_r.htm"/>
+   <appContext helpID="reference_unc_sv3_3r"
+               path="front_matter/technical_support_pbsworks_r.htm"/>
+   <appContext helpID="untitled3" path="topics/get_started/object_store_overview_r.htm"/>
+   <appContext helpID="reference_tpr_hf1_jbb"
+               path="topics/videos/tutorials_object_store_r.htm"/>
+</map>
