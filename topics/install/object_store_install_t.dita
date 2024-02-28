@@ -12,7 +12,7 @@
         <taskbody>
             <context>
                 <ul id="ul_dhl_nr4_nvb">
-                    <li>Node.js 16 LTS</li>
+                    <li>Node.js 18 LTS</li>
                     <li>Python 3.8.10</li>
                     <li>Amazon Coretto OpenJDK 11</li>
                     <li>Docker</li>
